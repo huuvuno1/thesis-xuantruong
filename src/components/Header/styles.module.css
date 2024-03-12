@@ -1,20 +1,24 @@
-.logo {
-  font-weight: 600;
+.header {
+  background-color: #012755;
+  height: 84px;
+  color: #FFFBFB;
+  font-family: Exo;
 }
 
-.menu,
-.menuPc {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.logo {
+  height: 65px;
 }
 
 .menuItem {
-  padding: 0 0.5rem;
+  margin: 0 20px;
 }
 
-.mobileMenu {
-  display: none;
+.inpSearch {
+  outline: none;
+  border-radius: 20px;
+  font-size: 18px;
+  color: #636363;
+  padding: 10px 10px 10px 25px;
 }
 
 @media screen and (max-width: 860px) {
