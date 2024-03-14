@@ -1,0 +1,90 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 65px;
+  gap: 94px;
+  background-color: #fff;
+}
+
+.cover {
+  display: block;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  margin-top: 8px;
+}
+
+.loginWrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.input {
+  width: 551px;
+  height: 75px;
+  top: 371px;
+  left: 824px;
+  border-radius: 40px;
+  border: 1px solid #8c8888;
+  padding: 27px 19px;
+  font-size: 16px;
+}
+
+.btnLogin {
+  width: 550px;
+  height: 75px;
+  top: 581px;
+  left: 824px;
+  border-radius: 40px;
+  background-color: #012755;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.inputPass {
+  width: 551px;
+  height: 75px;
+  top: 371px;
+  left: 824px;
+  border-radius: 40px;
+  border: 1px solid #8c8888;
+  padding: 27px 19px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.inputInner {
+  flex: 1;
+}
+
+.forgotPass {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  text-align: right;
+  margin-top: 12px;
+  color: #01437c;
+}

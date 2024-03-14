@@ -1,9 +1,10 @@
-import { Banner } from "@/components/Banner";
+import { Banner } from '@/components/Banner';
+import MainLayout from '@/layouts/MainLayout';
 
 export default function Home() {
   return (
-    <main className={`flex min-h-screen flex-col items-center justify-between`}>
+    <MainLayout>
       <Banner />
-    </main>
+    </MainLayout>
   );
 }
