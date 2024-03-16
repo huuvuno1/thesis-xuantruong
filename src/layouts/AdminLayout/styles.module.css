@@ -1,11 +1,19 @@
 .container {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .main {
-  height: 100%;
+  height: calc(100vh - 97px);
   flex: 1;
   display: flex;
+}
+
+.body {
+  width: 100%;
+  padding-right: 65px;
+  background-color: #fff;
+  overflow-y: auto;
 }

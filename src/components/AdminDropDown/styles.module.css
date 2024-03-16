@@ -1,0 +1,19 @@
+.filterBox {
+  width: 265px;
+  height: 44px;
+  left: -95px;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 15px;
+}
+
+.filterTitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}

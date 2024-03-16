@@ -8,7 +8,7 @@ export default function AdminLayout({ children }: any) {
       <AdminHeader />
       <div className={styles.main}>
         <AdminNavbar />
-        {children}
+        <div className={styles.body}>{children}</div>
       </div>
     </div>
   );

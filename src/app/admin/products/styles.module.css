@@ -1,9 +1,165 @@
 .container {
   height: 100%;
+  margin-top: 21px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  border-bottom: 1px solid #c7c7c7;
+  padding-bottom: 6px;
+  margin-bottom: 21px;
+}
+
+.header2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.header2Title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #000000;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+}
+
+.col {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.productName {
+  width: 97px;
+}
+
+.product {
+  width: 306px;
+}
+
+.price {
+  width: 63px;
+}
+
+.sellQuantity {
+  width: 97px;
+}
+
+.quantityLeft {
+  width: 117px;
+}
+
+.revenue {
+  width: 92px;
+}
+
+.action {
+  width: 80px;
+}
+
+.productName1 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.product1 {
+  display: flex;
+  gap: 20px;
+}
+
+.product1 p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #012755;
+}
+
+.price1,
+.sellQuantity1,
+.quantityLeft {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.revenue1 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.action1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footerText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #012755;
+}
+
+.paging {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.paging p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.pagingNumberOne {
+  width: 24px;
+  height: 24px;
+  background-color: #012755;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 65px;
-  gap: 94px;
-  background-color: #fff;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 55px;
 }

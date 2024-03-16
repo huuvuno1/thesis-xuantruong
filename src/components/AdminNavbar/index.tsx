@@ -33,7 +33,7 @@ export default function AdminNavbar() {
       <button
         className={`${styles.menuIconNoActive} ${
           '/admin/products' === pathname && styles.menuIcon
-        }`}
+        } ${'/admin/products/new' === pathname && styles.menuIcon}`}
         onClick={() => {
           router.push('/admin/products');
         }}

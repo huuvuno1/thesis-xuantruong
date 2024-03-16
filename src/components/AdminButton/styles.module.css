@@ -1,0 +1,14 @@
+.container {
+  width: 265px;
+  height: 47px;
+  top: 114px;
+  left: 1110px;
+  border-radius: 20px;
+  background-color: #012755;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: -0.017em;
+  color: #fff;
+  text-align: center;
+}

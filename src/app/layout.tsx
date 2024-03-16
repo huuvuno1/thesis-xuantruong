@@ -1,10 +1,6 @@
 import { StyledEngineProvider } from '@mui/material';
 import type { Metadata } from 'next';
-import { Exo, Inter } from 'next/font/google';
 import './globals.css';
-
-const inter = Inter({ subsets: ['latin'] });
-const exo = Exo({ subsets: ['latin', 'vietnamese', 'latin-ext'] });
 
 export const metadata: Metadata = {
   title: 'Fashion Forward',
@@ -20,9 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <StyledEngineProvider injectFirst>
-        <body className={`${inter.className} ${exo.className}`}>
-          {children}
-        </body>
+        <body>{children}</body>
       </StyledEngineProvider>
     </html>
   );

@@ -1,0 +1,230 @@
+.container {
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 31px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.form {
+  margin-top: 72px;
+  background-color: #f8f8f8;
+  padding-right: 34px;
+}
+
+.btnViewWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btnView {
+  display: flex;
+  align-items: center;
+  width: 168px;
+  height: 47px;
+  top: 233px;
+  left: 1192px;
+  border-radius: 20px;
+  background-color: #012755;
+  padding: 13px 19px 10px 15px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  gap: 9px;
+  color: #fff;
+}
+
+.formItem {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.formItemProductCode {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #012755;
+}
+
+.formItemInput {
+  width: 230px;
+  height: 61px;
+  top: 295px;
+  left: 365px;
+  border-radius: 20px;
+  border: 1px solid #595959;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #595959;
+  padding: 15px 18px;
+  background-color: #f8f8f8;
+}
+
+.formItemWrapper {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+  margin-left: 33px;
+}
+
+.formItemLong {
+  width: 483px;
+}
+
+.formItemWrapperMain {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
+.formDesc {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #012755;
+  margin-bottom: 28px;
+}
+
+.formDescWrapper {
+  padding: 21px 34px 0 33px;
+  height: 300px;
+}
+
+.point {
+  width: 43.11px;
+  height: 44.72px;
+  background-color: #777777;
+}
+
+.pointWrapper {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.pointWrapper p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.017em;
+  text-align: center;
+  color: #595959;
+  padding: 0 85px;
+}
+
+.formImage {
+  padding: 33px;
+}
+
+.smallPoint {
+  width: 20.12px;
+  height: 20.87px;
+  background-color: #777777;
+}
+
+.smallPointWrapper {
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  background-color: #fff;
+}
+
+.pointWrapperHorizontal {
+  display: flex;
+  gap: 33px;
+}
+
+.smallPointWrapper1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.smallPointText {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #595959;
+}
+
+/* formColor */
+.formColor {
+  padding: 0 33px;
+  padding-bottom: 58px;
+}
+
+.formColorTitle {
+  display: flex;
+  align-items: center;
+}
+
+.formColorTitleText {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #012755;
+}
+
+.moreSize {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.moreSizeText {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #595959;
+}
+
+.colorItem {
+  display: flex;
+  align-content: center;
+  margin-top: 21px;
+  gap: 30px;
+}
+
+.addProduct {
+  padding: 0 33px;
+  padding-bottom: 97px;
+}
