@@ -47,6 +47,8 @@ export default function AdminNavbar() {
       <button
         className={`${styles.menuIconNoActive} ${
           '/admin/categories' === pathname && styles.menuIcon
+        } ${styles.menuIconNoActive} ${
+          '/admin/categories/new' === pathname && styles.menuIcon
         }`}
         onClick={() => {
           router.push('/admin/categories');
@@ -61,7 +63,7 @@ export default function AdminNavbar() {
       <button
         className={`${styles.menuIconNoActive} ${
           '/admin/orders' === pathname && styles.menuIcon
-        }`}
+        } ${'/admin/orders/detail' === pathname && styles.menuIcon}`}
         onClick={() => {
           router.push('/admin/orders');
         }}

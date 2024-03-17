@@ -1,9 +1,117 @@
 .container {
-  height: 100vh;
+}
+
+.header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 65px;
-  gap: 94px;
-  background-color: #fff;
+  justify-content: space-between;
+  margin-top: 21px;
+}
+
+.headerTitle {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.headerAction {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.table {
+  border-top: 0.5px solid #c7c7c7;
+  margin-top: 69px;
+  padding-top: 21px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.col {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.code {
+  width: 98px;
+}
+
+.name {
+  width: 200px;
+}
+
+.quantity {
+  width: 145px;
+}
+
+.up {
+  width: 95px;
+}
+
+.revenue {
+  width: 115px;
+}
+
+.action {
+  width: 80px;
+}
+
+.name1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.name1 p {
+  color: #012755;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.quantity1,
+.up1,
+.revenue {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: -0.017em;
+  color: #012755;
+}
+
+.action1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.code1 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.footer {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #012755;
 }

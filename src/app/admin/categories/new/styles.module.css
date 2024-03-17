@@ -1,15 +1,14 @@
 .container {
-  height: 100%;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 31px;
+  margin-top: 21px;
 }
 
-.title {
+.headerTitle {
   font-size: 32px;
   font-weight: 600;
   line-height: 43px;
@@ -17,10 +16,21 @@
   text-align: left;
 }
 
-.form {
-  margin-top: 72px;
+.headerDesc {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 21px;
+  margin-bottom: 16px;
+}
+
+.content {
+  border-radius: 10px;
   background-color: #f8f8f8;
-  padding-right: 34px;
+  padding: 14px 33px;
 }
 
 .btnViewWrapper {
@@ -84,7 +94,6 @@
   display: flex;
   align-items: center;
   gap: 140px;
-  margin-left: 33px;
 }
 
 .formItemLong {
@@ -191,7 +200,6 @@
 .formColorTitle {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .formColorTitleText {
@@ -226,6 +234,31 @@
 }
 
 .addProduct {
-  padding: 0 33px;
   padding-bottom: 97px;
+  margin-top: 32px;
+}
+
+.formItemDesc {
+  display: flex;
+  margin-top: 26px;
+  gap: 33px;
+}
+
+.formItemDescTextEditor {
+  width: 576px;
+  height: 381px;
+  background-color: #fff;
+}
+
+.formItemDescImage {
+  width: 372px;
+  height: 370px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.formItemDescItem {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }

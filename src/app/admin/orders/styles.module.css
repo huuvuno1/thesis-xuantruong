@@ -1,0 +1,193 @@
+.container {
+  margin-top: 21px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerTitle {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.headerAction {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+
+/* table */
+.table {
+  margin-top: 91px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 21px;
+  border-bottom: 0.5px solid #c7c7c7;
+}
+
+.menu p {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #595959;
+}
+
+.menu p:first-child {
+  color: #012755;
+  text-decoration: underline;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #012755;
+  margin-top: 25px;
+  margin-bottom: 28px;
+}
+
+.id {
+  width: 90px;
+}
+
+.buyer {
+  width: 132px;
+}
+
+.stock {
+  width: 201px;
+}
+
+.status {
+  width: 150px;
+}
+
+.price {
+  width: 81px;
+}
+
+.action {
+  width: 72px;
+}
+
+.id1 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #000;
+}
+
+.row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row1 p {
+  margin-bottom: 39px;
+}
+
+.buyer1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.stock1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.status1 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.status1Red {
+  color: #f51818;
+}
+
+.price1 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.action1 {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.footerText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #012755;
+}
+
+.paging {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.paging p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.pagingNumberOne {
+  width: 24px;
+  height: 24px;
+  background-color: #012755;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 96px;
+}

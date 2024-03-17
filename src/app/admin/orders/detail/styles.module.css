@@ -1,0 +1,212 @@
+.container {
+  margin-top: 21px;
+}
+
+.headerTitle {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.printer {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.orderDetail {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #012755;
+  border-bottom: 0.5px solid #c7c7c7;
+  padding-bottom: 4px;
+}
+
+.orderDetailWrapper {
+  padding: 0 19px;
+  margin-top: 43px;
+}
+
+.orderDetailNav {
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  gap: 98px;
+}
+
+.orderDetailNav p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #012755;
+}
+
+.orderInfo {
+  width: 366px;
+}
+
+.customerInfo {
+  width: 455px;
+}
+
+.cardInfo {
+  margin-top: 20px;
+  display: flex;
+  gap: 98px;
+}
+
+.orderInfoCard {
+  width: 385px;
+  height: 426px;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  padding: 30px 20px;
+  padding-bottom: 32px;
+}
+
+.customerInfoCard {
+  width: 455px;
+  height: 176px;
+  border-radius: 20px;
+  background-color: #f8f8f8;
+  padding: 19px 13px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.orderInfoCardItem {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 25px;
+}
+
+.orderInfoCardItemImg {
+  display: block;
+  height: 90px;
+  width: 75px;
+}
+
+.orderInfoCardItemInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  gap: 6px;
+}
+
+.orderInfoCardItemInfoName {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #012755;
+}
+
+.orderInfoCardItemInfoSize {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #595959;
+}
+
+.orderInfoCardItemInfoQuantity {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #595959;
+}
+
+.orderInfoCardItemInfoPrice {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.hr {
+  border: 1px solid #595959;
+}
+
+.detailWrapper {
+  margin-top: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detail p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #595959;
+}
+
+.detail1 p {
+  color: #000;
+}
+
+.customerInfoCardAddress {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.customerInfoCardAddressUserInfo p,
+.customerInfoCardAddressUserAddress p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #595959;
+}
+
+.customerInfoCardAddressUserInfo,
+.customerInfoCardAddressUserAddress {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.customerInfoCardAddressUserInfo p:first-child {
+  color: #000;
+}
+
+.customerInfoCardAddressUserAddress p:first-child {
+  color: #000;
+}
+
+.customerInfoCardOrderHistory p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.customerInfoCardOrderHistory {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
