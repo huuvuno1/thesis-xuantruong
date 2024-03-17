@@ -91,7 +91,7 @@ export default function AdminNavbar() {
       <button
         className={`${styles.menuIconNoActive} ${
           '/admin/customers' === pathname && styles.menuIcon
-        }`}
+        } ${'/admin/customers/detail' === pathname && styles.menuIcon}`}
         onClick={() => {
           router.push('/admin/customers');
         }}

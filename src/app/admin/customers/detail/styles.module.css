@@ -1,0 +1,194 @@
+.container {
+  margin-top: 21px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerTitle {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.headerAction {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* table */
+.table {
+  margin-bottom: 89px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.row p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #012755;
+  margin-top: 25px;
+}
+
+.id {
+  width: 166px;
+}
+
+.buyer {
+  width: 185px;
+}
+
+.stock {
+  width: 100px;
+}
+
+.status {
+  width: 150px;
+}
+
+.price {
+  width: 125px;
+}
+
+.action {
+  width: 80px;
+}
+
+.id1 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #000;
+}
+
+.row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row1 p {
+  margin-bottom: 34px;
+  color: #000;
+  font-weight: 600;
+}
+
+.buyer1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.stock1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.status1 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.price1 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.action1 {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+/* profile */
+.profile {
+  height: 176px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  background-color: #f8f8f8;
+  gap: 27px;
+  margin-top: 42px;
+  margin-bottom: 29px;
+}
+
+.username {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #012755;
+  text-decoration: underline;
+}
+
+.userInfoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 43px;
+}
+
+.userInfoWrapperItem p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #595959;
+}
+
+.usernameWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.userInfoWrapperItem {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.userInfoWrapperItem p:first-child {
+  color: #000;
+}
+
+.historyLine {
+  padding: 21px 0;
+  border-top: 0.5px solid #c7c7c7;
+  border-bottom: 0.5px solid #c7c7c7;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #012755;
+}

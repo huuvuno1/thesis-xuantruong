@@ -1,0 +1,171 @@
+.container {
+  margin-top: 21px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerTitle {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 43px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.headerAction {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* table */
+.table {
+  margin-top: 69px;
+  border-top: 0.5px solid #c7c7c7;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #000;
+  margin-top: 25px;
+  margin-bottom: 28px;
+}
+
+.id {
+  width: 97px;
+}
+
+.buyer {
+  width: 185px;
+}
+
+.stock {
+  width: 201px;
+}
+
+.status {
+  width: 150px;
+}
+
+.price {
+  width: 125px;
+}
+
+.action {
+  width: 80px;
+}
+
+.id1 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #000;
+}
+
+.row1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row1 p {
+  margin-bottom: 40px;
+  color: #012755;
+  font-weight: 600;
+}
+
+.buyer1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.stock1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.status1 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.price1 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.action1 {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.footerText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #012755;
+}
+
+.paging {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.paging p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.pagingNumberOne {
+  width: 24px;
+  height: 24px;
+  background-color: #012755;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 96px;
+  margin-top: 21px;
+}
