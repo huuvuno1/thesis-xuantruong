@@ -30,6 +30,8 @@
 
 .menuItem {
   width: 133px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .menuLeft {

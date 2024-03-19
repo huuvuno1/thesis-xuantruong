@@ -1,13 +1,165 @@
-@media screen and (max-width: 860px) {
-  .footer {
-    flex-direction: column;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #0c0c0c;
+}
 
-  .first {
-    margin-bottom: 1rem;
-  }
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  width: 1440px;
+  padding: 0 65px;
+  padding-top: 29px;
+  padding-bottom: 40px;
+  margin: auto;
+}
 
-  .cpr {
-    font-size: 1rem;
-  }
+.container1Wrapepr {
+  border-bottom: 1px solid #bfbfbf;
+  width: 100%;
+}
+
+.content {
+  width: 455px;
+  color: #fff;
+}
+
+.contentTitle {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
+.contentDesc {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn {
+  width: 169px;
+  height: 42px;
+  border-radius: 20px;
+  background-color: #2f5acf;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 7px;
+}
+
+.mail {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mailItem {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.mailItemHotline {
+  font-size: 16px;
+  font-weight: 400;
+  height: 19px;
+}
+
+.mailItemNumber {
+  font-size: 20px;
+  font-weight: 700;
+  height: 24px;
+}
+
+.address {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 1440px;
+  padding: 0 65px;
+  padding-top: 29px;
+  padding-bottom: 40px;
+  margin: auto;
+}
+
+.mem {
+  width: 195px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.mem p,
+.policy p,
+.cs p,
+.knowledge p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.mem p:first-child,
+.policy p:first-child,
+.cs p:first-child,
+.knowledge p:first-child {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.policy {
+  width: 195px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.cs,
+.knowledge {
+  width: 276px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.contactAddressWrapper {
+  width: 388px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contactAddress {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.contactAddressItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contactAddressItem p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.bocongthuong {
+  margin-top: 28px;
+}
+
+.csWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+
+.last {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  height: 87.07px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
