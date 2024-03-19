@@ -1,0 +1,54 @@
+.container {
+  margin: auto;
+  padding: 0 65px;
+  margin-top: 111px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.reviewItem {
+  width: 423px;
+  height: 226px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 2px 0px #00000040;
+  padding: 20px;
+}
+
+.reviewItemHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 35px 11px 0;
+}
+
+.avatarWrapper {
+  display: flex;
+  align-items: center;
+  gap: 13.47px;
+}
+
+.avatarWrapper p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cmt {
+  font-size: 14px;
+  font-weight: 400;
+  height: 112px;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 14px;
+  color: #00000066;
+}

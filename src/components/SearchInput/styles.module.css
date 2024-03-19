@@ -1,0 +1,30 @@
+.container {
+  width: 265px;
+  height: 47px;
+  top: 38px;
+  left: 977px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: #f0efef;
+  gap: 8px;
+  padding: 15px;
+}
+
+.input {
+  flex: 1;
+  background-color: none;
+  background-color: #f0efef;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 23.92px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}

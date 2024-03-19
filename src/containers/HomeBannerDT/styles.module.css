@@ -1,0 +1,28 @@
+.container {
+  padding: 0 65px;
+  margin-top: 111px;
+  padding-bottom: 119px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 33px;
+}
+
+.cover {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1309px;
+  height: 218px;
+  position: absolute;
+  padding-left: 90px;
+  padding-right: 100px;
+}

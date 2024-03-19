@@ -1,0 +1,34 @@
+.container {
+  padding: 0 65px;
+  margin-top: 51px;
+  margin-bottom: 62px;
+}
+
+.prdList {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 57px;
+}
+
+.header p {
+  font-size: 26px;
+  font-weight: 600;
+  color: #797979;
+  margin-bottom: 28px;
+}
+
+.header p:first-child {
+  font-size: 26px;
+  font-weight: 600;
+  color: #000;
+}
+
+.productItem {
+  width: 313px;
+}

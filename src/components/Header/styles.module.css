@@ -1,16 +1,17 @@
-.header {
-  background-color: #012755;
+.container {
   height: 84px;
-  color: #FFFBFB;
-  font-family: Exo;
+  background-color: #012755;
+}
+
+.header {
+  height: 84px;
+  color: #fffbfb;
+  width: 1441px;
+  margin: auto;
 }
 
 .logo {
   height: 65px;
-}
-
-.menuItem {
-  margin: 0 20px;
 }
 
 .inpSearch {
@@ -19,6 +20,28 @@
   font-size: 18px;
   color: #636363;
   padding: 10px 10px 10px 25px;
+}
+
+.menuPc {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.menuItem {
+  width: 133px;
+}
+
+.menuLeft {
+  display: flex;
+  align-items: center;
+  gap: 103px;
+}
+
+.menuRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 @media screen and (max-width: 860px) {
