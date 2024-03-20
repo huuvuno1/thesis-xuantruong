@@ -122,3 +122,22 @@
   font-weight: 500;
   border-radius: 50%;
 }
+
+.priceWrapper {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.oldPrice {
+  font-size: 16px;
+  font-weight: 600;
+  color: #b6b3b3;
+  text-decoration: line-through;
+}
+
+.percent {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e01b32;
+}

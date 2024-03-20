@@ -19,6 +19,8 @@ interface ProductCardProps {
   className?: string;
   isNew?: boolean;
   isSale?: boolean;
+  oldPrice?: string;
+  percent?: string;
 }
 export default function ProductCard(props: Readonly<ProductCardProps>) {
   return (
@@ -58,7 +60,13 @@ export default function ProductCard(props: Readonly<ProductCardProps>) {
       <p className={styles.desc}>{props.desc}</p>
 
       <div className={styles.priceWrapper}>
-        <p className={styles.price}>{props.price}</p>
+        <div className={styles.priceWrapper}>
+          <p className={styles.price}>{props.price}</p>
+          {props.oldPrice && (
+            <p className={styles.oldPrice}>{props.oldPrice}</p>
+          )}
+          {props.percent && <p className={styles.percent}>{props.percent}</p>}
+        </div>
 
         <Image src={HeartIcon} alt="icon" />
       </div>
