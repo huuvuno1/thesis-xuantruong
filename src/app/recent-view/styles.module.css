@@ -1,0 +1,24 @@
+.container {
+  margin-top: 68px;
+  margin-bottom: 108px;
+}
+
+.comb {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 65px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.comb p:last-child {
+  font-weight: 700;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 44px;
+}

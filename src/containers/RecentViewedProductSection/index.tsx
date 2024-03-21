@@ -63,11 +63,16 @@ const products = [
   },
 ];
 
-export default function FavoriteProductSection() {
+interface RecentViewedProductSectionProps {
+  className?: string;
+}
+export default function RecentViewedProductSection(
+  props: RecentViewedProductSectionProps
+) {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${props.className}`}>
       <div className={styles.header}>
-        <p>Sản phẩm bạn có thể thích</p>
+        <p>Sản phẩm vừa xem</p>
       </div>
 
       <div className={styles.prdList}>

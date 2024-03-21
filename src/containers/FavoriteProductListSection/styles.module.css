@@ -1,7 +1,7 @@
 .container {
   padding: 0 65px;
   margin-top: 51px;
-  margin-bottom: 62px;
+  margin-bottom: 58px;
 }
 
 .prdList {
@@ -27,8 +27,4 @@
   font-size: 26px;
   font-weight: 600;
   color: #000;
-}
-
-.prdList .productItem {
-  width: 313px;
 }

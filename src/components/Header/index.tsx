@@ -8,8 +8,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './styles.module.css';
 import { SearchInput } from '../SearchInput';
+import { useCallback } from 'react';
+import { useRouter } from 'next/navigation';
 
 export const Header = () => {
+  const router = useRouter();
+
+  const handleGotoFavoritePage = useCallback(() => {
+    router.push('/favorite');
+  }, [router]);
   return (
     <header className={styles.container}>
       <div
@@ -53,7 +60,7 @@ export const Header = () => {
           className={`cursor-pointer flex items-center justify-between ${styles.menuRight}`}
         >
           <SearchInput />
-          <HeartIcon />
+          <HeartIcon onClick={handleGotoFavoritePage} />
           <UserIcon />
           <CartIcon />
         </div>

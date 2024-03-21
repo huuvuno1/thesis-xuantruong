@@ -18,6 +18,7 @@ export default function Home() {
       <Banner />
 
       <HomeCategoriesSection />
+
       <HomeProductSection />
 
       <Image src={subBanner} alt="sub banner" />
