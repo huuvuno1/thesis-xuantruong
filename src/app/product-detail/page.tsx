@@ -6,6 +6,7 @@ import styles from './styles.module.css';
 import MainLayout from '@/layouts/MainLayout';
 import ProductDetailDesc from '@/containers/ProductDetailDesc';
 import FavoriteProductSection from '@/containers/FavoriteProductSection';
+import ProductDetailReview from '@/containers/ProductDetailReview';
 
 export default function ProductDetail() {
   return (
@@ -24,6 +25,8 @@ export default function ProductDetail() {
         <ProductDetailDesc />
 
         <FavoriteProductSection />
+
+        <ProductDetailReview />
       </div>
     </MainLayout>
   );

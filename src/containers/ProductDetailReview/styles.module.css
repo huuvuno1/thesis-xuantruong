@@ -1,0 +1,161 @@
+.container {
+  width: 100%;
+  padding: 0 65px;
+  display: flex;
+  gap: 20px;
+}
+
+.common {
+  width: 265px;
+  height: 222px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.commonTitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.commonGrade {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.reviewTotal {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  margin-top: 11px;
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.reviewItem {
+  display: flex;
+  align-items: center;
+  width: 265px;
+  height: 44px;
+  border-radius: 20px;
+  border: 1px solid #cccccc;
+  justify-content: space-between;
+  padding: 0 18px;
+}
+
+.reviewItem p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.reviewItemHaha {
+  border: 1px solid #012755;
+  font-size: 20px;
+  font-weight: 500;
+  color: #012755;
+}
+
+.thisReviewItemWrapper {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+  border-top: 1px solid #898989;
+  margin-top: 21px;
+  margin-left: 21px;
+  margin-right: 21px;
+  padding-top: 36px;
+}
+
+.thisReviewItem {
+  flex: 1;
+}
+
+.thisReviewItemName {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.thisReviewItemKind {
+  font-size: 11px;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 9px;
+  margin-top: 3px;
+}
+
+.thisReviewItemCmt {
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 11px;
+}
+
+.thisReviewItemDate {
+  font-size: 14px;
+  font-weight: 400;
+  color: #00000066;
+  margin-top: 15px;
+}
+
+.cmtImageWrapper {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.viewMoreBtn {
+  width: 179px;
+  height: 47px;
+  border-radius: 30px;
+  background-color: #012755;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.reviewWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+.footer p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #012755;
+}
+
+.paging {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.pagingp {
+  width: 24px;
+  height: 24px;
+  background-color: #012755;
+  color: #fff !important;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
