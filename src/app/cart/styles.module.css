@@ -179,6 +179,7 @@
   height: 33px;
   border-radius: 20px;
   background-color: #f1f1f1;
+  gap: 18px;
 }
 
 .productKindItem p {

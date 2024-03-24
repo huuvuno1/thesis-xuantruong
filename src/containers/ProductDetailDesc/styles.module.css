@@ -1,0 +1,88 @@
+.container {
+  width: 100%;
+  margin-top: 38px;
+}
+
+.header {
+  height: 81px;
+  padding-left: 95px;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  width: 1310px;
+  margin: auto;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.itemWrapper {
+  margin-left: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  margin-top: 48px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+
+.itemValue {
+  font-size: 14px;
+  font-weight: 400;
+  color: #111010;
+}
+
+.itemKey {
+  width: 150px;
+  color: #717171;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.descWrapper {
+  margin-top: 70px;
+}
+
+.desc {
+  padding: 0 160px;
+  margin-top: 23px;
+}
+
+.titleCommon {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.content p {
+  font-size: 16px;
+}
+
+.banner1 {
+  margin-top: 23px;
+  margin-bottom: 72px;
+}
+
+.banner2 {
+  margin: auto;
+  display: block;
+}
+
+.viewmoreBtn {
+  width: 265px;
+  height: 75px;
+  border-radius: 30px;
+  background-color: #012755;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 72px;
+  margin-bottom: 70px;
+}

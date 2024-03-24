@@ -21,10 +21,14 @@ interface ProductCardProps {
   isSale?: boolean;
   oldPrice?: string;
   percent?: string;
+  onClick?: () => void;
 }
 export default function ProductCard(props: Readonly<ProductCardProps>) {
   return (
-    <div className={`${styles.container} ${props.className}`}>
+    <div
+      className={`${styles.container} ${props.className}`}
+      onClick={props.onClick}
+    >
       {props.isOutOfStock && (
         <div className={styles.soldout}>
           <div className={styles.soldoutInner}>Bán hết</div>

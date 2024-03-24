@@ -29,7 +29,7 @@ export const Header = () => {
           <div className={styles.menu}>
             <div className={styles.menuPc}>
               <Link
-                href="/"
+                href="/products"
                 className={`text-lg font-medium ${styles.menuItem}`}
               >
                 Sản phẩm

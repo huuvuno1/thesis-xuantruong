@@ -1,13 +1,15 @@
 .container {
-  height: 84px;
   background-color: #012755;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header {
   height: 84px;
   color: #fffbfb;
-  width: 1441px;
-  margin: auto;
+  max-width: 1441px;
+  width: 100%;
 }
 
 .logo {

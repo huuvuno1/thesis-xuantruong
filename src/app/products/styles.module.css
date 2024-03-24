@@ -1,0 +1,39 @@
+.container {
+  margin-top: 48px;
+  margin-bottom: 39px;
+  padding: 0 65px;
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.btnWrapper {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 264px;
+  height: 54px;
+  border-radius: 10px;
+  background-color: #01437c;
+  padding-left: 28px;
+  margin-top: 12px;
+}
+
+.btnText {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header {
+  margin-bottom: 39px;
+}
+
+.main {
+  display: flex;
+  height: 100%;
+}
