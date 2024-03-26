@@ -12,6 +12,7 @@ import MainLayout from '@/layouts/MainLayout';
 import Image from 'next/image';
 import RecentViewedProductSection from '@/containers/RecentViewedProductSection';
 import FavoriteProductListSection from '@/containers/FavoriteProductListSection';
+import { useRouter } from 'next/navigation';
 
 const cartData = [
   {
@@ -38,6 +39,7 @@ const cartData = [
 ];
 
 export default function Cart() {
+  const router = useRouter();
   return (
     <MainLayout>
       <div className={styles.container}>
@@ -103,7 +105,14 @@ export default function Cart() {
               </div>
             </div>
 
-            <button className={styles.placeOrderBtn}>Tiến hành đặt hàng</button>
+            <button
+              className={styles.placeOrderBtn}
+              onClick={() => {
+                router.push('/cart-payment');
+              }}
+            >
+              Tiến hành đặt hàng
+            </button>
           </div>
         </div>
 

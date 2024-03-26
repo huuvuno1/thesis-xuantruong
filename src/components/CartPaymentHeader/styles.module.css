@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 38px;
+}
+
+.container p {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.active {
+  color: #bababa;
+}

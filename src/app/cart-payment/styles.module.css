@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 82px;
+  padding: 0 65px;
+}
+
+.headerText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 11px;
+  border-bottom: 1px solid #a5a5a5;
+  padding-right: 26px;
+}
+
+.headerTextTranformInfo {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.headerTextDefaultAddress {
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.input {
+  height: 61px;
+  border-radius: 20px;
+  border: 1px solid #595959;
+  padding: 15px 18px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 26px;
+}
+
+.nameInput {
+  height: 61px;
+  border-radius: 20px;
+  border: 1px solid #595959;
+  padding: 15px 18px;
+  margin-top: 34px;
+}
+
+.left {
+  width: 761px;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.inputWrapperWithIcon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.desc {
+  height: 99px;
+}
+
+.headerTextTranformInfoBelow {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 103px;
+}
+
+.paymentMethodItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 31px;
+}
+
+.paymentMethodItemInput {
+  height: 61px;
+  border-radius: 20px;
+  border: 1px solid #595959;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px 16px;
+  color: #595959;
+  flex: 1;
+}
+
+.paymentMethod {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 30px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.right {
+  flex: 1;
+  border-left: 1px solid #595959;
+  padding-left: 22px;
+  width: 536px;
+}
+
+.main {
+  display: flex;
+}
+
+.inputPadding {
+  padding-right: 23px;
+}
+
+.colCart {
+  font-size: 26px;
+  font-weight: 600;
+  width: 285px;
+}
+
+.colQuantity {
+  font-size: 20px;
+  font-weight: 400;
+  width: 82px;
+}
+
+.colPrice {
+  font-size: 20px;
+  font-weight: 400;
+  width: 71px;
+}
