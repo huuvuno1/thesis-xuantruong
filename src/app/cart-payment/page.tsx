@@ -10,6 +10,7 @@ import CircleIcon from '@/assets/images/CircleIcon.png';
 import MainLayout from '@/layouts/MainLayout';
 import Image from 'next/image';
 import { CartPaymentHeader } from '@/components/CartPaymentHeader';
+import { useRouter } from 'next/navigation';
 
 const cartData = [
   {
@@ -36,6 +37,7 @@ const cartData = [
 ];
 
 export default function CartPayment() {
+  const router = useRouter();
   return (
     <MainLayout>
       <div className={styles.container}>
@@ -138,17 +140,17 @@ export default function CartPayment() {
               </div>
 
               {cartData.map((c) => (
-                <div key={c.name}>
-                  <div>
+                <div key={c.name} className={styles.rowP}>
+                  <div className={`${styles.colCart} ${styles.colCart1}`}>
                     <Image src={c.image} alt={c.name} />
 
-                    <div>
-                      <p>{c.name}</p>
-                      <p>{c.desc}</p>
+                    <div className={styles.nameWrapper}>
+                      <p className={styles.name}>{c.name}</p>
+                      <p className={styles.desc1}>{c.desc}</p>
 
-                      <div>
+                      <div className={styles.sizeItemWrapper}>
                         {c.kind.map((k) => (
-                          <div key={k}>
+                          <div key={k} className={styles.sizeWrapper}>
                             <p>{k}</p>
 
                             <Image src={ArrowIconDown} alt="icon" />
@@ -158,12 +160,57 @@ export default function CartPayment() {
                     </div>
                   </div>
 
-                  <p>1</p>
+                  <p className={styles.quantity1}>1</p>
 
-                  <p>{c.price}</p>
+                  <p className={styles.price1}>{c.price}</p>
                 </div>
               ))}
             </div>
+
+            <div className={styles.discount}>
+              <input
+                className={styles.discountInput}
+                type="text"
+                placeholder="Nhập mã giảm giá"
+              />
+
+              <button className={styles.apply}>Áp dụng</button>
+            </div>
+
+            <div className={styles.completeWrapper}>
+              <div className={styles.complete}>
+                <p className={styles.nameComplete}>Tạm tính</p>
+
+                <p className={styles.valueComplete}>1,647,000đ</p>
+              </div>
+
+              <div className={styles.complete}>
+                <p className={styles.nameComplete}>Giảm giá</p>
+
+                <p className={styles.valueComplete}>0đ</p>
+              </div>
+
+              <div className={styles.complete}>
+                <p className={styles.nameComplete}>Phí giao hàng</p>
+
+                <p className={styles.valueComplete}>Miễn phí</p>
+              </div>
+
+              <div className={styles.complete}>
+                <p className={styles.nameCompleteT}>Tổng</p>
+
+                <p className={styles.valueCompletT}>1,647,000đ</p>
+              </div>
+            </div>
+
+            <button
+              className={styles.btnComplete}
+              onClick={() => {
+                router.push('/cart-complete');
+              }}
+            >
+              Hoàn tất đơn hàng
+            </button>
           </div>
         </div>
       </div>

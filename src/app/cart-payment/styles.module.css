@@ -108,6 +108,11 @@
   border-left: 1px solid #595959;
   padding-left: 22px;
   width: 536px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 200px;
+  margin-bottom: 48px;
 }
 
 .main {
@@ -134,4 +139,134 @@
   font-size: 20px;
   font-weight: 400;
   width: 71px;
+}
+
+.rowP {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 39px;
+}
+
+.colCart1 {
+  display: flex;
+  gap: 21px;
+  width: 285px;
+}
+
+.nameWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.desc1 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #726666;
+  margin-top: 9px;
+}
+
+.sizeWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  height: 33px;
+  width: 77px;
+  border-radius: 20px;
+  padding: 6px 15px;
+}
+
+.sizeWrapper p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.sizeItemWrapper {
+  display: flex;
+  gap: 16px;
+  margin-top: 15px;
+}
+
+.price1 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.quantity1 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.discount {
+  display: flex;
+  gap: 20px;
+}
+
+.discountInput {
+  width: 339px;
+  height: 61px;
+  border-radius: 20px;
+  border: 1px solid #595959;
+  padding: 15px 19px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.apply {
+  width: 170px;
+  height: 61px;
+  border-radius: 20px;
+  background-color: #002756;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.complete {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nameComplete {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.valueComplete {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.completeWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 44px;
+}
+
+.btnComplete {
+  width: 433px;
+  height: 59px;
+  background-color: #002756;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  margin: auto;
+  margin-top: 44px;
+}
+
+.nameCompleteT {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.valueCompletT {
+  font-size: 26px;
+  font-weight: 600;
 }
