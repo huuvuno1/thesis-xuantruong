@@ -1,0 +1,122 @@
+.container {
+}
+
+.content {
+  margin-top: 49px;
+  padding: 0 65px;
+  margin-bottom: 67px;
+}
+
+.contentTitle {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+
+.contentWrapper {
+  display: flex;
+  gap: 46px;
+}
+
+.quoteWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+}
+
+.quoteWrapper p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.Simple {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 33px;
+}
+
+.ptWrapper {
+  padding: 0 65px;
+  background-color: #012755;
+  color: #fffafa;
+  padding-top: 23px;
+  padding-bottom: 41px;
+}
+
+.ptWrapperTitle {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fffafa;
+  margin-bottom: 32px;
+}
+
+.ptWrapperContentWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ptWrapperContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.ptWrapperContent h4 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.ptWrapperContent p {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 50px;
+  margin-top: 23px;
+  text-align: center;
+}
+
+.hehe {
+  display: flex;
+  flex-direction: column;
+  gap: 109px;
+}
+
+.customerTalkAboutMe {
+  padding: 0 65px;
+  padding-top: 68px;
+  padding-bottom: 130px;
+  display: flex;
+  justify-content: space-between;
+  gap: 107px;
+}
+
+.customerTalkAboutMeTitle {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 34px;
+}
+
+.customerTalkAboutMeDesc {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 37px;
+}
+
+.customerTalkAboutMeName {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 26px;
+}
+
+.customerTalkAboutMeName p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.customerTalkAboutMeBackNext {
+  display: flex;
+  align-items: center;
+  gap: 13.84px;
+}

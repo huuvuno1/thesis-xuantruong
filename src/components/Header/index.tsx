@@ -36,19 +36,19 @@ export const Header = () => {
               </Link>
               <Link
                 className={`text-lg font-medium ${styles.menuItem}`}
-                href={'/female'}
+                href={'/news'}
               >
                 Tin tức
               </Link>
               <Link
                 className={`text-lg font-medium ${styles.menuItem}`}
-                href={'/male'}
+                href={'/intro'}
               >
                 Giới thiệu
               </Link>
               <Link
                 className={`text-lg font-medium ${styles.menuItem}`}
-                href={'/male'}
+                href={'/contacts'}
               >
                 Liên hệ
               </Link>
