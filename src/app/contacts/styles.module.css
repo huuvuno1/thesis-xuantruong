@@ -1,0 +1,139 @@
+.container {
+}
+
+.titleSearch {
+  font-size: 32px;
+  font-weight: 600;
+  color: #01437c;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.search {
+  margin-top: 103px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intpuSearch {
+  width: 740px;
+  height: 61px;
+  border-radius: 20px;
+  border: 1px solid #595959;
+  padding: 15px 45px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.categoryWapper {
+  margin: 0 65px;
+  margin-top: 69px;
+  background-color: #eaeaea;
+  padding-top: 31px;
+  padding-left: 71px;
+  padding-right: 75px;
+  padding-bottom: 58px;
+  border-radius: 20px;
+}
+
+.categorycommonWrapper {
+  display: flex;
+}
+
+.categoryTitle {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 28px;
+}
+
+.categoryLeftWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.categoryLeftItem {
+  width: 291px;
+  height: 61px;
+  border-radius: 20px;
+  border: 1px solid #595959;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 17px 7px;
+  color: #000;
+  background-color: #fff;
+}
+
+.categoryLeftItemActive {
+  background-color: #01437c;
+  color: #fff;
+}
+
+.categoryRightItem {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 359px;
+  height: 156px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 15px 18px;
+}
+
+.categoryRightItem strong {
+  font-size: 20px;
+  font-weight: 700;
+  color: #01437c;
+}
+
+.categoryRightItem p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.categoryRightItemTop {
+  display: flex;
+  gap: 62px;
+}
+
+.categoryRight {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  margin-left: 93px;
+}
+
+.anyquestion {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 37px;
+}
+
+.anyquestionbtn {
+  width: 433px;
+  height: 59px;
+  background-color: #002756;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.anyquestionWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 85px;
+  margin-bottom: 79px;
+}
+
+.lastBannerWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 99px;
+}
