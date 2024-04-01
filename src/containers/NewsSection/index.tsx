@@ -23,11 +23,11 @@ const articles = [
   },
 ];
 
-export default function NewsSection() {
+export default function HomeNewSection() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <h3>Những bài viết mới</h3>
+        <h3>Tin tức</h3>
       </div>
       <div className={styles.articles}>
         {articles.map((a) => (
