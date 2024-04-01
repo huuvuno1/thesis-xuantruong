@@ -83,7 +83,11 @@ export default function News() {
 
             <div className={styles.articleWrapperItem}>
               {news.map((n) => (
-                <Link href="/news" key={n.title} className={styles.articleItem}>
+                <Link
+                  href="/news-detail"
+                  key={n.title}
+                  className={styles.articleItem}
+                >
                   <Image src={n.img} alt="cover" />
 
                   <h5 className={styles.articleItemTitle}>{n.title}</h5>

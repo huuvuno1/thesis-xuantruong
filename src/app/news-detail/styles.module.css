@@ -1,6 +1,6 @@
 .container {
   padding: 0 65px;
-  margin-top: 118px;
+  margin-top: 63px;
   margin-bottom: 181px;
 }
 
@@ -55,8 +55,7 @@
 
 .articleWrapperItem {
   display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
+  flex-direction: column;
 }
 
 .articleItem {
@@ -93,12 +92,52 @@
 
 .articleTitleWrapper {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   margin-bottom: 9px;
 }
 
 .articleTitle {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.breadcum {
+  display: flex;
+}
+
+.breadcum p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.breadcumActive {
+  font-weight: 700 !important;
+}
+
+.detailTitle {
   font-size: 32px;
   font-weight: 600;
+  margin-bottom: 9px;
+}
+
+.detailItem {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.detailItemTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.detailItemImg {
+  margin: auto;
+  margin-bottom: 29px;
+}
+
+.detailItemDesc {
+  font-size: 20px;
+  font-weight: 500;
 }
