@@ -42,6 +42,18 @@ export default function ProductCard(props: Readonly<ProductCardProps>) {
         </div>
         <Image src={props?.image} alt="homeProductSection" />
         <p className={styles.textTag}>Simple</p>
+
+        <div className={styles.sizeChoosed}>
+          <p className={styles.sizeChoosedTitle}>Thêm nhanh vào giỏ hàng*</p>
+
+          <div className={styles.sizeChoosedSizeWrapper}>
+            <div className={styles.sizeChoosedSizeItem}>S</div>
+            <div className={styles.sizeChoosedSizeItem}>M</div>
+            <div className={styles.sizeChoosedSizeItem}>L</div>
+            <div className={styles.sizeChoosedSizeItem}>XL</div>
+            <div className={styles.sizeChoosedSizeItem}>2XL</div>
+          </div>
+        </div>
       </div>
 
       <div className={styles.colorWrapper}>

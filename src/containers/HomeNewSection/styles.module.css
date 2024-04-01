@@ -56,3 +56,13 @@
   color: #01437c;
   margin-top: 25px;
 }
+
+.img:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s;
+}
+
+.imgWrapper {
+  overflow: hidden;
+  border-radius: 10px;
+}

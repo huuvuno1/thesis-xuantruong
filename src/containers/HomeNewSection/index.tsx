@@ -33,7 +33,9 @@ export default function NewsSection() {
         {articles.map((a) => (
           <div key={a.title} className={styles.articleItem}>
             <div className={styles.articleItemLine}>
-              <Image src={a.image} alt={a.title} />
+              <div className={styles.imgWrapper}>
+                <Image className={styles.img} src={a.image} alt={a.title} />
+              </div>
 
               <h4 className={styles.title}>{a.title}</h4>
             </div>

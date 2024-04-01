@@ -10,6 +10,7 @@ import styles from './styles.module.css';
 import { SearchInput } from '../SearchInput';
 import { useCallback } from 'react';
 import { useRouter } from 'next/navigation';
+import HeaderMenu from '../HeaderMenu';
 
 export const Header = () => {
   const router = useRouter();
@@ -30,9 +31,10 @@ export const Header = () => {
             <div className={styles.menuPc}>
               <Link
                 href="/products"
-                className={`text-lg font-medium ${styles.menuItem}`}
+                className={`text-lg font-medium ${styles.menuItem} ${styles.menuProduct}`}
               >
                 Sản phẩm
+                <HeaderMenu className={styles.menuShow} />
               </Link>
               <Link
                 className={`text-lg font-medium ${styles.menuItem}`}

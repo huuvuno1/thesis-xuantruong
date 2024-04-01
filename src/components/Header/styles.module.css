@@ -32,20 +32,34 @@
 
 .menuItem {
   width: 133px;
-  text-transform: uppercase;
   font-weight: 700;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuItem:hover {
+  background-color: #000;
+  height: 100%;
 }
 
 .menuLeft {
   display: flex;
   align-items: center;
   gap: 103px;
+  height: 100%;
 }
 
 .menuRight {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.menu {
+  height: 100%;
+  display: flex;
 }
 
 @media screen and (max-width: 860px) {
@@ -64,4 +78,18 @@
     justify-content: center;
     padding: 1rem 0.5rem;
   }
+}
+
+.menuProduct {
+}
+
+.menuShow {
+  display: none;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+}
+
+.menuProduct:hover .menuShow {
+  display: flex;
 }
