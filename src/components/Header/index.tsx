@@ -19,7 +19,7 @@ export const Header = () => {
     router.push('/favorite');
   }, [router]);
   return (
-    <header className={styles.container}>
+    <header className={`${styles.container} ${styles.desktopOnly}`}>
       <div
         className={`flex items-center justify-between px-8 py ${styles.header}`}
       >

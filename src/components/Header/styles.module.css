@@ -93,3 +93,9 @@
 .menuProduct:hover .menuShow {
   display: flex;
 }
+
+@media only screen and (max-width: 768px) {
+  .desktopOnly {
+    display: none;
+  }
+}

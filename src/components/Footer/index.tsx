@@ -9,7 +9,7 @@ import bocongthuong from '@/assets/images/bocongthuong.png';
 
 export const Footer = () => {
   return (
-    <footer className={styles.container}>
+    <footer className={`${styles.container} ${styles.desktopOnly}`}>
       <div className={styles.container1Wrapepr}>
         <div className={styles.container1}>
           <div className={styles.content}>
