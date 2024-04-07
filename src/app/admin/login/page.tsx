@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 'use client';
 
 import Image from 'next/image';
@@ -6,15 +7,26 @@ import styles from './styles.module.css';
 import loginImage from '@/assets/images/loginpage.png';
 import logoImage from '@/assets/images/logo.png';
 import eyeOffImage from '@/assets/images/eye-off.png';
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 export default function LoginAdmin() {
   const router = useRouter();
 
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
   const login = useCallback(() => {
-    router.push('/admin/statistical');
-  }, [router]);
+    if (username === 'admin' && password === 'admin') {
+      setError('');
+      router.push('/admin/statistical');
+
+      return;
+    }
+
+    setError('Tài khoản mật khẩu sai');
+  }, [router, username, password]);
 
   return (
     <div className={styles.container}>
@@ -26,17 +38,23 @@ export default function LoginAdmin() {
         <h2 className={styles.title}>Xin chào!</h2>
         <p className={styles.desc}>Chào mừng đến với trang quản lý</p>
 
+        {error && <p className={styles.error}>{error}</p>}
+
         <div className={styles.loginWrapper}>
           <input
             type="text"
             className={styles.input}
             placeholder="Email/SĐT của bạn"
+            value={username}
+            onChange={(e) => setUsername(e?.target.value)}
           />
           <div className={styles.inputPass}>
             <input
-              type="text"
+              type="password"
               placeholder="Mật khẩu"
               className={styles.inputInner}
+              value={password}
+              onChange={(e) => setPassword(e?.target.value)}
             />
             <Image src={eyeOffImage} alt="logo" />
           </div>

@@ -2,6 +2,7 @@ import { StyledEngineProvider } from '@mui/material';
 import type { Metadata } from 'next';
 import { Exo } from 'next/font/google';
 import './globals.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const metadata: Metadata = {
   title: 'Fashion Forward',

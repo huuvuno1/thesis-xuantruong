@@ -1,9 +1,13 @@
+'use client';
+
 import Image from 'next/image';
 import FourStar from '@/assets/images/fourStar.png';
 import HeartIcon from '@/assets/images/heartIcon.png';
+import hot from '@/assets/images/hot.png';
 
 import styles from './styles.module.css';
 import Link from 'next/link';
+import { useState } from 'react';
 
 interface Color {
   code: string;
@@ -25,17 +29,19 @@ interface ProductCardProps {
   href?: string;
 }
 export default function ProductCard(props: Readonly<ProductCardProps>) {
+  const [heart, setHeart] = useState(false);
+
+  const toggle = () => {
+    setHeart(!heart);
+  };
   return (
-    <Link
-      className={`${styles.container} ${props.className}`}
-      href={props?.href!}
-    >
+    <div className={`${styles.container} ${props.className}`}>
       {props.isOutOfStock && (
         <div className={styles.soldout}>
           <div className={styles.soldoutInner}>Bán hết</div>
         </div>
       )}
-      <div className={styles.mainImage}>
+      <Link href={props?.href!} className={styles.mainImage}>
         <div className={styles.header}>
           <Image src={FourStar} alt="FourStar" />
           {props.isNew && <div className={styles.newTag}>New</div>}
@@ -55,7 +61,7 @@ export default function ProductCard(props: Readonly<ProductCardProps>) {
             <div className={styles.sizeChoosedSizeItem}>2XL</div>
           </div>
         </div>
-      </div>
+      </Link>
 
       <div className={styles.colorWrapper}>
         {props?.colors?.map((c) => (
@@ -85,8 +91,12 @@ export default function ProductCard(props: Readonly<ProductCardProps>) {
           {props.percent && <p className={styles.percent}>{props.percent}</p>}
         </div>
 
-        <Image src={HeartIcon} alt="icon" />
+        {heart ? (
+          <Image src={hot} alt="hot" onClick={toggle} />
+        ) : (
+          <Image src={HeartIcon} alt="icon" onClick={toggle} />
+        )}
       </div>
-    </Link>
+    </div>
   );
 }

@@ -9,7 +9,7 @@ import loginBanner from '@/assets/images/loginBanner.png';
 import eyeOffImage from '@/assets/images/eye-off.png';
 import MainLayout from '@/layouts/MainLayout';
 import { useRouter } from 'next/navigation';
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 
 export default function Login() {
   const router = useRouter();
@@ -17,6 +17,21 @@ export default function Login() {
   const handleGotoRegister = useCallback(() => {
     router.push('/auth/register');
   }, [router]);
+
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+
+  const handleLogin = () => {
+    console.log('login', username, password);
+
+    if (username === 'admin@gmail.com' && password === '123456') {
+      router.push('/');
+      return;
+    }
+
+    setError('Tài khoản hoặc mật khẩu không đúng!');
+  };
   return (
     <MainLayout>
       <div className={styles.container}>
@@ -41,17 +56,28 @@ export default function Login() {
             <div className={styles.line2}></div>
           </div>
 
+          {error && <p className={styles.error}>{error}</p>}
+
           <div className={styles.form}>
             <input
               type="text"
               placeholder="Email/SĐT của bạn"
               className={styles.input}
+              value={username}
+              onChange={(e) => setUsername(e?.target?.value)}
             />
             <div className={styles.input}>
-              <input type="text" placeholder="Mật khẩu" />
+              <input
+                type="password"
+                placeholder="Mật khẩu"
+                value={password}
+                onChange={(e) => setPassword(e?.target?.value)}
+              />
               <Image src={eyeOffImage} alt="eyeOffImage" />
             </div>
-            <button className={styles.btnLogin}>Đăng nhập</button>
+            <button onClick={handleLogin} className={styles.btnLogin}>
+              Đăng nhập
+            </button>
           </div>
           <div className={styles.actionWrapper}>
             <p onClick={handleGotoRegister}>Đăng ký tài khoản mới</p>

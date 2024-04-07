@@ -20,6 +20,8 @@ import playIcon from '@/assets/images/playIcon.png';
 
 import chat365 from '@/assets/images/chat-vs-365.png';
 
+import { ToastContainer, toast } from 'react-toastify';
+
 const imageSmall = [
   productSmall1,
   productSmall2,
@@ -36,6 +38,14 @@ interface ProductDetailMainProps {
 export default function ProductDetailMain(
   props: Readonly<ProductDetailMainProps>
 ) {
+  const notify = () =>
+    toast.success('Đã thêm vào giỏ hàng!', {
+      position: 'top-center',
+
+      style: {
+        fontSize: '14px',
+      },
+    });
   return (
     <div className={`${styles.container} ${props.className}`}>
       <div className={styles.imageLeft}>
@@ -98,7 +108,7 @@ export default function ProductDetailMain(
             <p>+</p>
           </div>
 
-          <button className={styles.addToCart}>
+          <button className={styles.addToCart} onClick={notify}>
             <p>Thêm vào giỏ hàng</p>
             <Image src={cartIcon} alt="cartIcon" />
           </button>
@@ -114,6 +124,8 @@ export default function ProductDetailMain(
 
         <Image src={chat365} alt="chat365" />
       </div>
+
+      <ToastContainer />
     </div>
   );
 }
