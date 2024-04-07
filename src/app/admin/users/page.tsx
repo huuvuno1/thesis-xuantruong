@@ -8,8 +8,6 @@ import PencilIcon from '@/assets/icons/pencil.svg';
 import DeleteIcon from '@/assets/icons/DeleteIcon.svg';
 import ArrowLeft from '@/assets/icons/ArrowLeft.svg';
 import ArrowRight from '@/assets/icons/ArrowRight.svg';
-import { useRouter } from 'next/navigation';
-import { useCallback } from 'react';
 
 const data = [
   {
@@ -64,11 +62,6 @@ const data = [
 ];
 
 export default function LoginAdmin() {
-  const router = useRouter();
-
-  const handleGotoOrderDetail = useCallback(() => {
-    router.push('/admin/orders/detail');
-  }, [router]);
   return (
     <AdminLayout>
       <div className={styles.container}>
@@ -92,11 +85,7 @@ export default function LoginAdmin() {
           </div>
 
           {data?.map((d) => (
-            <div
-              className={styles.row1}
-              key={d.id}
-              onClick={handleGotoOrderDetail}
-            >
+            <div className={styles.row1} key={d.id}>
               <p className={`${styles.id} ${styles.id1}`}>{d.id}</p>
               <p className={`${styles.buyer} ${styles.buyer1}`}>{d.buyer}</p>
               <p className={`${styles.stock} ${styles.stock1}`}>{d.stock}</p>

@@ -297,7 +297,6 @@
 
 /* analyticsProduct */
 .analyticsProduct {
-  border: 0.5px solid #c7c7c7;
   margin-top: 61px;
   margin-bottom: 59px;
 }
@@ -350,8 +349,26 @@
   text-align: left;
 }
 
+.analyticsProductProductColumn999 {
+  width: 150px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
 .analyticsProductPriceColumn {
   width: 63px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.analyticsProductPriceColumn999 {
+  width: 100px;
   font-size: 16px;
   font-weight: 600;
   line-height: 21px;
@@ -377,12 +394,31 @@
   text-align: left;
 }
 
+.analyticsProductRevenueColumn999 {
+  width: 300px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
 .analyticsProductProductCodeColumn1 {
   font-size: 16px;
   font-weight: 600;
   line-height: 21px;
   letter-spacing: -0.017em;
   text-align: left;
+}
+
+.analyticsProductProductCodeColumn11 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  width: 2px;
+  width: 200px;
 }
 
 .analyticsProductProductColumn2 {
@@ -408,6 +444,14 @@
   text-align: left;
 }
 
+.analyticsProductPriceColumn333 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
 .analyticsProductQuantityColumn4 {
   font-size: 16px;
   font-weight: 400;
@@ -416,10 +460,71 @@
   text-align: left;
 }
 
+.analyticsProductQuantityColumn444 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  width: 120px;
+}
+
 .analyticsProductRevenueColumn5 {
   font-size: 16px;
   font-weight: 600;
   line-height: 21px;
   letter-spacing: -0.017em;
   text-align: left;
+}
+
+.analyticsProductRevenueColumn5999 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  width: 300px;
+}
+
+.footerText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+  color: #012755;
+}
+
+.paging {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.paging p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.pagingNumberOne {
+  width: 24px;
+  height: 24px;
+  background-color: #012755;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  padding-bottom: 96px;
+  margin-top: 21px;
 }

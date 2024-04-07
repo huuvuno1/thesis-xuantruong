@@ -5,8 +5,10 @@ import styles from './styles.module.css';
 import AdminSearchInput from '@/components/AdminSearchInput';
 import EyeIcon from '@/assets/icons/EyeIcon.svg';
 import PlusSquareIcon from '@/assets/icons/plus-square.svg';
+import themsanpham from '@/assets/images/themsanpham.png';
 import PlusIcon from '@/assets/icons/plus.svg';
 import AdminButton from '@/components/AdminButton';
+import Image from 'next/image';
 
 export default function NewProduct() {
   return (
@@ -69,6 +71,10 @@ export default function NewProduct() {
 
           <div className={styles.formDescWrapper}>
             <p className={styles.formDesc}>Mô tả</p>
+
+            <Image src={themsanpham} alt="themsanpham" />
+
+            <textarea className={styles.text} name="" id=""></textarea>
           </div>
 
           <div className={styles.formImage}>

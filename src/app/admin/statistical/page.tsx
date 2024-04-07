@@ -1,5 +1,7 @@
 'use client';
 
+import ArrowLeft from '@/assets/icons/ArrowLeft.svg';
+import ArrowRight from '@/assets/icons/ArrowRight.svg';
 import AdminLayout from '@/layouts/AdminLayout';
 import styles from './styles.module.css';
 import ArrawDownIcon from '@/assets/icons/arraw-down.svg';
@@ -151,6 +153,22 @@ export default function LoginAdmin() {
           </div>
         </div>
 
+        <div className={styles.footer}>
+          <p className={styles.footerText}>Hiển thị 3/150 sản phẩm</p>
+
+          <div className={styles.paging}>
+            <ArrowLeft />
+            <p className={styles.pagingNumberOne}>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>...</p>
+            <p>15</p>
+            <ArrowRight />
+          </div>
+        </div>
+
         <div className={styles.analyticsProduct}>
           <div className={styles.analyticsProductHeader}>
             <p className={styles.analyticsProductHeaderTitle}>
@@ -267,6 +285,151 @@ export default function LoginAdmin() {
               className={`${styles.analyticsProductRevenueColumn} ${styles.analyticsProductRevenueColumn5}`}
             >
               556.750.000
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.footer}>
+          <p className={styles.footerText}>Hiển thị 3/150 sản phẩm</p>
+
+          <div className={styles.paging}>
+            <ArrowLeft />
+            <p className={styles.pagingNumberOne}>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>...</p>
+            <p>15</p>
+            <ArrowRight />
+          </div>
+        </div>
+
+        <div className={styles.analyticsProduct}>
+          <div className={styles.analyticsProductHeader}>
+            <p className={styles.analyticsProductHeaderTitle}>
+              Hỗ trợ khách hàng
+            </p>
+
+            <div className={styles.analyticsProductHeaderAction}>
+              <AdminSearchInput />
+            </div>
+          </div>
+
+          <div className={styles.analyticsProductRow}>
+            <div className={styles.analyticsProductRevenueColumn999}>
+              Tên khách hàng
+            </div>
+            <div className={styles.analyticsProductProductColumn999}>
+              Địa chỉ email
+            </div>
+            <div className={styles.analyticsProductPriceColumn999}>
+              Số điện thoại
+            </div>
+            <div className={styles.analyticsProductQuantityColumn}>
+              Thời gian gửi
+            </div>
+            <div className={styles.analyticsProductRevenueColumn999}>
+              Nội dung gửi đến
+            </div>
+          </div>
+
+          <div className={styles.analyticsProductRow}>
+            <div
+              className={`${styles.analyticsProductProductCodeColumn} ${styles.analyticsProductProductCodeColumn11}`}
+            >
+              Nguyễn Vũ Trung Nguyên
+            </div>
+            <div
+              className={`${styles.analyticsProductProductColumn} ${styles.analyticsProductProductColumn2}`}
+            >
+              <p className={styles.rowProductName1}>trungnguyen12@gmail.com</p>
+            </div>
+            <div
+              className={`${styles.analyticsProductPriceColumn} ${styles.analyticsProductPriceColumn3}`}
+            >
+              0987654321
+            </div>
+            <div
+              className={`${styles.analyticsProductQuantityColumn} ${styles.analyticsProductQuantityColumn444}`}
+            >
+              11/02/24 8.00am
+            </div>
+            <div
+              className={`${styles.analyticsProductRevenueColumn} ${styles.analyticsProductRevenueColumn5999}`}
+            >
+              Mình cần tư vấn size, shop liên hệ mình nhé!
+            </div>
+          </div>
+          <div className={styles.analyticsProductRow}>
+            <div
+              className={`${styles.analyticsProductProductCodeColumn} ${styles.analyticsProductProductCodeColumn11}`}
+            >
+              Nguyễn Đình Văn
+            </div>
+            <div
+              className={`${styles.analyticsProductProductColumn} ${styles.analyticsProductProductColumn2}`}
+            >
+              <p className={styles.rowProductName1}>trungnguyen12@gmail.com</p>
+            </div>
+            <div
+              className={`${styles.analyticsProductPriceColumn} ${styles.analyticsProductPriceColumn3}`}
+            >
+              0987654321
+            </div>
+            <div
+              className={`${styles.analyticsProductQuantityColumn} ${styles.analyticsProductQuantityColumn444}`}
+            >
+              11/02/24 8.00am
+            </div>
+            <div
+              className={`${styles.analyticsProductRevenueColumn} ${styles.analyticsProductRevenueColumn5999}`}
+            >
+              Tôi đặt quần âu bên shop nhưng bị chật, tôi muốn đổi lại size
+            </div>
+          </div>
+          <div className={styles.analyticsProductRow}>
+            <div
+              className={`${styles.analyticsProductProductCodeColumn} ${styles.analyticsProductProductCodeColumn11}`}
+            >
+              Nguyễn Vũ Nguyên
+            </div>
+            <div
+              className={`${styles.analyticsProductProductColumn} ${styles.analyticsProductProductColumn2}`}
+            >
+              <p className={styles.rowProductName1}>trungnguyen12@gmail.com</p>
+            </div>
+            <div
+              className={`${styles.analyticsProductPriceColumn} ${styles.analyticsProductPriceColumn333}`}
+            >
+              0987654321
+            </div>
+            <div
+              className={`${styles.analyticsProductQuantityColumn} ${styles.analyticsProductQuantityColumn444}`}
+            >
+              11/02/24 8.00am
+            </div>
+            <div
+              className={`${styles.analyticsProductRevenueColumn} ${styles.analyticsProductRevenueColumn5999}`}
+            >
+              Mình muốn làm cộng tác viên bên shop thì làm thế nào ạ? Shop cho
+              mình xin chính sách nhé
+            </div>
+          </div>
+
+          <div className={styles.footer}>
+            <p className={styles.footerText}>Hiển thị 3/150 hỗ trợ</p>
+
+            <div className={styles.paging}>
+              <ArrowLeft />
+              <p className={styles.pagingNumberOne}>1</p>
+              <p>2</p>
+              <p>3</p>
+              <p>4</p>
+              <p>5</p>
+              <p>...</p>
+              <p>15</p>
+              <ArrowRight />
             </div>
           </div>
         </div>

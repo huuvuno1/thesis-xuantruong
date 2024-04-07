@@ -109,7 +109,6 @@
 
 .formDescWrapper {
   padding: 21px 34px 0 33px;
-  height: 300px;
 }
 
 .point {
@@ -228,4 +227,9 @@
 .addProduct {
   padding: 0 33px;
   padding-bottom: 97px;
+}
+
+.text {
+  height: 250px;
+  width: 995px;
 }

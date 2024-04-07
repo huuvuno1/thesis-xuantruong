@@ -5,6 +5,8 @@ import styles from './styles.module.css';
 import AdminSearchInput from '@/components/AdminSearchInput';
 import AdminButton from '@/components/AdminButton';
 import EyeIcon from '@/assets/icons/EyeIcon.svg';
+import themdanhmuc from '@/assets/images/themdanhmuc.png';
+import Image from 'next/image';
 
 export default function NewCategoriesAdmin() {
   return (
@@ -56,7 +58,9 @@ export default function NewCategoriesAdmin() {
             <div className={styles.formItemDescItem}>
               <p className={styles.formItemProductCode}>Mô tả</p>
 
-              <div className={styles.formItemDescTextEditor}></div>
+              <div className={styles.formItemDescTextEditor}>
+                <Image src={themdanhmuc} alt="icon" />
+              </div>
             </div>
 
             <div className={styles.formItemDescItem}>
