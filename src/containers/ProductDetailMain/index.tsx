@@ -98,10 +98,10 @@ export default function ProductDetailMain(
             <p>+</p>
           </div>
 
-          <div className={styles.addToCart}>
+          <button className={styles.addToCart}>
             <p>Thêm vào giỏ hàng</p>
             <Image src={cartIcon} alt="cartIcon" />
-          </div>
+          </button>
         </div>
 
         <button className={styles.buyNow}>

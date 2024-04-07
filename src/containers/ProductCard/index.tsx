@@ -3,6 +3,7 @@ import FourStar from '@/assets/images/fourStar.png';
 import HeartIcon from '@/assets/images/heartIcon.png';
 
 import styles from './styles.module.css';
+import Link from 'next/link';
 
 interface Color {
   code: string;
@@ -21,13 +22,13 @@ interface ProductCardProps {
   isSale?: boolean;
   oldPrice?: string;
   percent?: string;
-  onClick?: () => void;
+  href?: string;
 }
 export default function ProductCard(props: Readonly<ProductCardProps>) {
   return (
-    <div
+    <Link
       className={`${styles.container} ${props.className}`}
-      onClick={props.onClick}
+      href={props?.href!}
     >
       {props.isOutOfStock && (
         <div className={styles.soldout}>
@@ -86,6 +87,6 @@ export default function ProductCard(props: Readonly<ProductCardProps>) {
 
         <Image src={HeartIcon} alt="icon" />
       </div>
-    </div>
+    </Link>
   );
 }

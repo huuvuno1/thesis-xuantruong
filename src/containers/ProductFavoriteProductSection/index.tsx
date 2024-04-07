@@ -85,6 +85,7 @@ export default function ProductFavoriteProductSection() {
             className={styles.productItem}
             oldPrice={p.oldPrice}
             percent={p.percent}
+            href="/product-detail"
           />
         ))}
       </div>

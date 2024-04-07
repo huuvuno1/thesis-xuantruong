@@ -15,9 +15,9 @@
 
 .input {
   flex: 1;
-  background-color: none;
   background-color: #f0efef;
   font-size: 18px;
+  color: #000;
   font-weight: 300;
   line-height: 23.92px;
   letter-spacing: -0.017em;

@@ -1,7 +1,5 @@
 .container {
-  overflow-y: scroll;
   width: 269px;
-  height: calc(100vh - 84px - 114px - 39px - 48px);
 }
 
 .title {
@@ -57,6 +55,12 @@
   justify-content: center;
 }
 
+.sizeItem:hover {
+  background-color: #012755;
+  color: #fff;
+  cursor: pointer;
+}
+
 .category {
   margin-top: 37px;
 }
@@ -78,6 +82,11 @@
   align-items: center;
   width: 66px;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.colorCircle:hover {
+  border: 2px solid #012755;
 }
 
 .colorText {
@@ -90,4 +99,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 24px;
+}
+
+.checkboxinput {
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
 }

@@ -56,19 +56,19 @@ export default function ProductFilter(props: Readonly<ProductFilterProps>) {
         <strong className={styles.categoryTitle}>Danh mục</strong>
         <div className={styles.checkboxWrapperList}>
           <div className={styles.checkboxWrapper}>
-            <Image src={CheckBoxIcon} alt="check box iconS" />
+            <input className={styles.checkboxinput} type="checkbox"></input>
             <p className={styles.checkboxTitle}>Bán chạy</p>
           </div>
           <div className={styles.checkboxWrapper}>
-            <Image src={CheckBoxIcon} alt="check box iconS" />
+            <input className={styles.checkboxinput} type="checkbox"></input>
             <p className={styles.checkboxTitle}>Áo nam</p>
           </div>
           <div className={styles.checkboxWrapper}>
-            <Image src={CheckBoxIcon} alt="check box iconS" />
+            <input className={styles.checkboxinput} type="checkbox"></input>
             <p className={styles.checkboxTitle}>Quần nam</p>
           </div>
           <div className={styles.checkboxWrapper}>
-            <Image src={CheckBoxIcon} alt="check box iconS" />
+            <input className={styles.checkboxinput} type="checkbox"></input>
             <p className={styles.checkboxTitle}>Phụ kiện</p>
           </div>
         </div>
@@ -104,19 +104,19 @@ export default function ProductFilter(props: Readonly<ProductFilterProps>) {
         <strong className={styles.categoryTitle}>Nhu cầu</strong>
         <div className={styles.checkboxWrapperList}>
           <div className={styles.checkboxWrapper}>
-            <Image src={CheckBoxIcon} alt="check box iconS" />
+            <input className={styles.checkboxinput} type="checkbox"></input>
             <p className={styles.checkboxTitle}>Mặc ở nhà</p>
           </div>
           <div className={styles.checkboxWrapper}>
-            <Image src={CheckBoxIcon} alt="check box iconS" />
+            <input className={styles.checkboxinput} type="checkbox"></input>
             <p className={styles.checkboxTitle}>Mặc hằng ngày</p>
           </div>
           <div className={styles.checkboxWrapper}>
-            <Image src={CheckBoxIcon} alt="check box iconS" />
+            <input className={styles.checkboxinput} type="checkbox"></input>
             <p className={styles.checkboxTitle}>Mặc đi làm</p>
           </div>
           <div className={styles.checkboxWrapper}>
-            <Image src={CheckBoxIcon} alt="check box iconS" />
+            <input className={styles.checkboxinput} type="checkbox"></input>
             <p className={styles.checkboxTitle}>Đi chơi</p>
           </div>
         </div>

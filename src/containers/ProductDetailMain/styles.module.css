@@ -167,6 +167,7 @@
   padding: 0 28px;
   gap: 9.72px;
   color: #012755;
+  cursor: pointer;
 }
 
 .addToCart p {

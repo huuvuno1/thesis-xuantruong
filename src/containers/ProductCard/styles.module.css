@@ -187,3 +187,8 @@
   font-weight: 500;
   border-radius: 5px;
 }
+
+.sizeChoosedSizeItem:hover {
+  background-color: #01437c;
+  color: #fff;
+}

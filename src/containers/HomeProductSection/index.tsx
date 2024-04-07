@@ -93,6 +93,7 @@ export default function HomeProductSection() {
             price={p.price}
             isOutOfStock={p.isOutOfStock}
             isNew={p.isNew}
+            href="/product-detail"
           />
         ))}
       </div>

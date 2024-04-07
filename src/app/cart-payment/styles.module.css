@@ -4,6 +4,8 @@
   align-items: center;
   margin-top: 82px;
   padding: 0 65px;
+  height: max-content;
+  margin-bottom: 48px;
 }
 
 .headerText {
@@ -269,4 +271,33 @@
 .valueCompletT {
   font-size: 26px;
   font-weight: 600;
+}
+
+.paymentMethodItemInputPUT {
+  width: 22px;
+  height: 22px;
+}
+
+.payment-description p {
+  display: none;
+}
+
+#thanhtoankhinhanhang:checked
+  ~ .payment-description
+  #thanhtoankhinhanhang-description {
+  display: block;
+}
+
+.wrapperPayment p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26.58px;
+  letter-spacing: -0.017em;
+  text-align: left;
+}
+
+.wrapperPaymentW {
+  display: flex;
+  padding-left: 65px;
+  gap: 29px;
 }

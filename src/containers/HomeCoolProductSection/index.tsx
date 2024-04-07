@@ -79,6 +79,7 @@ export default function HomeCoolProductSection() {
             isSale={p.isSale}
             isNew={p.isNew}
             className={styles.productItem}
+            href="/product-detail"
           />
         ))}
       </div>

@@ -91,6 +91,7 @@ export default function FavoriteProductListSection() {
             price={p.price}
             isOutOfStock={p.isOutOfStock}
             isNew={p.isNew}
+            href="/product-detail"
           />
         ))}
       </div>

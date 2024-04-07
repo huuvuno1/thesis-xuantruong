@@ -5,34 +5,32 @@ import styles from './styles.module.css';
 import cartItemP1 from '@/assets/images/cart-item-p-1.png';
 import cartItemP2 from '@/assets/images/cart-item-p-2.png';
 import cartItemP3 from '@/assets/images/cart-item-p-3.png';
-import arrowDown from '@/assets/images/ArrowDownIcon.png';
-import xIcon from '@/assets/images/x-icon.png';
 
 import MainLayout from '@/layouts/MainLayout';
-import Image from 'next/image';
 import RecentViewedProductSection from '@/containers/RecentViewedProductSection';
 import FavoriteProductListSection from '@/containers/FavoriteProductListSection';
 import { useRouter } from 'next/navigation';
+import CartItemCart from '@/components/CartItemCart';
 
 const cartData = [
   {
     name: 'Áo khoác lông S2',
     desc: 'Be/S',
-    price: '1.799.000đ',
+    price: 1799000,
     kind: ['Be', 'S'],
     image: cartItemP1,
   },
   {
     name: 'Quần tây nam SiteTab v2',
     desc: 'Đen/L',
-    price: '499.000đ',
+    price: 499000,
     kind: ['Đen', 'S'],
     image: cartItemP2,
   },
   {
     name: 'Quần Jeans Slimfit',
     desc: 'Đen/XL',
-    price: '349.000đ',
+    price: 349000,
     kind: ['Đen', 'XL'],
     image: cartItemP3,
   },
@@ -57,38 +55,14 @@ export default function Cart() {
             </div>
 
             {cartData.map((c) => (
-              <div key={c.name} className={styles.row1}>
-                <div className={styles.productInfo1}>
-                  <div className={styles.xIconWrapper}>
-                    <Image src={xIcon} alt="xIcon" />
-                  </div>
-
-                  <div className={styles.productInfo}>
-                    <Image src={c.image} alt={c.name} />
-
-                    <div className={styles.productInfoWrapper}>
-                      <p className={styles.productInfoName}>{c.name}</p>
-                      <p className={styles.productInfoDesc}>{c.desc}</p>
-
-                      <div className={styles.productKindWrapper}>
-                        {c.kind.map((k) => (
-                          <div key={k} className={styles.productKindItem}>
-                            <p>{k}</p>
-                            <Image src={arrowDown} alt="icon" />
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <p className={styles.rowPrice1}>{c.price}</p>
-                <div className={styles.quantityWrapper}>
-                  <p>-</p>
-                  <p>1</p>
-                  <p>+</p>
-                </div>
-                <p className={styles.rowPrice1}>{c.price}</p>
-              </div>
+              <CartItemCart
+                desc={c.desc}
+                image={c.image}
+                kind={c.kind}
+                name={c.name}
+                price={c.price}
+                key={c.name}
+              />
             ))}
 
             <div className={styles.buyMore}>

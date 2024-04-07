@@ -67,7 +67,7 @@ interface RecentViewedProductSectionProps {
   className?: string;
 }
 export default function RecentViewedProductSection(
-  props: RecentViewedProductSectionProps
+  props: Readonly<RecentViewedProductSectionProps>
 ) {
   return (
     <div className={`${styles.container} ${props.className}`}>
@@ -90,6 +90,7 @@ export default function RecentViewedProductSection(
             className={styles.productItem}
             oldPrice={p.oldPrice}
             percent={p.percent}
+            href="/product-detail"
           />
         ))}
       </div>

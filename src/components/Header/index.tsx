@@ -63,8 +63,13 @@ export const Header = () => {
         >
           <SearchInput />
           <HeartIcon onClick={handleGotoFavoritePage} />
-          <UserIcon />
-          <CartIcon />
+
+          <Link href={'/profile'}>
+            <UserIcon />
+          </Link>
+          <Link href={'/cart'}>
+            <CartIcon />
+          </Link>
         </div>
       </div>
     </header>

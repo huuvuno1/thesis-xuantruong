@@ -5,12 +5,14 @@ import cartItemP1 from '@/assets/images/cart-item-p-1.png';
 import cartItemP2 from '@/assets/images/cart-item-p-2.png';
 import cartItemP3 from '@/assets/images/cart-item-p-3.png';
 import ArrowIconDown from '@/assets/images/ArrowDownIcon.png';
-import CircleIcon from '@/assets/images/CircleIcon.png';
+import momoimage from '@/assets/images/momo.png';
+import zalopay from '@/assets/images/zalopay.png';
 
 import MainLayout from '@/layouts/MainLayout';
 import Image from 'next/image';
 import { CartPaymentHeader } from '@/components/CartPaymentHeader';
 import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 const cartData = [
   {
@@ -38,6 +40,12 @@ const cartData = [
 
 export default function CartPayment() {
   const router = useRouter();
+
+  const [selectedPayment, setSelectedPayment] = useState(null);
+
+  const handleInputChange = (e: any) => {
+    setSelectedPayment(e.target.value);
+  };
   return (
     <MainLayout>
       <div className={styles.container}>
@@ -100,33 +108,113 @@ export default function CartPayment() {
 
               <div className={styles.paymentMethod}>
                 <div className={styles.paymentMethodItem}>
-                  <Image src={CircleIcon} alt="CircleIcon" />
-
-                  <p className={styles.paymentMethodItemInput}>
+                  <input
+                    type="radio"
+                    id="thanhtoankhinhanhang"
+                    name="payment"
+                    className={styles.paymentMethodItemInputPUT}
+                    onChange={handleInputChange}
+                    checked={selectedPayment === 'ttknh'}
+                    value="ttknh"
+                  ></input>
+                  <label
+                    htmlFor="thanhtoankhinhanhang"
+                    className={styles.paymentMethodItemInput}
+                  >
                     COD (Thanh toán khi nhận hàng)
-                  </p>
+                  </label>
                 </div>
-                <div className={styles.paymentMethodItem}>
-                  <Image src={CircleIcon} alt="CircleIcon" />
 
-                  <p className={styles.paymentMethodItemInput}>
+                <div className={styles.paymentMethodItem}>
+                  <input
+                    type="radio"
+                    id="thanhtoanvimomo"
+                    name="payment"
+                    className={styles.paymentMethodItemInputPUT}
+                    checked={selectedPayment === 'ttvmm'}
+                    value="ttvmm"
+                    onChange={handleInputChange}
+                  ></input>
+
+                  <label
+                    htmlFor="thanhtoanvimomo"
+                    className={styles.paymentMethodItemInput}
+                  >
                     Thanh toán qua ví MoMo
-                  </p>
+                  </label>
                 </div>
-                <div className={styles.paymentMethodItem}>
-                  <Image src={CircleIcon} alt="CircleIcon" />
+                {'ttvmm' === selectedPayment && (
+                  <div className={styles.wrapperPaymentW}>
+                    <div className={styles.wrapperPayment}>
+                      <p>Quét mã bên cạnh để thanh toán đơn hàng của bạn TÊN</p>
+                      <p>STK: 0988889999</p>
+                      <p>TK: 365 SIMPLE</p>
+                    </div>
 
-                  <p className={styles.paymentMethodItemInput}>
+                    <Image src={momoimage} alt="momoimage" />
+                  </div>
+                )}
+
+                <div className={styles.paymentMethodItem}>
+                  <input
+                    type="radio"
+                    id="thanhtoanvizalo"
+                    name="payment"
+                    className={styles.paymentMethodItemInputPUT}
+                    checked={selectedPayment === 'ttqvzalo'}
+                    value="ttqvzalo"
+                    onChange={handleInputChange}
+                  ></input>
+
+                  <label
+                    htmlFor="thanhtoanvizalo"
+                    className={styles.paymentMethodItemInput}
+                  >
                     Thanh toán qua ví điện tử (ZaloPay / VNPAY..)
-                  </p>
+                  </label>
                 </div>
-                <div className={styles.paymentMethodItem}>
-                  <Image src={CircleIcon} alt="CircleIcon" />
+                {'ttqvzalo' === selectedPayment && (
+                  <div className={styles.wrapperPaymentW}>
+                    <div className={styles.wrapperPayment}>
+                      <p>Quét mã bên cạnh để thanh toán đơn hàng của bạn</p>
+                      <p>STK: 0987654321</p>
+                      <p>TK: 365 SIMPLE</p>
+                    </div>
 
-                  <p className={styles.paymentMethodItemInput}>
+                    <Image src={zalopay} alt="zalopay" />
+                  </div>
+                )}
+
+                <div className={styles.paymentMethodItem}>
+                  <input
+                    type="radio"
+                    id="nganhang"
+                    name="payment"
+                    className={styles.paymentMethodItemInputPUT}
+                    checked={selectedPayment === 'nganhang'}
+                    value="nganhang"
+                    onChange={handleInputChange}
+                  ></input>
+
+                  <label
+                    htmlFor="nganhang"
+                    className={styles.paymentMethodItemInput}
+                  >
                     Quét QR / Thanh toán bằng ứng dụng ngân hàng
-                  </p>
+                  </label>
                 </div>
+                {'nganhang' === selectedPayment && (
+                  <div className={styles.wrapperPaymentW}>
+                    <div className={styles.wrapperPayment}>
+                      <p>Quét mã bên cạnh để thanh toán đơn hàng của bạn</p>
+                      <p>STK: 0987654321</p>
+                      <p>TÊN TK: 365 SIMPLE</p>
+                      <p>NGÂN HÀNG TIỀN PHONG (TP BANK)</p>
+                    </div>
+
+                    <Image src={zalopay} alt="zalopay" />
+                  </div>
+                )}
               </div>
             </div>
           </div>

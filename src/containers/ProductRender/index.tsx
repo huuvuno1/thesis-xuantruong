@@ -17,8 +17,6 @@ import ArrowDownIcon from '@/assets/images/ArrowDownIcon.png';
 
 import styles from './styles.module.css';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
-import { useCallback } from 'react';
 
 const products = [
   {
@@ -212,12 +210,6 @@ interface ProductRenderProps {
   className?: string;
 }
 export default function ProductRender(props: Readonly<ProductRenderProps>) {
-  const router = useRouter();
-
-  const handleGotoProductDetail = useCallback(() => {
-    router.push('/product-detail');
-  }, [router]);
-
   return (
     <div className={`${styles.container} ${props.className}`}>
       <div className={styles.header}>
@@ -247,7 +239,7 @@ export default function ProductRender(props: Readonly<ProductRenderProps>) {
             className={styles.productItem}
             oldPrice={p.oldPrice}
             percent={p.percent}
-            onClick={handleGotoProductDetail}
+            href="/product-detail"
           />
         ))}
       </div>
