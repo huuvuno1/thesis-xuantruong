@@ -26,6 +26,7 @@ export default function Login() {
     console.log('login', username, password);
 
     if (username === 'admin@gmail.com' && password === '123456') {
+      localStorage.setItem('is_login', 'true');
       router.push('/');
       return;
     }

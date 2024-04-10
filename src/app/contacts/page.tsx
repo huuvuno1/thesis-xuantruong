@@ -8,9 +8,26 @@ import lastBnnaer from '@/assets/images/lastBnnaer.png';
 
 import MainLayout from '@/layouts/MainLayout';
 import { useState } from 'react';
+import { Box, Modal } from '@mui/material';
+import { ToastContainer, toast } from 'react-toastify';
 
 export default function Contacts() {
   const [active, setActive] = useState('1');
+
+  const notify = () => {
+    setOpen(false);
+    return toast.success('365 sẽ liên hệ với bạn sớm nhất!', {
+      position: 'top-center',
+
+      style: {
+        fontSize: '14px',
+      },
+    });
+  };
+
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <MainLayout>
       <div className={styles.container}>
@@ -172,13 +189,62 @@ export default function Contacts() {
             Nếu còn bất kỳ câu hỏi nào, bạn hãy liên hệ trực tiếp với chúng mình
           </h3>
 
-          <button className={styles.anyquestionbtn}>Liên hệ trực tiếp</button>
+          <button className={styles.anyquestionbtn} onClick={handleOpen}>
+            Liên hệ trực tiếp
+          </button>
         </div>
 
         <div className={styles.lastBannerWrapper}>
           <Image src={lastBnnaer} alt="lastBnnaer" />
         </div>
       </div>
+
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+        className={styles.modal}
+      >
+        <Box className={styles.modalBox}>
+          <h3 className={styles.modalTitle}>
+            Vui lòng điền thông tin để chúng mình có thể hỗ trợ bạn!
+          </h3>
+
+          <div className={styles.modalMain}>
+            <input
+              className={styles.modalInput}
+              type="text"
+              placeholder="Họ và tên"
+            />
+
+            <div className={styles.modalInputWrapper}>
+              <input
+                className={styles.modalInput}
+                type="text"
+                placeholder="Email"
+              />
+              <input
+                className={styles.modalInput}
+                type="text"
+                placeholder="Số điện thoại"
+              />
+            </div>
+
+            <input
+              className={styles.modalInput}
+              type="text"
+              placeholder="Nội dung muốn nhắn nhủ tới 365"
+            />
+          </div>
+
+          <button className={styles.anyquestionbtn} onClick={notify}>
+            Gửi hỗ trợ
+          </button>
+        </Box>
+      </Modal>
+
+      <ToastContainer />
     </MainLayout>
   );
 }

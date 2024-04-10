@@ -8,9 +8,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from './styles.module.css';
 import { SearchInput } from '../SearchInput';
-import { useCallback } from 'react';
+import { useCallback, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import HeaderMenu from '../HeaderMenu';
+import LoginAvatar from '@/assets/images/LoginAvatar.png';
 
 export const Header = () => {
   const router = useRouter();
@@ -18,6 +19,8 @@ export const Header = () => {
   const handleGotoFavoritePage = useCallback(() => {
     router.push('/favorite');
   }, [router]);
+
+  const isLogin = useMemo(() => localStorage?.getItem('is_login'), []);
   return (
     <header className={`${styles.container} ${styles.desktopOnly}`}>
       <div
@@ -64,9 +67,16 @@ export const Header = () => {
           <SearchInput />
           <HeartIcon onClick={handleGotoFavoritePage} />
 
-          <Link href={'/profile'}>
-            <UserIcon />
-          </Link>
+          {isLogin ? (
+            <Link href={'/profile'}>
+              <Image src={LoginAvatar} alt="LoginAvatar" />
+            </Link>
+          ) : (
+            <Link href={'/auth/login'}>
+              <UserIcon />
+            </Link>
+          )}
+
           <Link href={'/cart'}>
             <CartIcon />
           </Link>
