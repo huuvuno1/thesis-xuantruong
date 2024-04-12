@@ -23,9 +23,11 @@ export default function Login() {
   const [error, setError] = useState('');
 
   const handleLogin = () => {
-    console.log('login', username, password);
-
-    if (username === 'admin@gmail.com' && password === '123456') {
+    if (
+      username === 'admin@gmail.com' &&
+      password === '123456' &&
+      typeof window !== 'undefined'
+    ) {
       localStorage.setItem('is_login', 'true');
       router.push('/');
       return;

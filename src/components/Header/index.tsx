@@ -20,7 +20,13 @@ export const Header = () => {
     router.push('/favorite');
   }, [router]);
 
-  const isLogin = useMemo(() => localStorage?.getItem('is_login'), []);
+  const isLogin = useMemo(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage?.getItem('is_login');
+    }
+
+    return false;
+  }, []);
   return (
     <header className={`${styles.container} ${styles.desktopOnly}`}>
       <div
