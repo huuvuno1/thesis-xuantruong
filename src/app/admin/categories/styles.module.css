@@ -61,6 +61,8 @@
 
 .revenue {
   width: 115px;
+  text-align: right !important;
+  width: 134px;
 }
 
 .action {

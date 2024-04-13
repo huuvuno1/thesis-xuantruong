@@ -4,13 +4,13 @@ import styles from './styles.module.css';
 
 import MainLayout from '@/layouts/MainLayout';
 
-import UserLineIcon from '@/assets/icons/UserLineIcon.svg';
 import LockIcon from '@/assets/icons/LockIcon.svg';
 import LogOutIcon from '@/assets/icons/LogOutIcon.svg';
+import UserLineIcon from '@/assets/icons/UserLineIcon.svg';
 import EyeOffIcon from '@/assets/icons/eye-off.svg';
 import ArrowDownIcon from '@/assets/images/ArrowDownIcon.png';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Profile() {
   return (
@@ -38,10 +38,10 @@ export default function Profile() {
                 <LockIcon />
                 <p>Thay đổi mật khẩu</p>
               </Link>
-              <div className={`${styles.btn}`}>
+              <Link href={"/auth/login"} onClick={() => localStorage.clear()} className={`${styles.btn}`}>
                 <LogOutIcon />
                 <p>Đăng xuất</p>
-              </div>
+              </Link>
             </div>
           </div>
 

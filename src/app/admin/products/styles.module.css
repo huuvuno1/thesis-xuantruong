@@ -59,6 +59,7 @@
 
 .price {
   width: 63px;
+  text-align: right;
 }
 
 .sellQuantity {

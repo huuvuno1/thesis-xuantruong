@@ -4,10 +4,10 @@ import styles from './styles.module.css';
 
 import MainLayout from '@/layouts/MainLayout';
 
-import WhiteLockIcon from '@/assets/icons/WhiteLockIcon.svg';
 import LogOutIcon from '@/assets/icons/LogOutIcon.svg';
-import EyeOffIcon from '@/assets/icons/eye-off.svg';
 import UserXanhIcon from '@/assets/icons/UserXanhIcon.svg';
+import WhiteLockIcon from '@/assets/icons/WhiteLockIcon.svg';
+import EyeOffIcon from '@/assets/icons/eye-off.svg';
 import Link from 'next/link';
 
 export default function Password() {
@@ -39,10 +39,12 @@ export default function Password() {
                 <WhiteLockIcon />
                 <p>Thay đổi mật khẩu</p>
               </Link>
-              <div className={`${styles.btn}`}>
+              <Link href={"/auth/register"} onClick={() => {
+                localStorage.clear();
+              }} className={`${styles.btn}`}>
                 <LogOutIcon />
                 <p>Đăng xuất</p>
-              </div>
+              </Link>
             </div>
           </div>
 

@@ -1,15 +1,15 @@
 'use client';
 
-import AdminLayout from '@/layouts/AdminLayout';
-import styles from './styles.module.css';
-import AdminDropDown from '@/components/AdminDropDown';
-import AdminSearchInput from '@/components/AdminSearchInput';
-import PencilIcon from '@/assets/icons/pencil.svg';
-import DeleteIcon from '@/assets/icons/DeleteIcon.svg';
 import ArrowLeft from '@/assets/icons/ArrowLeft.svg';
 import ArrowRight from '@/assets/icons/ArrowRight.svg';
+import DeleteIcon from '@/assets/icons/DeleteIcon.svg';
+import PencilIcon from '@/assets/icons/pencil.svg';
+import AdminDropDown from '@/components/AdminDropDown';
+import AdminSearchInput from '@/components/AdminSearchInput';
+import AdminLayout from '@/layouts/AdminLayout';
 import { useRouter } from 'next/navigation';
 import { useCallback } from 'react';
+import styles from './styles.module.css';
 
 const data = [
   {
@@ -104,7 +104,9 @@ export default function LoginAdmin() {
             <p className={styles.buyer}>Người mua</p>
             <p className={styles.stock}>Mặt hàng</p>
             <p className={styles.status}>Trạng thái đơn hàng</p>
-            <p className={styles.price}>Giá tiền</p>
+            <p className={styles.price} style={{
+              textAlign: 'center'
+            }}>Giá tiền</p>
             <p className={styles.action}>Thao tác</p>
           </div>
 
@@ -118,11 +120,9 @@ export default function LoginAdmin() {
               <p className={`${styles.buyer} ${styles.buyer1}`}>{d.buyer}</p>
               <p className={`${styles.stock} ${styles.stock1}`}>{d.stock}</p>
               <p
-                className={`${styles.status} ${styles.status1} ${
-                  'Chờ vận chuyển' === d.status && styles.status1Red
-                } ${'Chờ lấy hàng' === d.status && styles.status1Red} ${
-                  'Đã hủy' === d.status && styles.status1Red
-                }`}
+                className={`${styles.status} ${styles.status1} ${'Chờ vận chuyển' === d.status && styles.status1Red
+                  } ${'Chờ lấy hàng' === d.status && styles.status1Red} ${'Đã hủy' === d.status && styles.status1Red
+                  }`}
               >
                 {d.status}
               </p>

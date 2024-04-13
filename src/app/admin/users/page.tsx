@@ -1,13 +1,13 @@
 'use client';
 
-import AdminLayout from '@/layouts/AdminLayout';
-import styles from './styles.module.css';
-import AdminDropDown from '@/components/AdminDropDown';
-import AdminSearchInput from '@/components/AdminSearchInput';
-import PencilIcon from '@/assets/icons/pencil.svg';
-import DeleteIcon from '@/assets/icons/DeleteIcon.svg';
 import ArrowLeft from '@/assets/icons/ArrowLeft.svg';
 import ArrowRight from '@/assets/icons/ArrowRight.svg';
+import DeleteIcon from '@/assets/icons/DeleteIcon.svg';
+import PencilIcon from '@/assets/icons/pencil.svg';
+import AdminDropDown from '@/components/AdminDropDown';
+import AdminSearchInput from '@/components/AdminSearchInput';
+import AdminLayout from '@/layouts/AdminLayout';
+import styles from './styles.module.css';
 
 const data = [
   {
@@ -28,7 +28,7 @@ const data = [
     id: '#123456',
     buyer: 'Vũ Xuân Trường',
     stock: 'trungnguyen12@gmail.com',
-    status: '0987654321 hàng',
+    status: '0987654321',
     price: 'Thanh Xuân, Hà Nội',
   },
   {
