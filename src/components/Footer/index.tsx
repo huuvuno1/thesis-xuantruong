@@ -9,7 +9,7 @@ import map from '@/assets/images/map.png';
 import phoneUrl from '@/assets/images/phone.png';
 import { Box, Modal } from '@mui/material';
 import { useState } from 'react';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 
 export const Footer = () => {
   const [open, setOpen] = useState(false);
@@ -27,6 +27,7 @@ export const Footer = () => {
   };
   return (
     <>
+      <ToastContainer />
       <Modal
         open={open}
         onClose={handleClose}
