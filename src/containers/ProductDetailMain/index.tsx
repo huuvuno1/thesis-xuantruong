@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import styles from './styles.module.css';
 
@@ -21,6 +23,8 @@ import playIcon from '@/assets/images/playIcon.png';
 import chat365 from '@/assets/images/chat-vs-365.png';
 
 import { ToastContainer, toast } from 'react-toastify';
+import { useState } from 'react';
+import Link from 'next/link';
 
 const imageSmall = [
   productSmall1,
@@ -46,6 +50,8 @@ export default function ProductDetailMain(
         fontSize: '14px',
       },
     });
+
+  const [quantity, setQuantity] = useState(1);
   return (
     <div className={`${styles.container} ${props.className}`}>
       <div className={styles.imageLeft}>
@@ -103,9 +109,15 @@ export default function ProductDetailMain(
 
         <div className={styles.cartWrapper}>
           <div className={styles.countWrapper}>
-            <p>-</p>
-            <p>1</p>
-            <p>+</p>
+            <button
+              onClick={() =>
+                quantity === 1 ? null : setQuantity(quantity - 1)
+              }
+            >
+              -
+            </button>
+            <p>{quantity}</p>
+            <button onClick={() => setQuantity(quantity + 1)}>+</button>
           </div>
 
           <button className={styles.addToCart} onClick={notify}>
@@ -114,11 +126,11 @@ export default function ProductDetailMain(
           </button>
         </div>
 
-        <button className={styles.buyNow}>
+        <Link href={'/cart-payment'} className={styles.buyNow}>
           <p>Mua ngay</p>
 
           <Image src={playIcon} alt="playIcon" />
-        </button>
+        </Link>
 
         <div className={styles.line}></div>
 
