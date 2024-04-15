@@ -10,6 +10,7 @@ import eyeOffImage from '@/assets/images/eye-off.png';
 import MainLayout from '@/layouts/MainLayout';
 import { useRouter } from 'next/navigation';
 import { useCallback, useState } from 'react';
+import LoginResponsive from '@/responsive/LoginResponsive';
 
 export default function Login() {
   const router = useRouter();
@@ -37,59 +38,65 @@ export default function Login() {
   };
   return (
     <MainLayout>
-      <div className={styles.container}>
-        <div className={styles.loginForm}>
-          <h1 className={styles.title}>Đăng nhập</h1>
-          <p className={styles.desc}>
-            Đăng nhập để không bỏ lỡ quyền lợi tích luỹ và hoàn tiền cho bất kỳ
-            đơn hàng nào.
-          </p>
-          <strong className={styles.subtitle}>
-            Đăng nhập hoặc đăng ký (miễn phí)
-          </strong>
+      <div className={styles.desktopOnly}>
+        <div className={styles.container}>
+          <div className={styles.loginForm}>
+            <h1 className={styles.title}>Đăng nhập</h1>
+            <p className={styles.desc}>
+              Đăng nhập để không bỏ lỡ quyền lợi tích luỹ và hoàn tiền cho bất
+              kỳ đơn hàng nào.
+            </p>
+            <strong className={styles.subtitle}>
+              Đăng nhập hoặc đăng ký (miễn phí)
+            </strong>
 
-          <div className={styles.socialWrapper}>
-            <Image src={ggImage} alt="google" />
-            <Image src={facebookImage} alt="facebook" />
-          </div>
-
-          <div className={styles.lineWrapper}>
-            <div className={styles.line1}></div>
-            <p>Hoặc</p>
-            <div className={styles.line2}></div>
-          </div>
-
-          {error && <p className={styles.error}>{error}</p>}
-
-          <div className={styles.form}>
-            <input
-              type="text"
-              placeholder="Email/SĐT của bạn"
-              className={styles.input}
-              value={username}
-              onChange={(e) => setUsername(e?.target?.value)}
-            />
-            <div className={styles.input}>
-              <input
-                type="password"
-                placeholder="Mật khẩu"
-                value={password}
-                onChange={(e) => setPassword(e?.target?.value)}
-              />
-              <Image src={eyeOffImage} alt="eyeOffImage" />
+            <div className={styles.socialWrapper}>
+              <Image src={ggImage} alt="google" />
+              <Image src={facebookImage} alt="facebook" />
             </div>
-            <button onClick={handleLogin} className={styles.btnLogin}>
-              Đăng nhập
-            </button>
+
+            <div className={styles.lineWrapper}>
+              <div className={styles.line1}></div>
+              <p>Hoặc</p>
+              <div className={styles.line2}></div>
+            </div>
+
+            {error && <p className={styles.error}>{error}</p>}
+
+            <div className={styles.form}>
+              <input
+                type="text"
+                placeholder="Email/SĐT của bạn"
+                className={styles.input}
+                value={username}
+                onChange={(e) => setUsername(e?.target?.value)}
+              />
+              <div className={styles.input}>
+                <input
+                  type="password"
+                  placeholder="Mật khẩu"
+                  value={password}
+                  onChange={(e) => setPassword(e?.target?.value)}
+                />
+                <Image src={eyeOffImage} alt="eyeOffImage" />
+              </div>
+              <button onClick={handleLogin} className={styles.btnLogin}>
+                Đăng nhập
+              </button>
+            </div>
+            <div className={styles.actionWrapper}>
+              <p onClick={handleGotoRegister}>Đăng ký tài khoản mới</p>
+              <p>Quên mật khẩu</p>
+            </div>
           </div>
-          <div className={styles.actionWrapper}>
-            <p onClick={handleGotoRegister}>Đăng ký tài khoản mới</p>
-            <p>Quên mật khẩu</p>
+          <div>
+            <Image src={loginBanner} alt="loginBanner" />
           </div>
         </div>
-        <div>
-          <Image src={loginBanner} alt="loginBanner" />
-        </div>
+      </div>
+
+      <div className={styles.mobileOnly}>
+        <LoginResponsive />
       </div>
     </MainLayout>
   );
