@@ -15,3 +15,15 @@
 .comb p:last-child {
   font-weight: 700;
 }
+
+@media only screen and (max-width: 768px) {
+  .desktopOnly {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobileOnly {
+    display: none;
+  }
+}
