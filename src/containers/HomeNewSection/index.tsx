@@ -1,9 +1,12 @@
+'use client';
+
 import homeArticle from '@/assets/images/home-article-1.png';
 import homeArticle2 from '@/assets/images/home-article-2.png';
 import homeArticle3 from '@/assets/images/home-article-3.png';
 import Image from 'next/image';
 
 import styles from './styles.module.css';
+import { useRouter } from 'next/navigation';
 
 const articles = [
   {
@@ -24,6 +27,7 @@ const articles = [
 ];
 
 export default function NewsSection() {
+  const navigate = useRouter();
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -42,7 +46,12 @@ export default function NewsSection() {
 
             <p className={styles.desc}>{a.desc}</p>
 
-            <button className={styles.btn}>Chi tiết</button>
+            <button
+              onClick={() => navigate.push('/news-detail')}
+              className={styles.btn}
+            >
+              Chi tiết
+            </button>
           </div>
         ))}
       </div>
