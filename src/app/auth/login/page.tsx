@@ -25,8 +25,8 @@ export default function Login() {
 
   const handleLogin = () => {
     if (
-      username === 'admin@gmail.com' &&
-      password === '123456' &&
+      username === 'user' &&
+      password === 'user' &&
       typeof window !== 'undefined'
     ) {
       localStorage.setItem('is_login', 'true');
