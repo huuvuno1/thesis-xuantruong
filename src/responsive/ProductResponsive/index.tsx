@@ -1,5 +1,5 @@
-import React from 'react';
-import './index.css';
+"use client";
+import "./index.css";
 
 export default function ProductResponsive() {
   return (
@@ -10,10 +10,17 @@ export default function ProductResponsive() {
             Ra mắt 365 Simple Back to school!
           </span>
           <span className="buy-now">Mua ngay</span>
-          <span className="back-to-school-2">{' ->'}</span>
+          <span className="back-to-school-2">{" ->"}</span>
         </div>
         <div className="rectangle-3">
-          <div className="asset" />
+          <div
+            className="asset"
+            onClick={() => {
+              if (window) {
+                window.location.href = "/";
+              }
+            }}
+          />
           <div className="align-left">
             <div className="vector" />
             <div className="vector-4" />
@@ -70,11 +77,20 @@ export default function ProductResponsive() {
                 <div className="rectangle-14" />
               </div>
             </div>
-            <div className="description">
-              <span className="shirt-basics">Áo Sơ mi Nam Basics</span>
+            <a href="/product-detail" className="description">
+              <span
+                className="shirt-basics"
+                onClick={() => {
+                  if (window) {
+                    window.location.href = "/product-detail";
+                  }
+                }}
+              >
+                Áo Sơ mi Nam Basics
+              </span>
               <span className="thick-green">Dày dặn/ Xanh rêu</span>
               <span className="price">299.000đ</span>
-            </div>
+            </a>
           </div>
           <div className="heart">
             <div className="vector-15" />
@@ -105,11 +121,20 @@ export default function ProductResponsive() {
                   <div className="rectangle-28" />
                 </div>
               </div>
-              <div className="mo-ta">
-                <span className="ao-so-mi-nam-basics">Áo Sơ mi Nam Basics</span>
+              <a href="/product-detail" className="mo-ta">
+                <span
+                  className="ao-so-mi-nam-basics"
+                  onClick={() => {
+                    if (window) {
+                      window.location.href = "/product-detail";
+                    }
+                  }}
+                >
+                  Áo Sơ mi Nam Basics
+                </span>
                 <span className="day-dan-xanh-reu">Dày dặn/ Xanh rêu</span>
                 <span className="price-29">299.000đ</span>
-              </div>
+              </a>
             </div>
             <div className="heart-2a">
               <div className="vector-2b" />
@@ -128,7 +153,16 @@ export default function ProductResponsive() {
             <span className="price-30">550.000đ</span>
           </div>
           <div className="mo-ta-31">
-            <span className="ao-so-mi-nam-basics-32">Áo Sơ mi Nam Basics</span>
+            <span
+              className="ao-so-mi-nam-basics-32"
+              onClick={() => {
+                if (window) {
+                  window.location.href = "/product-detail";
+                }
+              }}
+            >
+              Áo Sơ mi Nam Basics
+            </span>
             <span className="day-dan-xanh-reu-33">Dày dặn/ Xanh rêu</span>
             <span className="price-34">299.000đ</span>
           </div>
@@ -169,11 +203,20 @@ export default function ProductResponsive() {
                 <div className="mo-ta-48" />
               </div>
             </div>
-            <div className="ao-so-mi-nam-basics-49">
-              <span className="day-dan-xanh-reu-4a">Áo Sơ mi Nam Basics</span>
+            <a href="/product-detail" className="ao-so-mi-nam-basics-49">
+              <span
+                className="day-dan-xanh-reu-4a"
+                onClick={() => {
+                  if (window) {
+                    window.location.href = "/product-detail";
+                  }
+                }}
+              >
+                Áo Sơ mi Nam Basics
+              </span>
               <span className="price-4b">Dày dặn/ Xanh rêu</span>
               <span className="heart-4c">299.000đ</span>
-            </div>
+            </a>
           </div>
           <div className="vector-4d">
             <div className="hover-product-ao-so-mi-4e" />
@@ -181,7 +224,16 @@ export default function ProductResponsive() {
         </div>
         <div className="mo-ta-4f">
           <div className="ao-so-mi-nam-basics-50">
-            <span className="day-dan-xanh-reu-51">Áo Sơ mi Nam Basics</span>
+            <span
+              className="day-dan-xanh-reu-51"
+              onClick={() => {
+                if (window) {
+                  window.location.href = "/product-detail";
+                }
+              }}
+            >
+              Áo Sơ mi Nam Basics
+            </span>
             <span className="price-52">Dày dặn/ Xanh rêu</span>
             <span className="rectangle-53">299.000đ</span>
           </div>
@@ -209,11 +261,20 @@ export default function ProductResponsive() {
                   <div className="ao-so-mi-nam-basics-66" />
                 </div>
               </div>
-              <div className="day-dan-xanh-reu-67">
-                <span className="price-68">Áo Sơ mi Nam Basics</span>
+              <a href="/product-detail" className="day-dan-xanh-reu-67">
+                <span
+                  className="price-68"
+                  onClick={() => {
+                    if (window) {
+                      window.location.href = "/product-detail";
+                    }
+                  }}
+                >
+                  Áo Sơ mi Nam Basics
+                </span>
                 <span className="heart-69">Dày dặn/ Xanh rêu</span>
                 <span className="vector-6a">299.000đ</span>
-              </div>
+              </a>
             </div>
             <div className="section-17">
               <div className="pic-12" />
@@ -256,11 +317,20 @@ export default function ProductResponsive() {
                 <div className="mo-ta-7a" />
               </div>
             </div>
-            <div className="ao-so-mi-nam-basics-7b">
-              <span className="day-dan-xanh-reu-7c">Áo Sơ mi Nam Basics</span>
+            <a href="/product-detail" className="ao-so-mi-nam-basics-7b">
+              <span
+                className="day-dan-xanh-reu-7c"
+                onClick={() => {
+                  if (window) {
+                    window.location.href = "/product-detail";
+                  }
+                }}
+              >
+                Áo Sơ mi Nam Basics
+              </span>
               <span className="text-34">Dày dặn/ Xanh rêu</span>
               <span className="heart-7d">299.000đ</span>
-            </div>
+            </a>
           </div>
           <div className="vector-7e">
             <div className="hover-san-pham-ao-so-mi-7f" />
@@ -268,7 +338,16 @@ export default function ProductResponsive() {
         </div>
         <div className="mo-ta-80">
           <div className="ao-so-mi-nam-basics-81">
-            <span className="day-dan-xanh-reu-82">Áo Sơ mi Nam Basics</span>
+            <span
+              className="day-dan-xanh-reu-82"
+              onClick={() => {
+                if (window) {
+                  window.location.href = "/product-detail";
+                }
+              }}
+            >
+              Áo Sơ mi Nam Basics
+            </span>
             <span className="text-37">Dày dặn/ Xanh rêu</span>
             <span className="rectangle-83">299.000đ</span>
           </div>
@@ -296,11 +375,20 @@ export default function ProductResponsive() {
                   <div className="ao-so-mi-nam-basics-94" />
                 </div>
               </div>
-              <div className="day-dan-xanh-reu-95">
-                <span className="text-3c">Áo Sơ mi Nam Basics</span>
+              <a href="/product-detail" className="day-dan-xanh-reu-95">
+                <span
+                  className="text-3c"
+                  onClick={() => {
+                    if (window) {
+                      window.location.href = "/product-detail";
+                    }
+                  }}
+                >
+                  Áo Sơ mi Nam Basics
+                </span>
                 <span className="heart-96">Dày dặn/ Xanh rêu</span>
                 <span className="vector-97">299.000đ</span>
-              </div>
+              </a>
             </div>
             <div className="spham-moi-98">
               <div className="hover-san-pham-ao-so-mi-99" />
@@ -332,7 +420,16 @@ export default function ProductResponsive() {
               </div>
             </div>
             <div className="product-description">
-              <span className="product-name">Áo Sơ mi Nam Basics</span>
+              <span
+                className="product-name"
+                onClick={() => {
+                  if (window) {
+                    window.location.href = "/product-detail";
+                  }
+                }}
+              >
+                Áo Sơ mi Nam Basics
+              </span>
               <span className="product-color">Dày dặn/ Xanh rêu</span>
               <span className="product-price">299.000đ</span>
             </div>
@@ -360,11 +457,20 @@ export default function ProductResponsive() {
           <div className="rectangle-ae">
             <div className="product-description-af" />
           </div>
-          <div className="product-name-b0">
-            <span className="product-color-b1">Áo Sơ mi Nam Basics</span>
+          <a href="/product-detail" className="product-name-b0">
+            <span
+              className="product-color-b1"
+              onClick={() => {
+                if (window) {
+                  window.location.href = "/product-detail";
+                }
+              }}
+            >
+              Áo Sơ mi Nam Basics
+            </span>
             <span className="product-price-b2">Dày dặn/ Xanh rêu</span>
             <span className="heart-icon-b3">299.000đ</span>
-          </div>
+          </a>
           <div className="vector-icon-b4">
             <div className="sale-tag" />
           </div>
@@ -411,11 +517,20 @@ export default function ProductResponsive() {
                   <div className="vector-icon-cc" />
                 </div>
               </div>
-              <div className="product-hover-cd">
-                <span className="rectangle-ce">Áo Sơ mi Nam Basics</span>
+              <a href="/product-detail" className="product-hover-cd">
+                <span
+                  className="rectangle-ce"
+                  onClick={() => {
+                    if (window) {
+                      window.location.href = "/product-detail";
+                    }
+                  }}
+                >
+                  Áo Sơ mi Nam Basics
+                </span>
                 <span className="product-image-cf">Dày dặn/ Xanh rêu</span>
                 <span className="new-tag-d0">299.000đ</span>
-              </div>
+              </a>
             </div>
             <div className="new-label-d1">
               <div className="rectangle-d2" />
@@ -443,13 +558,14 @@ export default function ProductResponsive() {
                   <div className="rectangle-e3" />
                 </div>
               </div>
-              <div className="mo-ta-e4">
+              <a href="/product-detail" className="mo-ta-e4">
                 <span className="ao-so-mi-nam-basics-e5">
+                  {" "}
                   Áo Sơ mi Nam Basics
                 </span>
                 <span className="day-dan-xanh-reu-e6">Dày dặn/ Xanh rêu</span>
                 <span className="price-e7">299.000đ</span>
-              </div>
+              </a>
             </div>
             <div className="heart-e8">
               <div className="vector-e9" />
@@ -477,11 +593,20 @@ export default function ProductResponsive() {
                   <div className="mo-ta-f9" />
                 </div>
               </div>
-              <div className="ao-so-mi-nam-basics-fa">
-                <span className="day-dan-xanh-reu-fb">Áo Sơ mi Nam Basics</span>
+              <a href="/product-detail" className="ao-so-mi-nam-basics-fa">
+                <span
+                  className="day-dan-xanh-reu-fb"
+                  onClick={() => {
+                    if (window) {
+                      window.location.href = "/product-detail";
+                    }
+                  }}
+                >
+                  Áo Sơ mi Nam Basics
+                </span>
                 <span className="price-fc">Dày dặn/ Xanh rêu</span>
                 <span className="heart-fd">299.000đ</span>
-              </div>
+              </a>
             </div>
             <div className="vector-fe">
               <div className="hover-san-pham-ao-so-mi-ff" />
@@ -509,11 +634,20 @@ export default function ProductResponsive() {
                   <div className="ao-so-mi-nam-basics-10f" />
                 </div>
               </div>
-              <div className="day-dan-xanh-reu-110">
-                <span className="price-111">Áo Sơ mi Nam Basics</span>
+              <a href="/product-detail" className="day-dan-xanh-reu-110">
+                <span
+                  className="price-111"
+                  onClick={() => {
+                    if (window) {
+                      window.location.href = "/product-detail";
+                    }
+                  }}
+                >
+                  Áo Sơ mi Nam Basics
+                </span>
                 <span className="heart-112">Dày dặn/ Xanh rêu</span>
                 <span className="vector-113">299.000đ</span>
-              </div>
+              </a>
             </div>
             <div className="hover-san-pham-ao-so-mi-114">
               <div className="rectangle-115" />
@@ -550,11 +684,20 @@ export default function ProductResponsive() {
             <div className="rectangle-12b">
               <div className="mo-ta-12c" />
             </div>
-            <div className="ao-so-mi-nam-basics-12d">
-              <span className="day-dan-xanh-reu-12e">Áo Sơ mi Nam Basics</span>
+            <a href="/product-detail" className="ao-so-mi-nam-basics-12d">
+              <span
+                className="day-dan-xanh-reu-12e"
+                onClick={() => {
+                  if (window) {
+                    window.location.href = "/product-detail";
+                  }
+                }}
+              >
+                Áo Sơ mi Nam Basics
+              </span>
               <span className="price-12f">Dày dặn/ Xanh rêu</span>
               <span className="text-70">299.000đ</span>
-            </div>
+            </a>
             <div className="heart-130">
               <div className="vector-131" />
             </div>

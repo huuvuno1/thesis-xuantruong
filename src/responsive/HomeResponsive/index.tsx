@@ -1,7 +1,6 @@
-'use client';
+"use client";
 
-import './index.css';
-import Link from 'next/link';
+import "./index.css";
 
 export default function HomeResponsive() {
   return (
@@ -11,7 +10,7 @@ export default function HomeResponsive() {
           <div className="cta-text">
             <span className="cta-link">Ra mắt 365 Simple Back to school! </span>
             <span className="cta-button">Mua ngay</span>
-            <span className="cta-link-2">{' ->'}</span>
+            <span className="cta-link-2">{" ->"}</span>
           </div>
         </div>
         <div className="rectangle-3">
@@ -37,7 +36,7 @@ export default function HomeResponsive() {
       </div>
       <div className="flex-row-c">
         <div className="new-products-8">
-          <Link href={'/products'} className="hover-shirt">
+          <a href={"/products"} className="hover-shirt">
             <div className="rectangle-9" />
             <div className="image" />
             <button className="tag-new">
@@ -68,7 +67,7 @@ export default function HomeResponsive() {
             <div className="heart">
               <div className="vector-10" />
             </div>
-          </Link>
+          </a>
           <div className="hover-shirt-11">
             <div className="rectangle-12" />
             <div className="image-13" />
@@ -230,7 +229,7 @@ export default function HomeResponsive() {
           <span className="running-man-66">Running man</span>
           <div className="model-tiep-67" />
           <div className="rectangle-68">
-            <span className="shop-now">{'Shop now >>>'}</span>
+            <span className="shop-now">{"Shop now >>>"}</span>
           </div>
           <span className="bst">BST</span>
           <span className="running-man-69">Running man</span>
@@ -545,7 +544,7 @@ export default function HomeResponsive() {
           <span className="da-dang">đa dạng</span>
           <div className="rectangle-110" />
         </div>
-        <span className="kham-pha-ngay">{'Khám phá ngay >>>'}</span>
+        <span className="kham-pha-ngay">{"Khám phá ngay >>>"}</span>
       </div>
       <div className="rectangle-111">
         <div className="rectangle-112">
@@ -553,7 +552,7 @@ export default function HomeResponsive() {
           <span className="nhieu-mau-ma">nhiều mẫu mã</span>
           <div className="rectangle-113" />
         </div>
-        <span className="kham-pha-ngay-114">{'Khám phá ngay >>>'}</span>
+        <span className="kham-pha-ngay-114">{"Khám phá ngay >>>"}</span>
       </div>
       <span className="danh-gia">Đánh giá</span>
       <div className="flex-row-c-115">
