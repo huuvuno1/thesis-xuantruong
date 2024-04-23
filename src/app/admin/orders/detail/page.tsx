@@ -1,14 +1,22 @@
-'use client';
+"use client";
 
-import AdminLayout from '@/layouts/AdminLayout';
-import styles from './styles.module.css';
-import PrinterIcon from '@/assets/icons/printer.svg';
-import ArrowRightLineIcon from '@/assets/icons/ArrowRightLine.svg';
-import product1 from '@/assets/images/product-table-1.png';
-import product2 from '@/assets/images/product-table-2.png';
-import Image from 'next/image';
+import ArrowRightLineIcon from "@/assets/icons/ArrowRightLine.svg";
+import PrinterIcon from "@/assets/icons/printer.svg";
+import product1 from "@/assets/images/product-table-1.png";
+import product2 from "@/assets/images/product-table-2.png";
+import AdminButton from "@/components/AdminButton";
+import AdminLayout from "@/layouts/AdminLayout";
+import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { useCallback } from "react";
+import styles from "./styles.module.css";
 
 export default function LoginAdmin() {
+  const router = useRouter();
+
+  const handleGoToOrder = useCallback(() => {
+    router.push("/admin/orders");
+  }, [router]);
   return (
     <AdminLayout>
       <div className={styles.container}>
@@ -87,24 +95,43 @@ export default function LoginAdmin() {
               </div>
             </div>
           </div>
-          <div className={styles.customerInfoCard}>
-            <div className={styles.customerInfoCardAddress}>
-              <div className={styles.customerInfoCardAddressUserInfo}>
-                <p>Vũ Xuân Trường</p>
-                <p>Email: truong.vx22@gmail.com</p>
-                <p>SĐT : 0987654321</p>
+          <div>
+            <div className={styles.customerInfoCard}>
+              <div className={styles.customerInfoCardAddress}>
+                <div className={styles.customerInfoCardAddressUserInfo}>
+                  <p>Vũ Xuân Trường</p>
+                  <p>Email: truong.vx22@gmail.com</p>
+                  <p>SĐT : 0987654321</p>
+                </div>
+
+                <div className={styles.customerInfoCardAddressUserAddress}>
+                  <p>Địa chỉ giao hàng</p>
+                  <p>99/223 Định Công, Hoàng Mai, Hà Nội</p>
+                </div>
               </div>
 
-              <div className={styles.customerInfoCardAddressUserAddress}>
-                <p>Địa chỉ giao hàng</p>
-                <p>99/223 Định Công, Hoàng Mai, Hà Nội</p>
+              <div className={styles.customerInfoCardOrderHistory}>
+                <p>Lịch sử đơn hàng</p>
+
+                <ArrowRightLineIcon />
               </div>
             </div>
-
-            <div className={styles.customerInfoCardOrderHistory}>
-              <p>Lịch sử đơn hàng</p>
-
-              <ArrowRightLineIcon />
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "end",
+              }}
+            >
+              <AdminButton
+                value="Huỷ"
+                onClick={handleGoToOrder}
+                className={styles.btn1}
+              />
+              <AdminButton
+                className={styles.btn2}
+                value="Xác nhận"
+                onClick={handleGoToOrder}
+              />
             </div>
           </div>
         </div>

@@ -10,6 +10,21 @@
   text-align: left;
 }
 
+.btn1 {
+  width: 168px !important;
+  border: 1px solid rgba(0, 0, 0, 1);
+  background-color: white;
+  color: rgba(1, 39, 85, 1);
+  margin-top: 26px;
+}
+
+.btn2 {
+  margin-top: 26px;
+  width: 168px !important;
+  margin-left: 14px;
+}
+
+
 .printer {
   display: flex;
   align-items: center;

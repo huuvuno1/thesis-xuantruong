@@ -120,11 +120,7 @@ export default function LoginAdmin() {
           </div>
 
           {data?.map((d) => (
-            <div
-              className={styles.row1}
-              key={d.id}
-              onClick={handleGotoOrderDetail}
-            >
+            <div className={styles.row1} key={d.id}>
               <p className={`${styles.id} ${styles.id1}`}>{d.id}</p>
               <p className={`${styles.buyer} ${styles.buyer1}`}>{d.buyer}</p>
               <p className={`${styles.stock} ${styles.stock1}`}>{d.stock}</p>
@@ -139,7 +135,7 @@ export default function LoginAdmin() {
               </p>
               <p className={`${styles.price} ${styles.price1}`}>{d.price}</p>
               <p className={`${styles.action} ${styles.action1}`}>
-                <PencilIcon />
+                <PencilIcon onClick={handleGotoOrderDetail} />
                 <DeleteIcon />
               </p>
             </div>
