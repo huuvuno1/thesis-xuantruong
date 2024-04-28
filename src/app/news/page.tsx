@@ -15,6 +15,7 @@ import ArrowRightWithCircle from '@/assets/images/ArrowRightWithCircle.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import NewsSection from '@/containers/HomeNewSection';
+import NewsResponsive from '@/responsive/NewsResponsive';
 
 const news = [
   {
@@ -47,65 +48,71 @@ const news = [
 export default function News() {
   return (
     <MainLayout>
-      <div className={styles.container}>
-        <div className={styles.main}>
-          <div className={styles.search}>
-            <div className={styles.searchContainer}>
-              <h3>Tìm kiếm</h3>
+      <div className={styles.desktopOnly}>
+        <div className={styles.container}>
+          <div className={styles.main}>
+            <div className={styles.search}>
+              <div className={styles.searchContainer}>
+                <h3>Tìm kiếm</h3>
 
-              <div className={styles.checkboxItemWrapper}>
-                <div className={styles.checkboxItem}>
-                  <Image src={checkBoxImg} alt="checkbox" />
-                  <p>Tin tức mới</p>
-                </div>
+                <div className={styles.checkboxItemWrapper}>
+                  <div className={styles.checkboxItem}>
+                    <Image src={checkBoxImg} alt="checkbox" />
+                    <p>Tin tức mới</p>
+                  </div>
 
-                <div className={styles.checkboxItem}>
-                  <Image src={checkBoxImg} alt="checkbox" />
-                  <p>Xu hướng thời trang</p>
-                </div>
+                  <div className={styles.checkboxItem}>
+                    <Image src={checkBoxImg} alt="checkbox" />
+                    <p>Xu hướng thời trang</p>
+                  </div>
 
-                <div className={styles.checkboxItem}>
-                  <Image src={checkBoxImg} alt="checkbox" />
-                  <p>Tips phối đồ</p>
-                </div>
+                  <div className={styles.checkboxItem}>
+                    <Image src={checkBoxImg} alt="checkbox" />
+                    <p>Tips phối đồ</p>
+                  </div>
 
-                <div className={styles.checkboxItem}>
-                  <Image src={checkBoxImg} alt="checkbox" />
-                  <p>Khuyến mãi</p>
+                  <div className={styles.checkboxItem}>
+                    <Image src={checkBoxImg} alt="checkbox" />
+                    <p>Khuyến mãi</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className={styles.articleWrapper}>
-            <div className={styles.articleTitleWrapper}>
-              <h1 className={styles.articleTitle}>TẤT CẢ BÀI VIẾT</h1>
+            <div className={styles.articleWrapper}>
+              <div className={styles.articleTitleWrapper}>
+                <h1 className={styles.articleTitle}>TẤT CẢ BÀI VIẾT</h1>
+              </div>
+
+              <div className={styles.articleWrapperItem}>
+                {news.map((n) => (
+                  <Link
+                    href="/news-detail"
+                    key={n.title}
+                    className={styles.articleItem}
+                  >
+                    <Image src={n.img} alt="cover" />
+
+                    <h5 className={styles.articleItemTitle}>{n.title}</h5>
+
+                    <p className={styles.articleItemDesc}>{n.desc}</p>
+
+                    <div className={styles.articleItemArrow}>
+                      <Image src={ArrowRightWithCircle} alt="cover" />
+                    </div>
+                  </Link>
+                ))}
+              </div>
+
+              <button className={styles.btnViewMore}>XEM THÊM</button>
             </div>
-
-            <div className={styles.articleWrapperItem}>
-              {news.map((n) => (
-                <Link
-                  href="/news-detail"
-                  key={n.title}
-                  className={styles.articleItem}
-                >
-                  <Image src={n.img} alt="cover" />
-
-                  <h5 className={styles.articleItemTitle}>{n.title}</h5>
-
-                  <p className={styles.articleItemDesc}>{n.desc}</p>
-
-                  <div className={styles.articleItemArrow}>
-                    <Image src={ArrowRightWithCircle} alt="cover" />
-                  </div>
-                </Link>
-              ))}
-            </div>
-
-            <button className={styles.btnViewMore}>XEM THÊM</button>
           </div>
+
+          <NewsSection />
         </div>
+      </div>
 
-        <NewsSection />
+      <div className={styles.mobileOnly}>
+        <NewsResponsive />
       </div>
     </MainLayout>
   );

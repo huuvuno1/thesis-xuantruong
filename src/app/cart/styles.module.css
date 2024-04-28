@@ -209,3 +209,15 @@
   font-weight: 600;
   color: #012755;
 }
+
+@media only screen and (max-width: 768px) {
+  .desktopOnly {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobileOnly {
+    display: none;
+  }
+}
