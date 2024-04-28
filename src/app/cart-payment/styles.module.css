@@ -79,15 +79,15 @@
   align-items: center;
   justify-content: space-between;
   gap: 31px;
+  border: 1px solid #595959;
+  padding: 15px 16px;
+  border-radius: 20px;
+  height: 61px;
 }
 
 .paymentMethodItemInput {
-  height: 61px;
-  border-radius: 20px;
-  border: 1px solid #595959;
   font-size: 20px;
   font-weight: 500;
-  padding: 15px 16px;
   color: #595959;
   flex: 1;
 }

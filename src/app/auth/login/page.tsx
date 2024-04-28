@@ -11,6 +11,13 @@ import MainLayout from '@/layouts/MainLayout';
 import { useRouter } from 'next/navigation';
 import { useCallback, useState } from 'react';
 import LoginResponsive from '@/responsive/LoginResponsive';
+import {
+  FormControl,
+  InputAdornment,
+  InputLabel,
+  OutlinedInput,
+  TextField,
+} from '@mui/material';
 
 export default function Login() {
   const router = useRouter();
@@ -64,22 +71,44 @@ export default function Login() {
             {error && <p className={styles.error}>{error}</p>}
 
             <div className={styles.form}>
-              <input
-                type="text"
-                placeholder="Email/SĐT của bạn"
-                className={styles.input}
+              <TextField
+                label="Email/SĐT của bạn"
+                variant="outlined"
                 value={username}
                 onChange={(e) => setUsername(e?.target?.value)}
+                sx={{
+                  m: 1,
+                  width: '100%',
+                  borderRadius: '20px',
+                  '& fieldset': { borderRadius: '20px' },
+                }}
+                InputProps={{ classes: { input: styles.inputinput } }}
               />
-              <div className={styles.input}>
-                <input
-                  type="password"
-                  placeholder="Mật khẩu"
+              <FormControl
+                sx={{ m: 1, width: '100%', height: '75px' }}
+                variant="outlined"
+              >
+                <InputLabel htmlFor="outlined-adornment-password">
+                  Mật khẩu
+                </InputLabel>
+                <OutlinedInput
+                  sx={{
+                    borderRadius: '20px',
+                    height: '75px',
+                    '& fieldset': { borderRadius: '20px', height: '75px' },
+                  }}
                   value={password}
-                  onChange={(e) => setPassword(e?.target?.value)}
+                  onChange={(e) => setPassword(e?.target.value)}
+                  id="outlined-adornment-password"
+                  type={'password'}
+                  endAdornment={
+                    <InputAdornment position="end">
+                      <Image src={eyeOffImage} alt="logo" />
+                    </InputAdornment>
+                  }
+                  label="Mật khẩu"
                 />
-                <Image src={eyeOffImage} alt="eyeOffImage" />
-              </div>
+              </FormControl>
               <button onClick={handleLogin} className={styles.btnLogin}>
                 Đăng nhập
               </button>

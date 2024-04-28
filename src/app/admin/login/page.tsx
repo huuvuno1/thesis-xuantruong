@@ -9,6 +9,14 @@ import logoImage from '@/assets/images/logo.png';
 import eyeOffImage from '@/assets/images/eye-off.png';
 import { useCallback, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import {
+  FilledInput,
+  FormControl,
+  InputAdornment,
+  InputLabel,
+  OutlinedInput,
+  TextField,
+} from '@mui/material';
 
 export default function LoginAdmin() {
   const router = useRouter();
@@ -41,23 +49,44 @@ export default function LoginAdmin() {
         {error && <p className={styles.error}>{error}</p>}
 
         <div className={styles.loginWrapper}>
-          <input
-            type="text"
-            className={styles.input}
-            placeholder="Email/SĐT của bạn"
+          <TextField
+            label="Email/SĐT của bạn"
+            variant="outlined"
             value={username}
             onChange={(e) => setUsername(e?.target.value)}
+            sx={{
+              m: 1,
+              width: '100%',
+              height: '75px',
+              borderRadius: '20px',
+              '& fieldset': { borderRadius: '20px', height: '75px' },
+            }}
           />
-          <div className={styles.inputPass}>
-            <input
-              type="password"
-              placeholder="Mật khẩu"
-              className={styles.inputInner}
+          <FormControl
+            sx={{ m: 1, width: '100%', height: '75px' }}
+            variant="outlined"
+          >
+            <InputLabel htmlFor="outlined-adornment-password">
+              Mật khẩu
+            </InputLabel>
+            <OutlinedInput
+              sx={{
+                borderRadius: '20px',
+                height: '75px',
+                '& fieldset': { borderRadius: '20px', height: '75px' },
+              }}
               value={password}
               onChange={(e) => setPassword(e?.target.value)}
+              id="outlined-adornment-password"
+              type={'password'}
+              endAdornment={
+                <InputAdornment position="end">
+                  <Image src={eyeOffImage} alt="logo" />
+                </InputAdornment>
+              }
+              label="Mật khẩu"
             />
-            <Image src={eyeOffImage} alt="logo" />
-          </div>
+          </FormControl>
           <button className={styles.btnLogin} onClick={login}>
             Đăng nhập
           </button>

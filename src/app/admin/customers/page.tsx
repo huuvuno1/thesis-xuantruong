@@ -10,6 +10,7 @@ import ArrowLeft from '@/assets/icons/ArrowLeft.svg';
 import ArrowRight from '@/assets/icons/ArrowRight.svg';
 import { useRouter } from 'next/navigation';
 import { useCallback } from 'react';
+import { Popconfirm } from 'antd';
 
 const data = [
   {
@@ -97,7 +98,14 @@ export default function LoginAdmin() {
               <p className={`${styles.price} ${styles.price1}`}>{d.price}</p>
               <p className={`${styles.action} ${styles.action1}`}>
                 <PencilIcon />
-                <DeleteIcon />
+                <Popconfirm
+                  title="Xóa khách hàng"
+                  description="Bạn có chắc sẽ xóa khách hàng không?"
+                  okText="Xóa"
+                  cancelText="Hủy"
+                >
+                  <DeleteIcon />
+                </Popconfirm>
               </p>
             </div>
           ))}

@@ -68,14 +68,15 @@
   left: 824px;
   border-radius: 40px;
   border: 1px solid #8c8888;
-  padding: 27px 19px;
   font-size: 16px;
   display: flex;
   align-items: center;
+  padding: 0 20px;
 }
 
 .inputInner {
   flex: 1;
+  height: 100%;
 }
 
 .forgotPass {

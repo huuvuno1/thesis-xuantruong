@@ -13,6 +13,7 @@ import Product1Image from '@/assets/images/product-table-1.png';
 import Image from 'next/image';
 import { useCallback } from 'react';
 import { useRouter } from 'next/navigation';
+import { Popconfirm } from 'antd';
 
 export default function LoginAdmin() {
   const router = useRouter();
@@ -80,7 +81,14 @@ export default function LoginAdmin() {
               <div className={`${styles.action1} ${styles.action}`}>
                 <PencilIcon />
 
-                <DeleteIcon />
+                <Popconfirm
+                  title="Xóa sản phẩm"
+                  description="Bạn có chắc sẽ xóa sản phẩm không?"
+                  okText="Xóa"
+                  cancelText="Hủy"
+                >
+                  <DeleteIcon />
+                </Popconfirm>
               </div>
             </div>
           ))}

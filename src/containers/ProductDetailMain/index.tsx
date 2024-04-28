@@ -119,18 +119,27 @@ export default function ProductDetailMain(
             <p>{quantity}</p>
             <button onClick={() => setQuantity(quantity + 1)}>+</button>
           </div>
+        </div>
 
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            marginTop: '10px',
+            gap: '10px',
+          }}
+        >
           <button className={styles.addToCart} onClick={notify}>
             <p>Thêm vào giỏ hàng</p>
             <Image src={cartIcon} alt="cartIcon" />
           </button>
+
+          <Link href={'/cart-payment'} className={styles.buyNow}>
+            <p>Mua ngay</p>
+
+            <Image src={playIcon} alt="playIcon" />
+          </Link>
         </div>
-
-        <Link href={'/cart-payment'} className={styles.buyNow}>
-          <p>Mua ngay</p>
-
-          <Image src={playIcon} alt="playIcon" />
-        </Link>
 
         <div className={styles.line}></div>
 
