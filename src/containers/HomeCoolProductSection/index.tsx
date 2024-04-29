@@ -63,7 +63,7 @@ export default function HomeCoolProductSection() {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <p>Sản phẩm thu đông</p>
+        <p style={{ color: '#012755' }}>Sản phẩm thu đông</p>
       </div>
 
       <div className={styles.prdList}>

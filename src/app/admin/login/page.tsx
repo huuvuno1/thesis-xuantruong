@@ -50,6 +50,7 @@ export default function LoginAdmin() {
 
         <div className={styles.loginWrapper}>
           <TextField
+            autoComplete="off"
             label="Email/SĐT của bạn"
             variant="outlined"
             value={username}
@@ -70,6 +71,7 @@ export default function LoginAdmin() {
               Mật khẩu
             </InputLabel>
             <OutlinedInput
+              autoComplete="off"
               sx={{
                 borderRadius: '20px',
                 height: '75px',

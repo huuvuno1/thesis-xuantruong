@@ -30,7 +30,7 @@ export default function HomeCategoriesSection() {
       {categories.map((c) => (
         <div className={styles.categoryItem} key={c.title}>
           {c.icon}
-          <p>{c.title}</p>
+          <p style={{ color: '#012755' }}>{c.title}</p>
         </div>
       ))}
     </div>

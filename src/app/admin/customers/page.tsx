@@ -86,18 +86,14 @@ export default function LoginAdmin() {
           </div>
 
           {data?.map((d) => (
-            <div
-              className={styles.row1}
-              key={d.id}
-              onClick={handleGotoCustomerDetail}
-            >
+            <div className={styles.row1} key={d.id}>
               <p className={`${styles.id} ${styles.id1}`}>{d.id}</p>
               <p className={`${styles.buyer} ${styles.buyer1}`}>{d.buyer}</p>
               <p className={`${styles.stock} ${styles.stock1}`}>{d.stock}</p>
               <p className={`${styles.status} ${styles.status1}`}>{d.status}</p>
               <p className={`${styles.price} ${styles.price1}`}>{d.price}</p>
               <p className={`${styles.action} ${styles.action1}`}>
-                <PencilIcon />
+                <PencilIcon onClick={handleGotoCustomerDetail} />
                 <Popconfirm
                   title="Xóa khách hàng"
                   description="Bạn có chắc sẽ xóa khách hàng không?"
