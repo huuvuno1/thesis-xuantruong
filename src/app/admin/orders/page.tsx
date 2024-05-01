@@ -1,73 +1,73 @@
-'use client';
+"use client";
 
-import ArrowLeft from '@/assets/icons/ArrowLeft.svg';
-import ArrowRight from '@/assets/icons/ArrowRight.svg';
-import DeleteIcon from '@/assets/icons/DeleteIcon.svg';
-import PencilIcon from '@/assets/icons/pencil.svg';
-import AdminDropDown from '@/components/AdminDropDown';
-import AdminSearchInput from '@/components/AdminSearchInput';
-import AdminLayout from '@/layouts/AdminLayout';
-import { useRouter } from 'next/navigation';
-import { useCallback } from 'react';
-import styles from './styles.module.css';
-import { Popconfirm } from 'antd';
+import ArrowLeft from "@/assets/icons/ArrowLeft.svg";
+import ArrowRight from "@/assets/icons/ArrowRight.svg";
+import DeleteIcon from "@/assets/icons/DeleteIcon.svg";
+import PencilIcon from "@/assets/icons/pencil.svg";
+import AdminDropDown from "@/components/AdminDropDown";
+import AdminSearchInput from "@/components/AdminSearchInput";
+import AdminLayout from "@/layouts/AdminLayout";
+import { Popconfirm } from "antd";
+import { useRouter } from "next/navigation";
+import { useCallback } from "react";
+import styles from "./styles.module.css";
 
 const data = [
   {
-    id: '#127581',
-    buyer: 'Đào Phương Anh',
-    stock: 'Áo sơ mi n35',
-    status: 'Chờ vận chuyển',
-    price: '12.565.000',
+    id: "#127581",
+    buyer: "Đào Phương Anh",
+    stock: "Áo sơ mi n35",
+    status: "Đang vận chuyển",
+    price: "12.565.000",
   },
   {
-    id: '#158572',
-    buyer: 'Lê Văn Đức',
-    stock: 'Áo sơ mi cộc tay 365 Z133',
-    status: 'Chờ lấy hàng',
-    price: '765.000',
+    id: "#158572",
+    buyer: "Lê Văn Đức",
+    stock: "Áo sơ mi cộc tay 365 Z133",
+    status: "Chờ xác nhận",
+    price: "765.000",
   },
   {
-    id: '#114585',
-    buyer: 'Kiều Hoàng Dương',
-    stock: 'Quần tây nam cao cấp g5',
-    status: 'Chờ lấy hàng',
-    price: '12.565.000',
+    id: "#114585",
+    buyer: "Kiều Hoàng Dương",
+    stock: "Quần tây nam cao cấp g5",
+    status: "Chờ lấy hàng",
+    price: "12.565.000",
   },
   {
-    id: '#115786',
-    buyer: 'Nguyễn Đình Văn',
-    stock: 'Thắt lưng bản nhỏ f44',
-    status: 'Đã hủy',
-    price: '165.000',
+    id: "#115786",
+    buyer: "Nguyễn Đình Văn",
+    stock: "Thắt lưng bản nhỏ f44",
+    status: "Đã hủy",
+    price: "165.000",
   },
   {
-    id: '#125546',
-    buyer: 'Nguyễn Hữu Vũ',
-    stock: 'Áo len giữ nhiệt v34',
-    status: 'Hoàn thành',
-    price: '465.000',
+    id: "#125546",
+    buyer: "Nguyễn Hữu Vũ",
+    stock: "Áo len giữ nhiệt v34",
+    status: "Hoàn thành",
+    price: "465.000",
   },
   {
-    id: '#114556',
-    buyer: 'Vũ Xuân Trường',
-    stock: 'Quần âu 365 K21 v2 giới hạn ',
-    status: 'Hoàn thành',
-    price: '2.565.000',
+    id: "#114556",
+    buyer: "Vũ Xuân Trường",
+    stock: "Quần âu 365 K21 v2 giới hạn ",
+    status: "Hoàn thành",
+    price: "2.565.000",
   },
   {
-    id: '#115542',
-    buyer: 'Mai Thế Tùng',
-    stock: 'Thắt lưng thời trang v22',
-    status: 'Hoàn thành',
-    price: '165.000',
+    id: "#115542",
+    buyer: "Mai Thế Tùng",
+    stock: "Thắt lưng thời trang v22",
+    status: "Hoàn thành",
+    price: "165.000",
   },
   {
-    id: '#128874',
-    buyer: 'Đắc Tâm',
-    stock: 'Áo len giữ nhiệt v34',
-    status: 'Hoàn thành',
-    price: '465.000',
+    id: "#128874",
+    buyer: "Đắc Tâm",
+    stock: "Áo len giữ nhiệt v34",
+    status: "Hoàn thành",
+    price: "465.000",
   },
 ];
 
@@ -75,7 +75,7 @@ export default function LoginAdmin() {
   const router = useRouter();
 
   const handleGotoOrderDetail = useCallback(() => {
-    router.push('/admin/orders/detail');
+    router.push("/admin/orders/detail");
   }, [router]);
   return (
     <AdminLayout>
@@ -90,7 +90,18 @@ export default function LoginAdmin() {
         </div>
 
         <div className={styles.statussss}>
-          <AdminDropDown value="Chờ xác nhận" />
+          <AdminDropDown
+            value={
+              <div
+                style={{
+                  color: "rgba(99, 99, 99, 1)",
+                  marginLeft: 20,
+                }}
+              >
+                Tất cả trạng thái
+              </div>
+            }
+          />
         </div>
 
         <div className={styles.table}>
@@ -112,7 +123,7 @@ export default function LoginAdmin() {
             <p
               className={styles.price}
               style={{
-                textAlign: 'center',
+                textAlign: "center",
               }}
             >
               Giá tiền
@@ -127,10 +138,14 @@ export default function LoginAdmin() {
               <p className={`${styles.stock} ${styles.stock1}`}>{d.stock}</p>
               <p
                 className={`${styles.status} ${styles.status1} ${
-                  'Chờ vận chuyển' === d.status && styles.status1Red
-                } ${'Chờ lấy hàng' === d.status && styles.status1Red} ${
-                  'Đã hủy' === d.status && styles.cancel22
-                } ${'Hoàn thành' === d.status && styles.success22}`}
+                  "Chờ vận chuyển" === d.status && styles.status1Red
+                } ${
+                  ["Chờ lấy hàng", "Đang vận chuyển", "Chờ xác nhận"].includes(
+                    d.status
+                  ) && styles.status1Red
+                } ${"Đã hủy" === d.status && styles.cancel22} ${
+                  "Hoàn thành" === d.status && styles.success22
+                }`}
               >
                 {d.status}
               </p>

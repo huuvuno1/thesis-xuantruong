@@ -1,8 +1,9 @@
-import styles from './styles.module.css';
-import ArrawDownIcon from '@/assets/icons/arraw-down.svg';
+import ArrawDownIcon from "@/assets/icons/arraw-down.svg";
+import { ReactNode } from "react";
+import styles from "./styles.module.css";
 
 interface AdminDropDownProps {
-  value: string;
+  value: string | ReactNode;
 }
 export default function AdminDropDown(props: Readonly<AdminDropDownProps>) {
   return (
