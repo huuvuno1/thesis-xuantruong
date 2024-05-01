@@ -769,6 +769,7 @@ export default function HomeResponsive() {
           </div>
         </div>
       </div>
+      {/* <FooterMobile /> */}
     </div>
   );
 }

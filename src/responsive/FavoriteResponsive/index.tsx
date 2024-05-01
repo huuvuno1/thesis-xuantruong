@@ -1,5 +1,4 @@
-import React from 'react';
-import './index.css';
+import "./index.css";
 
 export default function FavoriteResponsive() {
   return (
@@ -10,7 +9,7 @@ export default function FavoriteResponsive() {
             Ra mắt 365 Simple Back to school!
           </span>
           <span className="buy-now">Mua ngay</span>
-          <span className="release-back-to-school-buy-now-1">{' ->'}</span>
+          <span className="release-back-to-school-buy-now-1">{" ->"}</span>
         </div>
         <div className="rectangle-2">
           <div className="asset" />
@@ -497,12 +496,12 @@ export default function FavoriteResponsive() {
         </div>
       </div>
       <div className="rectangle-d2">
-        <div className="rectangle-d3">
+        <a href="/" className="rectangle-d3">
           <div className="home-d4" />
-        </div>
-        <div className="rectangle-d5">
+        </a>
+        <a href="/cart" className="rectangle-d5">
           <div className="archive" />
-        </div>
+        </a>
         <div className="rectangle-d6">
           <div className="clock" />
         </div>

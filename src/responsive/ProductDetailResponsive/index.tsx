@@ -1,7 +1,15 @@
-import React from 'react';
-import './index.css';
+import { toast } from "react-toastify";
+import "./index.css";
 
 export default function ProductDetailResponsive() {
+  const notify = () =>
+    toast.success("Đã thêm vào giỏ hàng!", {
+      position: "top-center",
+
+      style: {
+        fontSize: "14px",
+      },
+    });
   return (
     <div className="main-container">
       <div className="rectangle">
@@ -10,7 +18,7 @@ export default function ProductDetailResponsive() {
             Ra mắt 365 Simple Back to school!
           </span>
           <span className="buy-now">Mua ngay</span>
-          <span className="back-to-school-link-1">{' ->'}</span>
+          <span className="back-to-school-link-1">{" ->"}</span>
         </div>
         <div className="rectangle-2">
           <a href="/">
@@ -116,17 +124,19 @@ export default function ProductDetailResponsive() {
           <div className="group" />
           <span className="span">1</span>
         </div>
-        <div className="rectangle-21">
+        <div className="rectangle-21" onClick={() => notify()}>
           <div className="ic-baseline-shopify">
             <div className="vector-22" />
           </div>
           <span className="add-to-cart">Thêm vào giỏ hàng</span>
         </div>
       </div>
-      <button className="rectangle-23">
-        <span className="buy-now-24">Mua ngay</span>
-        <div className="vector-25" />
-      </button>
+      <a href="/cart-payment">
+        <button className="rectangle-23">
+          <span className="buy-now-24">Mua ngay</span>
+          <div className="vector-25" />
+        </button>
+      </a>
       <div className="line" />
       <div className="flex-row-e">
         <div className="whatsapp" />
@@ -140,7 +150,7 @@ export default function ProductDetailResponsive() {
       </div>
       <div className="flex-row">
         <span className="span-29">Danh mục</span>
-        <span className="span-2a">{'365 Simple > Sản phẩm mới > Áo Nam'}</span>
+        <span className="span-2a">{"365 Simple > Sản phẩm mới > Áo Nam"}</span>
       </div>
       <div className="flex-row-2b">
         <span className="span-2c">Thương hiệu</span>

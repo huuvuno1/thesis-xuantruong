@@ -1,5 +1,5 @@
-import React from 'react';
-import './index.css';
+import { FooterMobile } from "@/components/FooterMobile";
+import "./index.css";
 
 export default function CartPaymentResponsive() {
   return (
@@ -10,7 +10,7 @@ export default function CartPaymentResponsive() {
             Ra mắt 365 Simple Back to school!
           </span>
           <span className="mua-ngay">Mua ngay</span>
-          <span className="ra-mat-simple-back-to-school-2">{' ->'}</span>
+          <span className="ra-mat-simple-back-to-school-2">{" ->"}</span>
         </div>
         <div className="rectangle-3">
           <div className="asset" />
@@ -386,30 +386,7 @@ export default function CartPaymentResponsive() {
         </div>
         <span className="tien-hanh-dat-hang">Tiến hành đặt hàng</span>
       </div>
-      <div className="rectangle-79">
-        <div className="rectangle-7a">
-          <div className="home" />
-        </div>
-        <div className="rectangle-7b">
-          <div className="archive" />
-        </div>
-        <div className="rectangle-7c">
-          <div className="clock" />
-        </div>
-        <div className="rectangle-7d">
-          <div className="heart">
-            <div className="vector-7e" />
-          </div>
-        </div>
-        <div className="rectangle-7f">
-          <div className="phone">
-            <div className="vector-80" />
-          </div>
-        </div>
-      </div>
-      <div className="home-indicator-on-light">
-        <div className="rectangle-81" />
-      </div>
+      <FooterMobile />
     </div>
   );
 }

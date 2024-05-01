@@ -1,5 +1,4 @@
-import React from 'react';
-import './index.css';
+import "./index.css";
 
 export default function CartResponsive() {
   return (
@@ -10,7 +9,7 @@ export default function CartResponsive() {
             Ra mắt 365 Simple Back to school!
           </span>
           <span className="mua-ngay">Mua ngay</span>
-          <span className="ra-mat-simple-back-to-school-2">{' ->'}</span>
+          <span className="ra-mat-simple-back-to-school-2">{" ->"}</span>
         </div>
         <div className="rectangle-3">
           <div className="asset" />
@@ -47,7 +46,7 @@ export default function CartResponsive() {
           <div className="line" />
           <div className="mua-them-san-pham">
             <span className="mua-them-san-pham-c">Mua thêm sản phẩm</span>
-            <span className="arrow">{' >>>'}</span>
+            <span className="arrow">{" >>>"}</span>
           </div>
         </div>
         <div className="tom-tat-don-hang">
@@ -61,10 +60,12 @@ export default function CartResponsive() {
             </div>
             <span className="tong-tien-e">1,647,000</span>
           </div>
-          <button className="button-tien-hanh-dat-hang">
-            <span className="tien-hanh-dat-hang">Tiến hành đặt hàng</span>
-            <div className="rectangle-f" />
-          </button>
+          <a href="/cart-payment">
+            <button className="button-tien-hanh-dat-hang">
+              <span className="tien-hanh-dat-hang">Tiến hành đặt hàng</span>
+              <div className="rectangle-f" />
+            </button>
+          </a>
           <div className="rectangle-10" />
         </div>
         <div className="san-pham-co-the-thich">
@@ -666,11 +667,11 @@ export default function CartResponsive() {
             <div className="vector-131" />
           </div>
         </div>
-        <div className="rectangle-132">
+        <a href="/contacts" className="rectangle-132">
           <div className="phone">
             <div className="vector-133" />
           </div>
-        </div>
+        </a>
       </div>
       <div className="home-indicator">
         <div className="rectangle-134" />

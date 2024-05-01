@@ -1,5 +1,4 @@
-import React from 'react';
-import './index.css';
+import "./index.css";
 
 export default function ContactsResponsive() {
   return (
@@ -10,7 +9,7 @@ export default function ContactsResponsive() {
             Ra mắt 365 Simple Back to school!
           </span>
           <span className="buy-now">Mua ngay</span>
-          <span className="back-to-school-2">{' ->'}</span>
+          <span className="back-to-school-2">{" ->"}</span>
         </div>
         <div className="rectangle-3">
           <div className="asset" />
@@ -192,20 +191,20 @@ export default function ContactsResponsive() {
         <div className="rectangle-26" />
       </div>
       <div className="rectangle-27">
-        <div className="rectangle-28">
+        <a href="/" className="rectangle-28">
           <div className="home-div" />
-        </div>
-        <div className="rectangle-29">
+        </a>
+        <a href="/cart" className="rectangle-29">
           <div className="archive-div" />
-        </div>
+        </a>
         <div className="rectangle-2a">
           <div className="clock-div" />
         </div>
-        <div className="rectangle-2b">
+        <a href="/favorite" className="rectangle-2b">
           <div className="heart-div">
             <div className="vector-div" />
           </div>
-        </div>
+        </a>
         <div className="rectangle-2c">
           <div className="phone-div">
             <div className="vector-div-2d" />
