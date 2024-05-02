@@ -147,6 +147,20 @@
   padding: 7px 10px;
 }
 
+.delivering {
+  background-color: rgba(132, 150, 22, 1);
+  color: white;
+  text-align: center;
+  padding: 7px 10px;
+}
+
+.waiting {
+  background-color: rgba(224, 192, 23, 1);
+  color: white;
+  text-align: center;
+  padding: 7px 10px;
+}
+
 .cancel22 {
   color: white;
   text-align: center;
@@ -157,7 +171,7 @@
 .success22 {
   color: white;
   text-align: center;
-  background-color: rgba(15, 208, 34, 1);
+  background-color: rgba(151, 210, 156, 1);
   padding: 7px 10px;
 }
 

@@ -137,15 +137,12 @@ export default function LoginAdmin() {
               <p className={`${styles.buyer} ${styles.buyer1}`}>{d.buyer}</p>
               <p className={`${styles.stock} ${styles.stock1}`}>{d.stock}</p>
               <p
-                className={`${styles.status} ${styles.status1} ${
-                  "Chờ vận chuyển" === d.status && styles.status1Red
-                } ${
-                  ["Chờ lấy hàng", "Đang vận chuyển", "Chờ xác nhận"].includes(
+                className={`${styles.status} ${styles.status1} ${"Chờ vận chuyển" === d.status && styles.status1Red
+                  } ${["Chờ xác nhận"].includes(
                     d.status
                   ) && styles.status1Red
-                } ${"Đã hủy" === d.status && styles.cancel22} ${
-                  "Hoàn thành" === d.status && styles.success22
-                }`}
+                  } ${"Đã hủy" === d.status && styles.cancel22} ${"Hoàn thành" === d.status && styles.success22
+                  } ${"Đang vận chuyển" === d.status && styles.delivering} ${"Chờ lấy hàng" === d.status && styles.waiting}`}
               >
                 {d.status}
               </p>
@@ -182,6 +179,6 @@ export default function LoginAdmin() {
           </div>
         </div>
       </div>
-    </AdminLayout>
+    </AdminLayout >
   );
 }

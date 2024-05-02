@@ -58,3 +58,8 @@ input {
   outline: none;
   border: none;
 }
+
+
+div.ant-popover-content div.ant-popconfirm-buttons .ant-btn-primary.ant-btn-sm {
+  background-color: blue;
+}
