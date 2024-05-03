@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 export default function CartPaymentResponsive() {
   const [toggle, setToggle] = useState(false);
@@ -307,6 +308,8 @@ export default function CartPaymentResponsive() {
           </span>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }

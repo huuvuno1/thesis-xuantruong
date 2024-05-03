@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 export default function CartCompleteResponsive() {
   const [toggle, setToggle] = useState(false);
@@ -213,6 +214,8 @@ export default function CartCompleteResponsive() {
           <div className="rectangle-27" />
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }

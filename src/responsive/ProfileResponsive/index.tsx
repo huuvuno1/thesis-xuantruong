@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 export default function ProfileResponsive() {
   const [toggle, setToggle] = useState(false);
@@ -290,6 +291,8 @@ export default function ProfileResponsive() {
           <div className="rectangle-47" />
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }

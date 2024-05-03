@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 export default function RecentViewResponsive() {
   const [toggle, setToggle] = useState(false);
@@ -507,6 +508,8 @@ export default function RecentViewResponsive() {
           <div className="rectangle-9b" />
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }

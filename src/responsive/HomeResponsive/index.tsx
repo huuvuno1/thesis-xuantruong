@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import './index.css';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 export default function HomeResponsive() {
   const [toggle, setToggle] = useState(false);
@@ -697,32 +698,7 @@ export default function HomeResponsive() {
             Giấy phép kinh doanh lữ hành quốc tế số: 01-1761/2023/TCDL-GP LHQT
           </span>
         </div>
-        <div className="flex-row-b-136">
-          <div className="rectangle-137">
-            <div className="rectangle-138">
-              <div className="home" />
-            </div>
-            <div className="rectangle-139">
-              <div className="archive" />
-            </div>
-            <div className="rectangle-13a">
-              <div className="clock" />
-            </div>
-            <div className="rectangle-13b">
-              <div className="heart-13c">
-                <div className="vector-13d" />
-              </div>
-            </div>
-            <div className="rectangle-13e">
-              <div className="phone">
-                <div className="vector-13f" />
-              </div>
-            </div>
-          </div>
-          <div className="home-indicator-on-light">
-            <div className="rectangle-140" />
-          </div>
-        </div>
+
         <div className="flex-row-c-141">
           <div className="banner">
             <div className="rectangle-142" />
@@ -787,6 +763,8 @@ export default function HomeResponsive() {
         </div>
         {/* <FooterMobile /> */}
       </div>
+
+      <Footer />
     </>
   );
 }

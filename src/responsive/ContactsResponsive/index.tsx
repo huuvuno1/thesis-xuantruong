@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './index.css';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 export default function ContactsResponsive() {
   const [toggle, setToggle] = useState(false);
@@ -227,6 +228,8 @@ export default function ContactsResponsive() {
           <div className="rectangle-2e" />
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 export default function IntroResponsive() {
   const [toggle, setToggle] = useState(false);
@@ -301,6 +302,8 @@ export default function IntroResponsive() {
           <div className="rectangle-24" />
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }

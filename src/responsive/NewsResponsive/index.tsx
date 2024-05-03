@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 export default function NewsResponsive() {
   const [toggle, setToggle] = useState(false);
@@ -307,6 +308,8 @@ export default function NewsResponsive() {
           <div className="rectangle-51" />
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }

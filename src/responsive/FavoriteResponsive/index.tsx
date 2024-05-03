@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './index.css';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 export default function FavoriteResponsive() {
   const [toggle, setToggle] = useState(false);
@@ -543,6 +544,8 @@ export default function FavoriteResponsive() {
           <div className="section-2a" />
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }

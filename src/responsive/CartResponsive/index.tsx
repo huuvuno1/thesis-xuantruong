@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './index.css';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 export default function CartResponsive() {
   const [toggle, setToggle] = useState(false);
@@ -693,6 +694,8 @@ export default function CartResponsive() {
           <div className="rectangle-134" />
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }

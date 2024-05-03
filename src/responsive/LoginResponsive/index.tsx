@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import './index.css';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 const LoginResponsive = () => {
   const [toggle, setToggle] = useState(false);
@@ -91,6 +92,8 @@ const LoginResponsive = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };

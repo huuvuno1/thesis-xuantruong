@@ -2,6 +2,7 @@ import { toast } from 'react-toastify';
 import './index.css';
 import { useState } from 'react';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 export default function ProductDetailResponsive() {
   const notify = () =>
@@ -599,6 +600,8 @@ export default function ProductDetailResponsive() {
           </div>
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }

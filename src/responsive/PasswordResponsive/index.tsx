@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 export default function PasswordResponsive() {
   const [toggle, setToggle] = useState(false);
@@ -255,6 +256,8 @@ export default function PasswordResponsive() {
           <div className="rectangle-33" />
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }

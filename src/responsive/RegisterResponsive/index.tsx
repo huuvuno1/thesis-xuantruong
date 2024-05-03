@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './index.css';
 import NavBar from '../NavBar';
+import Footer from '../Footer';
 
 export default function RegisterResponsive() {
   const [toggle, setToggle] = useState(false);
@@ -116,6 +117,8 @@ export default function RegisterResponsive() {
           <div className="rectangle-1c" />
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }
