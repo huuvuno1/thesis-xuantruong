@@ -1,15 +1,15 @@
 'use client';
 
 import { useState } from 'react';
-import './index.css';
-import NavBar from '../NavBar';
 import Footer from '../Footer';
+import NavBar from '../NavBar';
+import './index.css';
 
 export default function HomeResponsive() {
   const [toggle, setToggle] = useState(false);
   return (
     <>
-      {toggle && <NavBar />}
+      <NavBar open={toggle} onClose={() => setToggle(false)} />
 
       <div className="main-container">
         <div className="rectangle">
@@ -29,10 +29,13 @@ export default function HomeResponsive() {
               <div className="vector-4" />
               <div className="vector-5" />
             </div>
-            <div className="cart">
+            <a href='/auth/login' className="account">
+              <div className="vector-69" />
+            </a>
+            <a href="/cart" className="cart">
               <div className="vector-6" />
               <div className="vector-7" />
-            </div>
+            </a>
             <div className="search" />
             <div className="ellipse" />
             <span className="count">5</span>
@@ -274,7 +277,7 @@ export default function HomeResponsive() {
                 <div className="star-77" />
               </div>
               <span className="simple-78">Simple</span>
-              <div className="mobile-chon-mau-ao-79">
+              <a href='/product-detail' className="mobile-chon-mau-ao-79">
                 <div className="flex-row-dbbc">
                   <div className="chon-mau-7a">
                     <div className="rectangle-7b" />
@@ -291,7 +294,7 @@ export default function HomeResponsive() {
                   <span className="day-dan-xanh-reu-81">Dày dặn/ Xanh rêu</span>
                   <span className="text-3c">299.000đ</span>
                 </div>
-              </div>
+              </a>
               <div className="heart-82">
                 <div className="vector-83" />
               </div>
@@ -441,13 +444,13 @@ export default function HomeResponsive() {
               <div className="chon-mau-d9">
                 <div className="rectangle-da" />
               </div>
-              <div className="mo-ta-db">
+              <a href='/product-detail' className="mo-ta-db">
                 <span className="ao-so-mi-nam-basics-dc">
                   Áo Sơ mi Nam Basics
                 </span>
                 <span className="day-dan-xanh-reu-dd">Dày dặn/ Xanh rêu</span>
                 <span className="price-de">299.000đ</span>
-              </div>
+              </a>
               <div className="heart-df">
                 <div className="vector-e0" />
               </div>

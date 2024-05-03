@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import './index.css';
-import NavBar from '../NavBar';
+import { useState } from 'react';
 import Footer from '../Footer';
+import NavBar from '../NavBar';
+import './index.css';
 
 export default function CartCompleteResponsive() {
   const [toggle, setToggle] = useState(false);
   return (
     <>
-      {toggle && <NavBar />}
+      <NavBar open={toggle} onClose={() => setToggle(false)} />
 
       <div className="main-container">
         <div className="rectangle">
@@ -25,13 +25,13 @@ export default function CartCompleteResponsive() {
               <div className="vector-3" />
               <div className="vector-4" />
             </div>
-            <div className="account">
+            <a href='/auth/login' className="account">
               <div className="vector-5" />
-            </div>
-            <div className="cart">
+            </a>
+            <a href="/cart" className="cart">
               <div className="vector-6" />
               <div className="vector-7" />
-            </div>
+            </a>
             <div className="search" />
             <div className="ellipse" />
             <span className="number-5">5</span>
@@ -63,10 +63,12 @@ export default function CartCompleteResponsive() {
               Thanh toán khi nhận hàng
             </span>
           </div>
-          <button className="button-quay-lai">
-            <span className="quay-lai-trang-chu">Quay lại trang chủ</span>
-            <div className="rectangle-b" />
-          </button>
+          <a href="/">
+            <button className="button-quay-lai">
+              <span className="quay-lai-trang-chu">Quay lại trang chủ</span>
+              <div className="rectangle-b" />
+            </button>
+          </a>
           <span className="tien-hanh-dat-hang">Tiến hành đặt hàng</span>
           <div className="footer">
             <div className="footer-c">

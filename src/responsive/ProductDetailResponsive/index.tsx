@@ -1,8 +1,8 @@
-import { toast } from 'react-toastify';
-import './index.css';
 import { useState } from 'react';
-import NavBar from '../NavBar';
+import { toast } from 'react-toastify';
 import Footer from '../Footer';
+import NavBar from '../NavBar';
+import './index.css';
 
 export default function ProductDetailResponsive() {
   const notify = () =>
@@ -17,7 +17,7 @@ export default function ProductDetailResponsive() {
   const [toggle, setToggle] = useState(false);
   return (
     <>
-      {toggle && <NavBar />}
+      <NavBar open={toggle} onClose={() => setToggle(false)} />
 
       <div className="main-container">
         <div className="rectangle">
@@ -37,13 +37,13 @@ export default function ProductDetailResponsive() {
               <div className="vector-3" />
               <div className="vector-4" />
             </div>
-            <div className="account">
+            <a href='/auth/login' className="account">
               <div className="vector-5" />
-            </div>
-            <div className="cart">
+            </a>
+            <a href="/cart" className="cart">
               <div className="vector-6" />
               <div className="vector-7" />
-            </div>
+            </a>
             <div className="search" />
             <div className="ellipse" />
             <span className="number">5</span>

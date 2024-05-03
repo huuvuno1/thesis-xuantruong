@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import './index.css';
-import NavBar from '../NavBar';
+import { useState } from 'react';
 import Footer from '../Footer';
+import NavBar from '../NavBar';
+import './index.css';
 
 export default function ProfileResponsive() {
   const [toggle, setToggle] = useState(false);
 
   return (
     <>
-      {toggle && <NavBar />}
+      <NavBar open={toggle} onClose={() => setToggle(false)} />
 
       <div className="main-container">
         <div className="rectangle">
@@ -26,9 +26,9 @@ export default function ProfileResponsive() {
               <div className="vector-4" />
               <div className="vector-5" />
             </div>
-            <div className="account">
+            <a href="/auth/login" className="account">
               <div className="vector-6" />
-            </div>
+            </a>
             <div className="cart">
               <div className="vector-7" />
               <div className="vector-8" />

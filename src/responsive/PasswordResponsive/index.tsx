@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import './index.css';
-import NavBar from '../NavBar';
+import { useState } from 'react';
 import Footer from '../Footer';
+import NavBar from '../NavBar';
+import './index.css';
 
 export default function PasswordResponsive() {
   const [toggle, setToggle] = useState(false);
 
   return (
     <>
-      {toggle && <NavBar />}
+      <NavBar open={toggle} onClose={() => setToggle(false)} />
 
       <div className="main-container">
         <div className="rectangle">
@@ -26,13 +26,13 @@ export default function PasswordResponsive() {
               <div className="vector-3" />
               <div className="vector-4" />
             </div>
-            <div className="account">
+            <a href='/auth/login' className="account">
               <div className="vector-5" />
-            </div>
-            <div className="cart">
+            </a>
+            <a href="/cart" className="cart">
               <div className="vector-6" />
               <div className="vector-7" />
-            </div>
+            </a>
             <div className="search" />
             <div className="ellipse" />
             <span className="number">5</span>

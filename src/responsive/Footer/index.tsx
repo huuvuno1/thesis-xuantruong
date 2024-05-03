@@ -1,4 +1,3 @@
-import React from 'react';
 import './index.css';
 
 export default function Footer() {
@@ -54,7 +53,8 @@ export default function Footer() {
             }}
           />
         </div>
-        <div
+        <a
+          href='/products'
           style={{
             width: '40px',
             height: '36px',
@@ -80,8 +80,9 @@ export default function Footer() {
               margin: '6px 0 0 8.306px',
             }}
           />
-        </div>
-        <div
+        </a>
+        <a
+          href='/recent-view'
           style={{
             width: '40px',
             height: '36px',
@@ -92,8 +93,7 @@ export default function Footer() {
             zIndex: '14',
           }}
         >
-          <a
-            href="/"
+          <div
             style={{
               width: '24px',
               height: '24px',
@@ -109,8 +109,8 @@ export default function Footer() {
               display: 'block',
             }}
           />
-        </div>
-        <div
+        </a>
+        <a href='/favorite'
           style={{
             width: '40px',
             height: '36px',
@@ -146,7 +146,7 @@ export default function Footer() {
               }}
             />
           </div>
-        </div>
+        </a>
         <div
           style={{
             width: '40px',

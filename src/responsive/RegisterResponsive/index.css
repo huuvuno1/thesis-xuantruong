@@ -688,7 +688,7 @@ button {
   display: block;
   position: relative;
   height: 18px;
-  margin: 19px 0 0 168px;
+  margin: 0px 0 0 168px;
   color: #fff6f6;
   font-family: Exo, var(--default-font-family);
   font-size: 14px;

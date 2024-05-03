@@ -1,16 +1,18 @@
 import { useState } from 'react';
-import './index.css';
-import NavBar from '../NavBar';
 import Footer from '../Footer';
+import NavBar from '../NavBar';
+import './index.css';
 
 export default function RegisterResponsive() {
   const [toggle, setToggle] = useState(false);
 
   return (
     <>
-      {toggle && <NavBar />}
+      <NavBar open={toggle} onClose={() => setToggle(false)} />
 
-      <div className="main-container">
+      <div className="main-container" style={{
+        height: 950
+      }}>
         <div className="rectangle">
           <div className="back-to-school">
             <span className="back-to-school-1">
@@ -26,9 +28,9 @@ export default function RegisterResponsive() {
               <div className="vector-4" />
               <div className="vector-5" />
             </div>
-            <div className="account">
+            <a href="/auth/login" className="account">
               <div className="vector-6" />
-            </div>
+            </a>
             <div className="cart">
               <div className="vector-7" />
               <div className="vector-8" />
@@ -51,7 +53,9 @@ export default function RegisterResponsive() {
             <div className="rectangle-9" />
             <div className="rectangle-a" />
           </div>
-          <div className="thog-tin">
+          <div className="thog-tin" style={{
+            overflow: 'hidden'
+          }}>
             <div className="group">
               <span className="or">Hoặc</span>
               <div className="line" />
@@ -89,30 +93,13 @@ export default function RegisterResponsive() {
               <span className="dang-ky-11">Đăng ký</span>
               <div className="rectangle-12" />
             </button>
-            <span className="dang-nhap-13">Đăng nhập</span>
+            <a href='/auth/login' className="dang-nhap-13" style={{
+              height: 22,
+              marginTop: 0
+            }}>Đăng nhập</a>
           </div>
         </div>
-        <div className="rectangle-14">
-          <div className="rectangle-15">
-            <div className="home" />
-          </div>
-          <div className="rectangle-16">
-            <div className="archive" />
-          </div>
-          <div className="rectangle-17">
-            <div className="clock" />
-          </div>
-          <div className="rectangle-18">
-            <div className="heart">
-              <div className="vector-19" />
-            </div>
-          </div>
-          <div className="rectangle-1a">
-            <div className="phone">
-              <div className="vector-1b" />
-            </div>
-          </div>
-        </div>
+
         <div className="home-indicator">
           <div className="rectangle-1c" />
         </div>

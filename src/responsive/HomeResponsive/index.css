@@ -27,6 +27,26 @@ button {
   outline: 0;
 }
 
+.account {
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  top: 8px;
+  left: 342px;
+  z-index: 459;
+  overflow: hidden;
+}
+.vector-69 {
+  position: relative;
+  width: 20.667px;
+  height: 20.667px;
+  margin: 5.167px 0 0 5.167px;
+  background: url(./user.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 460;
+}
+
 .main-container {
   position: relative;
   max-width: 428px;

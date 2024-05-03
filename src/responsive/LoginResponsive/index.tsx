@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-import './index.css';
-import NavBar from '../NavBar';
 import Footer from '../Footer';
+import NavBar from '../NavBar';
+import './index.css';
 
 const LoginResponsive = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
     <>
-      {toggle && <NavBar />}
+      <NavBar open={toggle} onClose={() => setToggle(false)} />
 
       <div className="main-container">
         <div className="rectangle">
@@ -27,9 +27,9 @@ const LoginResponsive = () => {
               <div className="vector-4" />
               <div className="vector-5" />
             </div>
-            <div className="account">
+            <a href="/auth/login" className="account">
               <div className="vector-6" />
-            </div>
+            </a>
             <div className="cart">
               <div className="vector-7" />
               <div className="vector-8" />
@@ -61,11 +61,11 @@ const LoginResponsive = () => {
         <div className="rectangle-c">
           <input className="mkhau-input" placeholder="Mật khẩu" />
         </div>
-        <div className="rectangle-d">
+        <a href='/' className="rectangle-d">
           <span className="dang-nhap">Đăng nhập</span>
-        </div>
+        </a>
         <div className="flex-row-a">
-          <span className="dang-ky-tai-khoan-moi">Đăng ký tài khoản mới</span>
+          <a href='/auth/register' className="dang-ky-tai-khoan-moi">Đăng ký tài khoản mới</a>
           <span className="quen-mat-khau">Quên mật khẩu ?</span>
         </div>
         <div className="flex-row">
