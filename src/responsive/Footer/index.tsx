@@ -18,7 +18,7 @@ export default function Footer() {
           height: '69px',
 
           position: 'absolute',
-          top: '0',
+          top: 10,
           left: '6px',
           zIndex: '2',
         }}
@@ -185,7 +185,7 @@ export default function Footer() {
           </div>
         </a>
       </div>
-      <div
+      {/* <div
         style={{
           width: '437.222px',
           height: '34.733px',
@@ -207,7 +207,7 @@ export default function Footer() {
             margin: '16px 0 0 158px',
           }}
         />
-      </div>
+      </div> */}
     </div>
   );
 }
