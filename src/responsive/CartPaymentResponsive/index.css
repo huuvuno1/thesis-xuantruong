@@ -111,6 +111,7 @@ button {
   letter-spacing: -0.2px;
 }
 .mua-ngay {
+  margin-left: 5px;
   position: relative;
   color: #000000;
   font-family: Exo, var(--default-font-family);

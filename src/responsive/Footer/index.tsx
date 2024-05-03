@@ -147,7 +147,7 @@ export default function Footer() {
             />
           </div>
         </a>
-        <div
+        <a href='/contacts'
           style={{
             width: '40px',
             height: '36px',
@@ -183,7 +183,7 @@ export default function Footer() {
               }}
             />
           </div>
-        </div>
+        </a>
       </div>
       <div
         style={{

@@ -112,6 +112,8 @@ button {
 }
 .mua-ngay {
   position: relative;
+  margin-left: 5px;
+
   color: #000000;
   font-family: Exo, var(--default-font-family);
   font-size: 12px;

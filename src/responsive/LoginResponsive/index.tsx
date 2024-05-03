@@ -30,10 +30,10 @@ const LoginResponsive = () => {
             <a href="/auth/login" className="account">
               <div className="vector-6" />
             </a>
-            <div className="cart">
+            <a href='/cart' className="cart">
               <div className="vector-7" />
               <div className="vector-8" />
-            </div>
+            </a>
             <div className="search" />
             <div className="ellipse" />
             <span className="number">5</span>

@@ -116,6 +116,8 @@ button {
   font-family: Exo, var(--default-font-family);
   font-size: 12px;
   font-weight: 500;
+  margin-left: 5px;
+
   line-height: 15.948px;
   text-align: center;
   text-decoration: underline;

@@ -16,7 +16,7 @@ export default function NavBar({ open = false, onClose = () => { } }) {
           <a href="/intro" className="rectanglee">
             <span className="tin-tucc">Giới thiệu</span>
           </a>
-          <a href="/contants" className="rectangle-33">
+          <a href="/contacts" className="rectangle-3333">
             <span className="lien-hee">Liên hệ</span>
           </a>
           <div className="linee" />
