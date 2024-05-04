@@ -10,502 +10,418 @@ export default function RecentViewResponsive() {
     <>
       <NavBar open={toggle} onClose={() => setToggle(false)} />
 
-      <div className="main-container">
-        <div className="rectangle">
-          <div className="ra-mat">
-            <span className="ra-mat-mua-ngay">
-              Ra mắt 365 Simple Back to school!
+      <div className='main-container'>
+        <div className='flex-row-ca'>
+          <div className='rectangle'>
+            <div className='ra-mat'>
+              <span className='ra-mat-simple-back'>
+                Ra mắt 365 Simple Back to school!
+              </span>
+              <span className='mua-ngay'>Mua ngay</span>
+              <span className='ra-mat-simple-back-1'> -></span>
+            </div>
+            <div className='rectangle-2'>
+              <div className='asset' />
+              <div className='align-left' onClick={() => setToggle(true)}>
+                <div className='vector' />
+                <div className='vector-3' />
+                <div className='vector-4' />
+              </div>
+              <a href='/auth/login' className='account'>
+                <div className='vector-5' />
+              </a>
+              <a href='/cart' className='cart'>
+                <div className='vector-6' />
+                <div className='vector-7' />
+              </a>
+              <div className='search' />
+              <div className='ellipse' />
+              <span className='number'>5</span>
+            </div>
+          </div>
+          <span className='trang-chu'>Trang chủ</span>
+          <span className='san-pham-vua-xem'>/ Sản phẩm vừa xem</span>
+        </div>
+        <div className='spham-moi'>
+          <a href='/product-detail' className='hover-san-pham'>
+            <div className='rectangle-8' />
+            <div className='image' />
+            <button className='tag-new'>
+              <span className='new'>New</span>
+              <div className='rectangle-9' />
+            </button>
+            <div className='danh-gia-sao'>
+              <span className='number-a'>4</span>
+              <div className='star' />
+            </div>
+            <span className='simple'>Simple</span>
+            <div className='mobile-chon-mau'>
+              <div className='flex-row-ba'>
+                <div className='chon-mau'>
+                  <div className='rectangle-b' />
+                </div>
+                <div className='chon-mau-c' />
+                <div className='chon-mau-d'>
+                  <div className='rectangle-e' />
+                </div>
+              </div>
+              <div className='mo-ta'>
+                <span className='ao-so-mi-nam'>Áo Sơ mi Nam Basics</span>
+                <span className='day-dan-xanh-reu'>Dày dặn/ Xanh rêu</span>
+                <span className='price'>299.000đ</span>
+              </div>
+            </div>
+            <div className='heart'>
+              <div className='vector-f' />
+            </div>
+          </a>
+          <a href='/product-detail' className='hover-san-pham-10'>
+            <span className='simple-11'>Simple</span>
+            <div className='rectangle-12' />
+            <div className='hover-san-pham-13'>
+              <div className='rectangle-14' />
+              <div className='image-15' />
+              <div className='image-16' />
+              <div className='sale'>
+                <div className='flex-column'>
+                  <div className='tag-new-17'>
+                    <div className='sale-18'>
+                      <span className='sale-19'>Sale</span>
+                      <div className='rectangle-1a' />
+                    </div>
+                  </div>
+                  <span className='percent'>-50%</span>
+                </div>
+                <span className='price-1b'>550.000đ</span>
+              </div>
+              <div className='tag-new-1c'>
+                <span className='new-1d'>New</span>
+                <div className='rectangle-1e' />
+              </div>
+              <div className='rating-star'>
+                <span className='rating-number'>4</span>
+                <div className='star-1f' />
+              </div>
+              <span className='simple-20'>Simple</span>
+              <div className='color-selection-mobile'>
+                <div className='flex-row'>
+                  <div className='color-selection'>
+                    <div className='rectangle-21' />
+                  </div>
+                  <div className='color-selection-22' />
+                  <div className='color-selection-23'>
+                    <div className='rectangle-24' />
+                  </div>
+                </div>
+                <div className='description'>
+                  <span className='product-name'>Áo Sơ mi Nam Basics</span>
+                  <span className='product-details'>Dày dặn/ Xanh rêu</span>
+                  <span className='product-price'>299.000đ</span>
+                </div>
+              </div>
+              <div className='heart-25'>
+                <div className='vector-26' />
+              </div>
+            </div>
+            <div className='tag-new-27'>
+              <button className='new-28' />
+              <div className='rectangle-29' />
+            </div>
+            <div className='rating-star-2a'>
+              <span className='rating-number-2b'>4</span>
+              <div className='star-2c' />
+            </div>
+            <div className='color-selection-2d' />
+            <div className='color-selection-2e'>
+              <div className='rectangle-2f' />
+            </div>
+            <div className='color-selection-30'>
+              <div className='rectangle-31' />
+            </div>
+            <div className='description-32'>
+              <span className='product-name-33'>Áo Sơ mi Nam Basics</span>
+              <span className='product-details-34'>Dày dặn/ Xanh rêu</span>
+              <span className='product-price-35'>299.000đ</span>
+            </div>
+            <div className='heart-36'>
+              <div className='vector-37' />
+            </div>
+          </a>
+        </div>
+        <div className='new-product'>
+          <a href='/product-detail' className='hover-product'>
+            <div className='rectangle-38' />
+            <div className='image-39' />
+            <div className='sale-3a'>
+              <div className='column-layout'>
+                <button className='tag-new-3b'>
+                  <div className='sale-3c'>
+                    <span className='sale-3d'>Sale</span>
+                    <div className='rectangle-3e' />
+                  </div>
+                </button>
+                <span className='percent-3f'>-50%</span>
+              </div>
+              <span className='price-40'>550.000đ</span>
+            </div>
+            <div className='tag-new-41'>
+              <span className='new-42'>New</span>
+              <div className='rectangle-43' />
+            </div>
+            <div className='rating-star-44'>
+              <span className='rating-number-45'>4</span>
+              <div className='star-46' />
+            </div>
+            <span className='simple-47'>Simple</span>
+            <div className='mobile-choose-color'>
+              <div className='flex-row-48'>
+                <div className='choose-color'>
+                  <div className='rectangle-49' />
+                </div>
+                <div className='choose-color-4a' />
+                <div className='choose-color-4b'>
+                  <div className='rectangle-4c' />
+                </div>
+              </div>
+              <div className='description-4d'>
+                <span className='ao-so-mi-nam-basics'>Áo Sơ mi Nam Basics</span>
+                <span className='day-dan-xanh-reu-4e'>Dày dặn/ Xanh rêu</span>
+                <span className='price-4f'>299.000đ</span>
+              </div>
+            </div>
+            <div className='heart-50'>
+              <div className='vector-51' />
+            </div>
+            <div className='heart-52'>
+              <div className='vector-53' />
+            </div>
+          </a>
+          <a href='/product-detail' className='hover-product-ao-so-mi'>
+            <span className='simple-54'>Simple</span>
+            <div className='rectangle-55' />
+            <div className='hover-product-ao-so-mi-56'>
+              <div className='rectangle-57' />
+              <div className='image-58' />
+              <div className='image-59' />
+              <div className='tag-new-5a'>
+                <span className='new-5b'>New</span>
+                <div className='rectangle-5c' />
+              </div>
+              <div className='rating-stars'>
+                <span className='text-26'>4</span>
+                <div className='star-5d' />
+              </div>
+              <span className='simple-5e'>Simple</span>
+              <div className='mobile-choose-color-5f'>
+                <div className='flex-row-dd'>
+                  <div className='choose-color-60'>
+                    <div className='rectangle-61' />
+                  </div>
+                  <div className='choose-color-62' />
+                  <div className='choose-color-63'>
+                    <div className='rectangle-64' />
+                  </div>
+                </div>
+                <div className='description-65'>
+                  <span className='ao-so-mi-nam-basics-66'>
+                    Áo Sơ mi Nam Basics
+                  </span>
+                  <span className='day-dan-xanh-reu-67'>Dày dặn/ Xanh rêu</span>
+                  <span className='price-68'>299.000đ</span>
+                </div>
+              </div>
+              <div className='heart-69'>
+                <div className='vector-6a' />
+              </div>
+              <div className='heart-6b'>
+                <div className='vector-6c' />
+              </div>
+            </div>
+            <div className='tag-new-6d'>
+              <span className='new-6e'>New</span>
+              <div className='rectangle-6f' />
+            </div>
+            <div className='rating-stars-70'>
+              <span className='text-2c'>4</span>
+              <div className='star-71' />
+            </div>
+            <div className='choose-color-72' />
+            <div className='choose-color-73'>
+              <div className='rectangle-74' />
+            </div>
+            <div className='choose-color-75'>
+              <div className='rectangle-76' />
+            </div>
+            <div className='description-77'>
+              <span className='ao-so-mi-nam-basics-78'>Áo Sơ mi Nam Basics</span>
+              <span className='day-dan-xanh-reu-79'>Dày dặn/ Xanh rêu</span>
+              <span className='price-7a'>299.000đ</span>
+            </div>
+            <div className='heart-7b'>
+              <div className='vector-7c' />
+            </div>
+          </a>
+        </div>
+        <div className='new-product-7d'>
+          <a href='/product-detail' className='hover-product-ao-so-mi-7e'>
+            <div className='rectangle-7f' />
+            <div className='image-80' />
+            <div className='sale-81'>
+              <div className='flex-column-ed'>
+                <div className='tag-new-82'>
+                  <div className='sale-83'>
+                    <span className='sale-84'>Sale</span>
+                    <div className='rectangle-85' />
+                  </div>
+                </div>
+                <span className='discount'>-50%</span>
+              </div>
+              <span className='price-86'>550.000đ</span>
+            </div>
+            <div className='tag-new-87'>
+              <span className='new-88'>New</span>
+              <div className='rectangle-89' />
+            </div>
+            <div className='rating-stars-8a'>
+              <span className='rating'>4</span>
+              <div className='star-8b' />
+            </div>
+            <span className='simple-8c'>Simple</span>
+            <div className='mobile-color-selection'>
+              <div className='color-selection-8d'>
+                <div className='color-selection-8e'>
+                  <div className='rectangle-8f' />
+                </div>
+                <div className='color-selection-90' />
+                <div className='color-selection-91'>
+                  <div className='rectangle-92' />
+                </div>
+              </div>
+              <div className='description-93'>
+                <span className='ao-so-mi-nam-basics-94'>
+                  Áo Sơ mi Nam Basics
+                </span>
+                <span className='day-dan-xanh-reu-95'>Dày dặn/ Xanh rêu</span>
+                <span className='price-96'>299.000đ</span>
+              </div>
+            </div>
+            <div className='heart-97'>
+              <div className='vector-98' />
+            </div>
+          </a>
+          <a href='/product-detail' className='hover-product-ao-so-mi-99'>
+            <div className='rectangle-9a' />
+            <div className='image-9b' />
+            <div className='tag-new-9c'>
+              <span className='new-9d'>New</span>
+              <div className='rectangle-9e' />
+            </div>
+            <div className='rating-stars-9f'>
+              <span className='rating-a0'>4</span>
+              <div className='star-a1' />
+            </div>
+            <span className='simple-a2'>Simple</span>
+            <div className='color-selection-a3' />
+            <div className='color-selection-a4'>
+              <div className='rectangle-a5' />
+            </div>
+            <div className='color-selection-a6'>
+              <div className='rectangle-a7' />
+            </div>
+            <div className='description-a8'>
+              <span className='ao-so-mi-nam-basics-a9'>Áo Sơ mi Nam Basics</span>
+              <span className='day-dan-xanh-reu-aa'>Dày dặn/ Xanh rêu</span>
+              <span className='price-ab'>299.000đ</span>
+            </div>
+            <div className='heart-ac'>
+              <div className='vector-ad' />
+            </div>
+          </a>
+        </div>
+        <div className='line' />
+        <div className='rectangle-ae'>
+          <span className='xem-them'>XEM THÊM</span>
+        </div>
+        <div className='rectangle-af'>
+          <div className='simple-chon-don-gian-song-de-dang'>
+            <span className='text-40'>365 Simple </span>
+            <span className='chon-don-gian-song-de-dang'>
+              - Chọn đơn giản - Sống dễ dàng !
             </span>
-            <span className="mua-ngay">Mua ngay</span>
-            <span className="ra-mat-mua-ngay-1">{' ->'}</span>
           </div>
-          <div className="rectangle-2">
-            <div className="asset" />
-            <div className="align-left" onClick={() => setToggle(!toggle)}>
-              <div className="vector" />
-              <div className="vector-3" />
-              <div className="vector-4" />
-            </div>
-            <a href='/auth/login' className="account">
-              <div className="vector-5" />
-            </a>
-            <a href="/cart" className="cart">
-              <div className="vector-6" />
-              <div className="vector-7" />
-            </a>
-            <div className="search" />
-            <div className="ellipse" />
-            <span className="number">5</span>
+          <span className='feedback'>
+            Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ
+            khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn
+            nữa.
+          </span>
+          <div className='rectangle-b0'>
+            <span className='danh-gop-y-kien'>Đóng góp ý kiến</span>
           </div>
-        </div>
-        <div className="frame">
-          <div className="link">
-            <span className="san-pham-vua-xem">/ Sản phẩm vừa xem</span>
-            <span className="trang-chu">Trang chủ</span>
-          </div>
-          <div className="group">
-            <div className="san-pham-moi">
-              <div className="san-pham-moi-8">
-                <div className="hover-san-pham">
-                  <div className="rectangle-9" />
-                  <div className="image" />
-                  <button className="tag-new">
-                    <span className="new">New</span>
-                    <div className="rectangle-a" />
-                  </button>
-                  <div className="danh-gia-sao">
-                    <span className="number-b">4</span>
-                    <div className="star" />
-                  </div>
-                  <span className="simple">Simple</span>
-                  <div className="mobile-chon-mau">
-                    <div className="flex-row-df">
-                      <div className="chon-mau">
-                        <div className="rectangle-c" />
-                      </div>
-                      <div className="chon-mau-d" />
-                      <div className="chon-mau-e">
-                        <div className="rectangle-f" />
-                      </div>
-                    </div>
-                    <div className="mo-ta">
-                      <span className="ao-so-mi-nam">Áo Sơ mi Nam Basics</span>
-                      <span className="day-dan-xanh-reu">
-                        Dày dặn/ Xanh rêu
-                      </span>
-                      <span className="price">299.000đ</span>
-                    </div>
-                  </div>
-                  <div className="heart">
-                    <div className="vector-10" />
-                  </div>
-                </div>
-                <div className="hover-san-pham-11">
-                  <span className="simple-12">Simple</span>
-                  <div className="rectangle-13" />
-                  <div className="hover-san-pham-14">
-                    <div className="rectangle-15" />
-                    <div className="image-16" />
-                    <div className="image-17" />
-                    <div className="sale">
-                      <div className="flex-column">
-                        <button className="tag-new-18">
-                          <div className="sale-19">
-                            <span className="sale-1a">Sale</span>
-                            <div className="rectangle-1b" />
-                          </div>
-                        </button>
-                        <span className="percentage">-50%</span>
-                      </div>
-                      <span className="price-1c">550.000đ</span>
-                    </div>
-                    <div className="tag-new-1d">
-                      <span className="new-1e">New</span>
-                      <div className="rectangle-1f" />
-                    </div>
-                    <div className="star-rating">
-                      <span className="rating">4</span>
-                      <div className="star-20" />
-                    </div>
-                    <span className="simple-21">Simple</span>
-                    <div className="select-color-mobile">
-                      <div className="flex-row">
-                        <div className="select-color">
-                          <div className="rectangle-22" />
-                        </div>
-                        <div className="select-color-23" />
-                        <div className="select-color-24">
-                          <div className="rectangle-25" />
-                        </div>
-                      </div>
-                      <div className="description">
-                        <span className="shirt-basics">
-                          Áo Sơ mi Nam Basics
-                        </span>
-                        <span className="thick-green">Dày dặn/ Xanh rêu</span>
-                        <span className="price-26">299.000đ</span>
-                      </div>
-                    </div>
-                    <div className="heart-27">
-                      <div className="vector-28" />
-                    </div>
-                  </div>
-                  <div className="tag-new-29">
-                    <span className="new-2a">New</span>
-                    <div className="rectangle-2b" />
-                  </div>
-                  <div className="star-rating-2c">
-                    <span className="rating-2d">4</span>
-                    <div className="star-2e" />
-                  </div>
-                  <div className="select-color-2f" />
-                  <div className="select-color-30">
-                    <div className="rectangle-31" />
-                  </div>
-                  <div className="select-color-32">
-                    <div className="rectangle-33" />
-                  </div>
-                  <div className="description-34">
-                    <span className="shirt-basics-35">Áo Sơ mi Nam Basics</span>
-                    <span className="thick-green-36">Dày dặn/ Xanh rêu</span>
-                    <span className="price-37">299.000đ</span>
-                  </div>
-                  <div className="heart-38">
-                    <div className="vector-39" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="new-product">
-              <div className="new-product-3a">
-                <div className="hover-shirt-product">
-                  <div className="rectangle-3b" />
-                  <div className="image-3c" />
-                  <div className="sale-3d">
-                    <div className="flex-column-3e">
-                      <button className="tag-new-3f">
-                        <div className="sale-40">
-                          <span className="sale-41">Sale</span>
-                          <div className="rectangle-42" />
-                        </div>
-                      </button>
-                      <span className="percentage-43">-50%</span>
-                    </div>
-                    <span className="price-44">550.000đ</span>
-                  </div>
-                  <div className="tag-new-45">
-                    <span className="new-46">New</span>
-                    <div className="rectangle-47" />
-                  </div>
-                  <div className="star-rating-48">
-                    <span className="rating-49">4</span>
-                    <div className="star-4a" />
-                  </div>
-                  <span className="simple-4b">Simple</span>
-                  <div className="select-color-mobile-4c">
-                    <div className="flex-row-4d">
-                      <div className="select-color-4e">
-                        <div className="rectangle-4f" />
-                      </div>
-                      <div className="pic-d" />
-                      <div className="box-13">
-                        <div className="box-14" />
-                      </div>
-                    </div>
-                    <div className="group-12">
-                      <span className="text-23">Áo Sơ mi Nam Basics</span>
-                      <span className="text-24">Dày dặn/ Xanh rêu</span>
-                      <span className="text-25">299.000đ</span>
-                    </div>
-                  </div>
-                  <div className="box-15">
-                    <div className="pic-e" />
-                  </div>
-                  <div className="wrapper-f">
-                    <div className="img-d" />
-                  </div>
-                </div>
-                <div className="wrapper-10">
-                  <span className="text-26">Simple</span>
-                  <div className="wrapper-11" />
-                  <div className="wrapper-12">
-                    <div className="section-14" />
-                    <div className="pic-f" />
-                    <div className="img-e" />
-                    <div className="section-15">
-                      <span className="text-27">New</span>
-                      <div className="box-16" />
-                    </div>
-                    <div className="group-13">
-                      <span className="text-28">4</span>
-                      <div className="img-f" />
-                    </div>
-                    <span className="text-29">Simple</span>
-                    <div className="box-17">
-                      <div className="section-16">
-                        <div className="wrapper-13">
-                          <div className="section-17" />
-                        </div>
-                        <div className="pic-10" />
-                        <div className="wrapper-14">
-                          <div className="box-18" />
-                        </div>
-                      </div>
-                      <div className="section-18">
-                        <span className="text-2a">Áo Sơ mi Nam Basics</span>
-                        <span className="text-2b">Dày dặn/ Xanh rêu</span>
-                        <span className="text-2c">299.000đ</span>
-                      </div>
-                    </div>
-                    <div className="section-19">
-                      <div className="pic-11" />
-                    </div>
-                    <div className="group-14">
-                      <div className="pic-12" />
-                    </div>
-                  </div>
-                  <div className="group-15">
-                    <span className="text-2d">New</span>
-                    <div className="group-16" />
-                  </div>
-                  <div className="section-1a">
-                    <span className="text-2e">4</span>
-                    <div className="pic-13" />
-                  </div>
-                  <div className="img-10" />
-                  <div className="group-17">
-                    <div className="wrapper-15" />
-                  </div>
-                  <div className="section-1b">
-                    <div className="wrapper-16" />
-                  </div>
-                  <div className="section-1c">
-                    <span className="text-2f">Áo Sơ mi Nam Basics</span>
-                    <span className="text-30">Dày dặn/ Xanh rêu</span>
-                    <span className="text-31">299.000đ</span>
-                  </div>
-                  <div className="wrapper-17">
-                    <div className="pic-14" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="section-1d">
-              <div className="box-19">
-                <div className="box-1a">
-                  <div className="section-1e" />
-                  <div className="img-11" />
-                  <div className="section-1f">
-                    <div className="section-20">
-                      <div className="box-1b">
-                        <div className="sale-50">
-                          <span className="sale-51">Sale</span>
-                          <div className="rectangle-52" />
-                        </div>
-                      </div>
-                      <span className="percent">-50%</span>
-                    </div>
-                    <span className="price-53">550.000đ</span>
-                  </div>
-                  <div className="tag-new-54">
-                    <span className="new-55">New</span>
-                    <div className="rectangle-56" />
-                  </div>
-                  <div className="star-rating-57">
-                    <span className="star-58">4</span>
-                    <div className="simple-59" />
-                  </div>
-                  <span className="mobile-color-selection">Simple</span>
-                  <div className="flex-row-5a">
-                    <div className="color-selection">
-                      <div className="rectangle-5b">
-                        <div className="color-selection-5c" />
-                      </div>
-                      <div className="color-selection-5d" />
-                      <div className="rectangle-5e">
-                        <div className="description-5f" />
-                      </div>
-                    </div>
-                    <div className="product-details">
-                      <span className="product-name">Áo Sơ mi Nam Basics</span>
-                      <span className="product-color">Dày dặn/ Xanh rêu</span>
-                      <span className="product-price">299.000đ</span>
-                    </div>
-                  </div>
-                  <div className="heart-60">
-                    <div className="vector-61" />
-                  </div>
-                </div>
-                <div className="product-hover">
-                  <div className="rectangle-62" />
-                  <div className="image-63" />
-                  <div className="tag-new-64">
-                    <span className="rectangle-65">New</span>
-                    <div className="star-rating-66" />
-                  </div>
-                  <div className="star-67">
-                    <span className="simple-68">4</span>
-                    <div className="color-selection-69" />
-                  </div>
-                  <span className="color-selection-6a">Simple</span>
-                  <div className="rectangle-6b" />
-                  <div className="color-selection-6c">
-                    <div className="rectangle-6d" />
-                  </div>
-                  <div className="description-6e">
-                    <div className="product-details-6f" />
-                  </div>
-                  <div className="product-name-70">
-                    <span className="product-color-71">
-                      Áo Sơ mi Nam Basics
-                    </span>
-                    <span className="product-price-72">Dày dặn/ Xanh rêu</span>
-                    <span className="heart-73">299.000đ</span>
-                  </div>
-                  <div className="vector-74">
-                    <div className="view-more" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="line">
-              <div className="view-more-75" />
-              <div className="view-more-76">
-                <span className="rectangle-77">XEM THÊM</span>
-                <div className="footer" />
-              </div>
+          <div className='flex-row-b1'>
+            <span className='hotline'>Hotline</span>
+            <div className='phone-light'>
+              <div className='vector-b2' />
             </div>
           </div>
-          <div className="footer-78">
-            <div className="group-79">
-              <div className="simple-living">
-                <div className="group-1e">
-                  <span className="customer-feedback">365 Simple </span>
-                  <span className="customer-feedback-7a">
-                    - Chọn đơn giản - Sống dễ dàng !
-                  </span>
-                </div>
-                <span className="feedback-message">
-                  Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến
-                  đóng góp từ khách hàng để có thể nâng cấp trải nghiệm dịch vụ
-                  và sản phẩm tốt hơn nữa.
-                </span>
-              </div>
-              <div className="feedback-button">
-                <span className="feedback-button-7b">Đóng góp ý kiến</span>
-                <div className="rectangle-7c" />
-              </div>
-              <div className="hotline">
-                <div className="flex-column-7d">
-                  <span className="hotline-7e">Hotline</span>
-                  <span className="hotline-number">
-                    1900-100023 - 027.918.2981
-                  </span>
-                </div>
-                <div className="phone-light">
-                  <div className="vector-7f" />
-                </div>
-              </div>
-              <div className="email">
-                <div className="flex-column-dd">
-                  <span className="email-80">Email</span>
-                  <span className="simple-email">365simple@gmail.com</span>
-                </div>
-                <div className="mail-outline">
-                  <div className="vector-81" />
-                </div>
-              </div>
-              <div className="lien-he">
-                <div className="ig" />
-                <div className="youtube" />
-                <div className="whatsapp" />
-                <div className="facebook" />
-              </div>
-              <div className="rectangle-82" />
-              <div className="footer-83">
-                <div className="ndung-footer">
-                  <span className="dia-chi-lien-he">Địa chỉ liên hệ</span>
-                  <div className="line-84" />
-                  <div className="club">
-                    <span className="club-85">365 Club</span>
-                    <span className="dang-ky-thanh-vien">
-                      Đăng ký thành viên
-                    </span>
-                    <span className="uu-dai-doc-quyen">Ưu đãi & độc quyền</span>
-                  </div>
-                  <div className="chinh-sach">
-                    <span className="chinh-sach-86">Chính sách</span>
-                    <span className="dieu-khoan-dieu-kien">
-                      Điều khoản và điều kiện
-                    </span>
-                    <span className="chinh-sach-khuyen-mai">
-                      Chính sách khuyến mãi
-                    </span>
-                    <span className="chinh-sach-bao-mat">
-                      Chính sách bảo mật
-                    </span>
-                    <span className="chinh-sach-giao-hang">
-                      Chính sách giao hàng
-                    </span>
-                  </div>
-                  <div className="cham-soc-khach-hang">
-                    <span className="cham-soc-khach-hang-87">
-                      Chăm sóc khách hàng
-                    </span>
-                    <span className="trai-nghiem-mua-sam">
-                      Trải nghiệm mua sắm 100% hài lòng
-                    </span>
-                    <span className="hoi-dap-faqs">Hỏi đáp - FAQs</span>
-                  </div>
-                  <div className="kien-thuc-mac-dep">
-                    <span className="kien-thuc-mac-dep-88">
-                      Kiến thức mặc đẹp
-                    </span>
-                    <span className="huong-dan-chon-size">
-                      Hướng dẫn chọn size
-                    </span>
-                    <span className="blog">Blog</span>
-                    <span className="group-mac-don-gian-song-chat">
-                      Group mặc đơn giản sống chất
-                    </span>
-                  </div>
-                </div>
-                <div className="group-89">
-                  <div className="line-8a" />
-                  <span className="giay-phep-kinh-doanh">
-                    Giấy phép kinh doanh lữ hành quốc tế số:
-                    01-1761/2023/TCDL-GP LHQT
-                  </span>
-                  <div className="image-8b" />
-                  <span className="copyright">
-                    Copyright © 365 Simple Viet Nam
-                  </span>
-                </div>
-              </div>
-              <div className="co-so">
-                <span className="co-so-8c">
-                  Cơ sở 1: Số XXX Nguyễn Văn A, phường Cống Vị, quận Ba Đình,
-                  Thành phố Hà Nội
-                </span>
-                <div className="baseline-place">
-                  <div className="vector-8d" />
-                </div>
-              </div>
-              <div className="co-so-8e">
-                <div className="baseline-place-8f">
-                  <div className="vector-90" />
-                </div>
-                <span className="co-so-91">
-                  Cơ sở 2: Số XXX Nguyễn Văn A, phường Cống Vị, quận Ba Đình,
-                  Thành phố Hà Nội
-                </span>
-              </div>
+          <span className='hotline-number'>1900-100023 - 027.918.2981</span>
+          <span className='email'>Email</span>
+          <div className='mail-outline'>
+            <div className='vector-b3' />
+          </div>
+          <span className='email-address'>365simple@gmail.com</span>
+          <div className='flex-row-ac'>
+            <div className='whatsapp' />
+            <div className='facebook' />
+            <div className='youtube' />
+            <div className='ig' />
+          </div>
+          <span className='dia-chi-lien-he'>Địa chỉ liên hệ</span>
+          <div className='flex-row-f'>
+            <div className='place-icon'>
+              <div className='vector-b4' />
             </div>
+            <span className='address-1'>
+              Cơ sở 1: Số XXX Nguyễn Văn A, phường Cống Vị, quận Ba Đình, Thành
+              phố Hà Nội
+            </span>
           </div>
-        </div>
-        <div className="rectangle-92">
-          <div className="rectangle-93">
-            <div className="home" />
-          </div>
-          <div className="rectangle-94">
-            <div className="archive" />
-          </div>
-          <div className="rectangle-95">
-            <div className="clock" />
-          </div>
-          <div className="rectangle-96">
-            <div className="heart-97">
-              <div className="vector-98" />
+          <div className='flex-row-b5'>
+            <div className='place-icon-b6'>
+              <div className='vector-b7' />
             </div>
+            <span className='address-2'>
+              Cơ sở 2: Số XXX Nguyễn Văn A, phường Cống Vị, quận Ba Đình, Thành
+              phố Hà Nội
+            </span>
           </div>
-          <div className="rectangle-99">
-            <div className="phone">
-              <div className="vector-9a" />
-            </div>
+          <div className='line-b8' />
+          <span className='text-4b'>365 Club</span>
+          <span className='dang-ky-thanh-vien'>Đăng ký thành viên</span>
+          <span className='uu-dai-doc-quyen'>Ưu đãi & độc quyền</span>
+          <span className='chinh-sach'>Chính sách</span>
+          <span className='dieu-khoan-va-dieu-kien'>Điều khoản và điều kiện</span>
+          <span className='chinh-sach-khuyen-mai'>Chính sách khuyến mãi</span>
+          <span className='chinh-sach-bao-mat'>Chính sách bảo mật</span>
+          <span className='chinh-sach-giao-hang'>Chính sách giao hàng</span>
+          <span className='cham-soc-khach-hang'>Chăm sóc khách hàng</span>
+          <span className='trai-nghiem-mua-sam'>
+            Trải nghiệm mua sắm 100% hài lòng
+          </span>
+          <span className='hoi-dap-faqs'>Hỏi đáp - FAQs</span>
+          <span className='kien-thuc-mac-dep'>Kiến thức mặc đẹp</span>
+          <span className='huong-dan-chon-size'>Hướng dẫn chọn size</span>
+          <span className='blog'>Blog</span>
+          <span className='group-mac-don-gian-song-chat'>
+            Group mặc đơn giản sống chất
+          </span>
+          <div className='line-b9' />
+          <div className='flex-row-ba'>
+            <div className='image-bb' />
+            <span className='copyright'>Copyright © 365 Simple Viet Nam </span>
           </div>
-        </div>
-        <div className="home-indicator">
-          <div className="rectangle-9b" />
+          <span className='giay-phep-kinh-doanh'>
+            Giấy phép kinh doanh lữ hành quốc tế số: 01-1761/2023/TCDL-GP LHQT
+          </span>
         </div>
       </div>
 

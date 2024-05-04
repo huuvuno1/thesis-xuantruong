@@ -10,222 +10,159 @@ export default function ContactsResponsive() {
     <>
       <NavBar open={toggle} onClose={() => setToggle(false)} />
 
-      <div className="main-container">
-        <div className="rectangle">
-          <div className="back-to-school">
-            <span className="back-to-school-1">
+      <div className='main-container'>
+        <div className='rectangle'>
+          <div className='back-to-school'>
+            <span className='back-to-school-1'>
               Ra mắt 365 Simple Back to school!
             </span>
-            <span className="buy-now">Mua ngay</span>
-            <span className="back-to-school-2">{' ->'}</span>
+            <span className='buy-now'>Mua ngay</span>
+            <span className='back-to-school-2'> -></span>
           </div>
-          <div className="rectangle-3">
-            <div className="asset" />
-            <div className="align-left" onClick={() => setToggle(!toggle)}>
-              <div className="vector" />
-              <div className="vector-4" />
-              <div className="vector-5" />
+          <div className='rectangle-3'>
+            <div className='asset' />
+            <div className='align-left'>
+              <div className='vector' />
+              <div className='vector-4' />
+              <div className='vector-5' />
             </div>
-            <a href="/auth/login" className="account">
-              <div className="vector-6" />
-            </a>
-            <div className="cart">
-              <div className="vector-7" />
-              <div className="vector-8" />
+            <div className='account'>
+              <div className='vector-6' />
             </div>
-            <div className="search" />
-            <div className="ellipse" />
-            <span className="number">5</span>
+            <div className='cart'>
+              <div className='vector-7' />
+              <div className='vector-8' />
+            </div>
+            <div className='search' />
+            <div className='ellipse' />
+            <span className='span-5'>5</span>
           </div>
         </div>
-        <div className="frame">
-          <div className="link">
-            <span className="contact">/ Liên hệ</span>
-            <span className="trang-chu">Trang chủ</span>
-          </div>
-          <div className="banner">
-            <div className="rectangle-9" />
-          </div>
-          <span className="simple-giup-ban">
-            365 SIMPLE CÓ THỂ GIÚP GÌ CHO BẠN ?
+        <div className='div-flex-row-c'>
+          <span className='span-trang-chu'>Trang chủ</span>
+          <span className='span-lien-he'>/ Liên hệ</span>
+        </div>
+        <div className='div-rectangle' />
+        <span className='span-365-simple-co-the-giup-gi-cho-ban'>
+          365 SIMPLE CÓ THỂ GIÚP GÌ CHO BẠN ?
+        </span>
+        <div className='div-rectangle-9'>
+          <span className='span-cho-chung-minh-biet-cau-hoi-cua-ban'>
+            Cho chúng mình biết câu hỏi của bạn...
           </span>
-          <button className="ho-ten">
-            <span className="cau-hoi">
-              Cho chúng mình biết câu hỏi của bạn...
-            </span>
-            <div className="rectangle-a" />
-          </button>
-          <div className="lien-he-tt">
-            <span className="lien-he-truc-tiep">
-              Nếu còn bất kỳ câu hỏi nào, bạn hãy liên hệ trực tiếp với chúng
-              mình
-            </span>
-            <div className="button-tien-hanh-dat-hang">
-              <span className="lien-he-truc-tiep-b">Liên hệ trực tiếp</span>
-              <div className="rectangle-c" />
-            </div>
-          </div>
-          <div className="footer">
-            <div className="footer-d">
-              <div className="group">
-                <div className="simple-chon-don-gian-song-de-dang">
-                  <span className="text-c">365 Simple </span>
-                  <span className="chon-don-gian-song-de-dang">
-                    - Chọn đơn giản - Sống dễ dàng !
-                  </span>
-                </div>
-                <span className="y-kien-dong-gop">
-                  Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến
-                  đóng góp từ khách hàng để có thể nâng cấp trải nghiệm dịch vụ
-                  và sản phẩm tốt hơn nữa.
-                </span>
-              </div>
-              <div className="button-dong-gop">
-                <span className="dong-gop-y-kien">Đóng góp ý kiến</span>
-                <div className="rectangle-e" />
-              </div>
-              <div className="hotline">
-                <div className="flex-column-ca">
-                  <span className="hotline-f">Hotline</span>
-                  <span className="text-11">1900-100023 - 027.918.2981</span>
-                </div>
-                <div className="ph-phone-light">
-                  <div className="vector-10" />
-                </div>
-              </div>
-              <div className="email">
-                <div className="flex-column">
-                  <span className="email-text">Email</span>
-                  <span className="email-address">365simple@gmail.com</span>
-                </div>
-                <div className="mail-icon">
-                  <div className="vector-11" />
-                </div>
-              </div>
-              <div className="lien-he">
-                <div className="ig" />
-                <div className="youtube" />
-                <div className="whatsapp" />
-                <div className="facebook" />
-              </div>
-              <div className="rectangle-12" />
-              <div className="footer-13">
-                <div className="footer-content">
-                  <span className="contact-address">Địa chỉ liên hệ</span>
-                  <div className="line" />
-                  <div className="club">
-                    <span className="text-15">365 Club</span>
-                    <span className="register-member">Đăng ký thành viên</span>
-                    <span className="exclusive-offers">Ưu đãi & độc quyền</span>
-                  </div>
-                  <div className="policies">
-                    <span className="policy">Chính sách</span>
-                    <span className="terms-conditions">
-                      Điều khoản và điều kiện
-                    </span>
-                    <span className="promotion-policy">
-                      Chính sách khuyến mãi
-                    </span>
-                    <span className="privacy-policy">Chính sách bảo mật</span>
-                    <span className="delivery-policy">
-                      Chính sách giao hàng
-                    </span>
-                  </div>
-                  <div className="customer-care">
-                    <span className="customer-care-14">
-                      Chăm sóc khách hàng
-                    </span>
-                    <span className="shopping-experience">
-                      Trải nghiệm mua sắm 100% hài lòng
-                    </span>
-                    <span className="faqs">Hỏi đáp - FAQs</span>
-                  </div>
-                  <div className="fashion-knowledge">
-                    <span className="fashion-knowledge-15">
-                      Kiến thức mặc đẹp
-                    </span>
-                    <span className="size-guide">Hướng dẫn chọn size</span>
-                    <span className="blog">Blog</span>
-                    <span className="simple-style-group">
-                      Group mặc đơn giản sống chất
-                    </span>
-                  </div>
-                </div>
-                <div className="group-16">
-                  <div className="line-17" />
-                  <span className="international-business-license">
-                    Giấy phép kinh doanh lữ hành quốc tế số:
-                    01-1761/2023/TCDL-GP LHQT
-                  </span>
-                  <div className="image" />
-                  <span className="copyright">
-                    Copyright © 365 Simple Viet Nam
-                  </span>
-                </div>
-              </div>
-              <div className="location">
-                <span className="location-18">
-                  Cơ sở 1: Số XXX Nguyễn Văn A, phường Cống Vị, quận Ba Đình,
-                  Thành phố Hà Nội
-                </span>
-                <div className="place-icon">
-                  <div className="vector-19" />
-                </div>
-              </div>
-              <div className="location-1a">
-                <div className="place-icon-1b">
-                  <div className="vector-1c" />
-                </div>
-                <span className="location-1d">
-                  Cơ sở 2: Số XXX Nguyễn Văn A, phường Cống Vị, quận Ba Đình,
-                  Thành phố Hà Nội
-                </span>
-              </div>
-            </div>
-          </div>
-          <div className="rectangle-1e" />
-          <span className="category">Danh mục</span>
-          <button className="purchase-policy">
-            <span className="purchase-policy-1f">Chính sách mua hàng</span>
-            <div className="rectangle-20" />
-          </button>
-          <button className="policy-button">
-            <span className="policy-span">Chính sách đổi trả</span>
-            <div className="rectangle-21" />
-          </button>
-          <button className="policy-button-22">
-            <span className="policy-span-23">Chính sách giao hàng</span>
-            <div className="rectangle-24" />
-          </button>
-          <div className="policy-div">
-            <span className="other-span">Khác...</span>
-            <div className="rectangle-25" />
-          </div>
-          <div className="rectangle-26" />
         </div>
-        <div className="rectangle-27">
-          <a href="/" className="rectangle-28">
-            <div className="home-div" />
-          </a>
-          <a href="/cart" className="rectangle-29">
-            <div className="archive-div" />
-          </a>
-          <div className="rectangle-2a">
-            <div className="clock-div" />
+        <div className='div-rectangle-a'>
+          <span className='span-danh-muc'>Danh mục</span>
+          <div className='div-rectangle-b'>
+            <span className='span-chinh-sach-mua-hang'>Chính sách mua hàng</span>
           </div>
-          <a href="/favorite" className="rectangle-2b">
-            <div className="heart-div">
-              <div className="vector-div" />
-            </div>
-          </a>
-          <div className="rectangle-2c">
-            <div className="phone-div">
-              <div className="vector-div-2d" />
-            </div>
+          <div className='div-rectangle-c'>
+            <input className='input-chinh-sach-mua-hang_input' style={{
+              fontSize: 17,
+              padding: '0 12px',
+              color: "#012755"
+            }} value={'Chính sách đổi trả'} />
+          </div>
+          <div className='div-rectangle-d'>
+            <input className='input-chinh-sach-mua-hang_input-e' style={{
+              fontSize: 17,
+              padding: '0 12px',
+              color: "#012755"
+            }} value={'Chính sách giao hàng'} />
+          </div>
+          <div className='div-rectangle-f'>
+            <input className='policy-input' style={{
+              fontSize: 17,
+              padding: '0 12px',
+              color: "#012755"
+            }} value={'Khác...'} />
           </div>
         </div>
-        <div className="home-indicator">
-          <div className="rectangle-2e" />
+        <span className='contact-us'>
+          Nếu còn bất kỳ câu hỏi nào, bạn hãy liên hệ trực tiếp với chúng mình
+        </span>
+        <div className='rectangle-10'>
+          <span className='contact-directly'>Liên hệ trực tiếp</span>
+        </div>
+        <div className='rectangle-11' />
+        <div className='rectangle-12'>
+          <div className='simple-living'>
+            <span className='text-10'>365 Simple </span>
+            <span className='simple-living-message'>
+              - Chọn đơn giản - Sống dễ dàng !
+            </span>
+          </div>
+          <span className='customer-feedback'>
+            Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ
+            khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn
+            nữa.
+          </span>
+          <div className='rectangle-13'>
+            <span className='feedback'>Đóng góp ý kiến</span>
+          </div>
+          <div className='flex-row'>
+            <span className='hotline'>Hotline</span>
+            <div className='phone-light'>
+              <div className='vector-14' />
+            </div>
+          </div>
+          <span className='phone-number'>1900-100023 - 027.918.2981</span>
+          <span className='email'>Email</span>
+          <div className='mail-outline'>
+            <div className='vector-15' />
+          </div>
+          <span className='simple-email'>365simple@gmail.com</span>
+          <div className='flex-row-cc'>
+            <div className='whatsapp' />
+            <div className='facebook' />
+            <div className='youtube' />
+            <div className='ig' />
+          </div>
+          <span className='contact-address'>Địa chỉ liên hệ</span>
+          <div className='flex-row-fb'>
+            <div className='baseline-place'>
+              <div className='vector-16' />
+            </div>
+            <span className='address-1'>
+              Cơ sở 1: Số XXX Nguyễn Văn A, phường Cống Vị, quận Ba Đình, Thành
+              phố Hà Nội
+            </span>
+          </div>
+          <div className='flex-row-aa'>
+            <div className='baseline-place-17'>
+              <div className='vector-18' />
+            </div>
+            <span className='address-2'>
+              Cơ sở 2: Số XXX Nguyễn Văn A, phường Cống Vị, quận Ba Đình, Thành
+              phố Hà Nội
+            </span>
+          </div>
+          <div className='line' />
+          <span className='club'>365 Club</span>
+          <span className='register-member'>Đăng ký thành viên</span>
+          <span className='exclusive-offers'>Ưu đãi & độc quyền</span>
+          <span className='policies'>Chính sách</span>
+          <span className='terms-conditions'>Điều khoản và điều kiện</span>
+          <span className='promotion-policy'>Chính sách khuyến mãi</span>
+          <span className='privacy-policy'>Chính sách bảo mật</span>
+          <span className='delivery-policy'>Chính sách giao hàng</span>
+          <span className='customer-care'>Chăm sóc khách hàng</span>
+          <span className='satisfactory-shopping-experience'>
+            Trải nghiệm mua sắm 100% hài lòng
+          </span>
+          <span className='faqs'>Hỏi đáp - FAQs</span>
+          <span className='fashion-knowledge'>Kiến thức mặc đẹp</span>
+          <span className='size-guide'>Hướng dẫn chọn size</span>
+          <span className='blog'>Blog</span>
+          <span className='simple-style-group'>Group mặc đơn giản sống chất</span>
+          <div className='line-19' />
+          <div className='flex-row-bc'>
+            <div className='image' />
+            <span className='copyright'>Copyright © 365 Simple Viet Nam </span>
+          </div>
+          <span className='international-tourism-business-license'>
+            Giấy phép kinh doanh lữ hành quốc tế số: 01-1761/2023/TCDL-GP LHQT
+          </span>
         </div>
       </div>
 

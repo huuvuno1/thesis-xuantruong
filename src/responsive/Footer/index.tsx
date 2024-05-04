@@ -8,7 +8,7 @@ export default function Footer() {
         height: '80px',
         margin: '0 auto',
         backgroundColor: '#ffffff',
-        zIndex: 10,
+        zIndex: 1000,
       }}
       className="main-container-1"
     >
