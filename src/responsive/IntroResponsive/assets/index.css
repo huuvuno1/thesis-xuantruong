@@ -105,7 +105,7 @@ button {
   height: 47px;
   top: 4px;
   left: 50%;
-  background: url(./assets/images/08d5c4f773c622791b8993a0c110ffcbb218c52f.png)
+  background: url(../assets/images/08d5c4f773c622791b8993a0c110ffcbb218c52f.png)
     no-repeat center;
   background-size: cover;
   transform: translate(-50.91%, 0);
@@ -126,7 +126,7 @@ button {
   width: 31px;
   height: 3px;
   margin: 10.5px 0 0 3.5px;
-  background: url(./assets/images/f1d18887-152f-4ce6-9ba6-801b56722f19.png)
+  background: url(../assets/images/f1d18887-152f-4ce6-9ba6-801b56722f19.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 121;
@@ -136,7 +136,7 @@ button {
   width: 22px;
   height: 3px;
   margin: 5px 0 0 3.5px;
-  background: url(./assets/images/daeaaf3c-c414-46be-a622-019eef044056.png)
+  background: url(../assets/images/daeaaf3c-c414-46be-a622-019eef044056.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 120;
@@ -146,7 +146,7 @@ button {
   width: 31px;
   height: 3px;
   margin: 6px 0 0 3.5px;
-  background: url(./assets/images/ed8520ba-6174-4b55-864a-bfa21cda397e.png)
+  background: url(../assets/images/ed8520ba-6174-4b55-864a-bfa21cda397e.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 122;
@@ -165,7 +165,7 @@ button {
   width: 20.667px;
   height: 20.667px;
   margin: 5.168px 0 0 5.167px;
-  background: url(./assets/images/c17756b9-4adf-4eaa-8d95-4e58c537002d.png)
+  background: url(../assets/images/c17756b9-4adf-4eaa-8d95-4e58c537002d.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 132;
@@ -184,7 +184,7 @@ button {
   width: 20.985px;
   height: 9.166px;
   margin: 2.578px 0 0 3.258px;
-  background: url(./assets/images/40185318-74f1-4f59-a0e5-42324e744611.png)
+  background: url(../assets/images/40185318-74f1-4f59-a0e5-42324e744611.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 126;
@@ -194,7 +194,7 @@ button {
   width: 20.522px;
   height: 10.599px;
   margin: 1.721px 0 0 3.489px;
-  background: url(./assets/images/5c0d1451-405f-4f63-a311-f45110d0f541.png)
+  background: url(../assets/images/5c0d1451-405f-4f63-a311-f45110d0f541.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 127;
@@ -205,7 +205,7 @@ button {
   height: 26px;
   top: 13px;
   left: 67px;
-  background: url(./assets/images/95012b99-4544-419a-8ca6-50ac027cefa2.png)
+  background: url(../assets/images/95012b99-4544-419a-8ca6-50ac027cefa2.png)
     no-repeat center;
   background-size: cover;
   z-index: 123;
@@ -217,7 +217,7 @@ button {
   height: 11px;
   top: 28.426px;
   left: 397px;
-  background: url(./assets/images/6b28134f-7010-4247-9816-910d66304725.png)
+  background: url(../assets/images/6b28134f-7010-4247-9816-910d66304725.png)
     no-repeat center;
   background-size: cover;
   z-index: 129;
@@ -284,7 +284,7 @@ button {
   width: 428px;
   height: 218px;
   margin: 17px 0 0 0;
-  background: url(./assets/images/e8326505af8462b7e269e9cff8a0be643dc5c155.png)
+  background: url(../assets/images/e8326505af8462b7e269e9cff8a0be643dc5c155.png)
     no-repeat center;
   background-size: cover;
   z-index: 66;
@@ -295,7 +295,7 @@ button {
   height: 35px;
   top: 87px;
   left: 0;
-  background: url(./assets/images/d728eaf3-8ac8-45a9-896d-e5a2f4b74888.png)
+  background: url(../assets/images/d728eaf3-8ac8-45a9-896d-e5a2f4b74888.png)
     no-repeat center;
   background-size: cover;
   z-index: 67;
@@ -306,7 +306,7 @@ button {
   height: 35px;
   top: 87px;
   left: 393px;
-  background: url(./assets/images/9382cb8c-d5ee-4be4-9c70-1b0a2ca1f7a8.png)
+  background: url(../assets/images/9382cb8c-d5ee-4be4-9c70-1b0a2ca1f7a8.png)
     no-repeat center;
   background-size: cover;
   z-index: 69;
@@ -326,7 +326,7 @@ button {
   width: 6.169px;
   height: 10.678px;
   margin: 0.59px 0 0 3.322px;
-  background: url(./assets/images/709c080b-916b-443e-b8b1-ff2ec9e2a624.png)
+  background: url(../assets/images/709c080b-916b-443e-b8b1-ff2ec9e2a624.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 71;
@@ -351,7 +351,7 @@ button {
   width: 388px;
   height: 313px;
   margin: 17px 0 0 20px;
-  background: url(./assets/images/5828e4b95801ca3db4b34e80c4cd440970577946.png)
+  background: url(../assets/images/5828e4b95801ca3db4b34e80c4cd440970577946.png)
     no-repeat center;
   background-size: cover;
   z-index: 73;
@@ -739,7 +739,7 @@ button {
   height: 34.534px;
   top: 13px;
   left: 18.345px;
-  background: url(./assets/images/233f7f51-887d-44ed-b306-4ad5d6f31be8.png)
+  background: url(../assets/images/233f7f51-887d-44ed-b306-4ad5d6f31be8.png)
     no-repeat center;
   background-size: cover;
   z-index: 106;
@@ -768,7 +768,7 @@ button {
   height: 16px;
   top: 22px;
   left: 297px;
-  background: url(./assets/images/fc8668cf-a4b6-4437-95e7-4a397f083823.png)
+  background: url(../assets/images/fc8668cf-a4b6-4437-95e7-4a397f083823.png)
     no-repeat center;
   background-size: cover;
   z-index: 107;
@@ -779,7 +779,7 @@ button {
   height: 13.54%;
   top: 42.71%;
   left: 0;
-  background: url(./assets/images/3397a6d5-60cd-484e-9e72-c926cd56ea6d.png)
+  background: url(../assets/images/3397a6d5-60cd-484e-9e72-c926cd56ea6d.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 113;
@@ -790,7 +790,7 @@ button {
   height: 13.54%;
   top: 42.71%;
   left: 93.75%;
-  background: url(./assets/images/aa18cc68-4892-44ac-a1f8-c5ba18ca64fe.png)
+  background: url(../assets/images/aa18cc68-4892-44ac-a1f8-c5ba18ca64fe.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 110;
@@ -810,7 +810,7 @@ button {
   width: 4.583px;
   height: 7.932px;
   margin: 0.44px 0 0 2.468px;
-  background: url(./assets/images/3d22880e-046b-4df5-bb93-d2a9dac216c8.png)
+  background: url(../assets/images/3d22880e-046b-4df5-bb93-d2a9dac216c8.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 112;
@@ -939,7 +939,7 @@ button {
   width: 17.432px;
   height: 17.432px;
   margin: 2.313px 0 0 3.024px;
-  background: url(./assets/images/9b8dfdba-8b3b-4dcf-ac22-c1e44ae2e1d8.png)
+  background: url(../assets/images/9b8dfdba-8b3b-4dcf-ac22-c1e44ae2e1d8.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 56;
@@ -985,7 +985,7 @@ button {
   width: 18.462px;
   height: 14.769px;
   margin: 3.691px 0 0 1.846px;
-  background: url(./assets/images/c4fd5ca4-15af-4641-a801-ac5c2877d190.png)
+  background: url(../assets/images/c4fd5ca4-15af-4641-a801-ac5c2877d190.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 9;
@@ -1019,7 +1019,7 @@ button {
   position: relative;
   width: 31.539px;
   height: 31.539px;
-  background: url(./assets/images/6d01f5e7-9444-4e7d-9aae-7d313bc9c6dc.png)
+  background: url(../assets/images/6d01f5e7-9444-4e7d-9aae-7d313bc9c6dc.png)
     no-repeat center;
   background-size: cover;
   z-index: 53;
@@ -1029,7 +1029,7 @@ button {
   position: relative;
   width: 31.539px;
   height: 31.539px;
-  background: url(./assets/images/9f05953e-bddb-47a7-b11a-1b9270b49c69.png)
+  background: url(../assets/images/9f05953e-bddb-47a7-b11a-1b9270b49c69.png)
     no-repeat center;
   background-size: cover;
   z-index: 52;
@@ -1039,7 +1039,7 @@ button {
   position: relative;
   width: 31.539px;
   height: 31.539px;
-  background: url(./assets/images/6503b6db-4b5e-43f4-85ca-bd3467fcc5e0.png)
+  background: url(../assets/images/6503b6db-4b5e-43f4-85ca-bd3467fcc5e0.png)
     no-repeat center;
   background-size: cover;
   z-index: 51;
@@ -1049,7 +1049,7 @@ button {
   position: relative;
   width: 31.539px;
   height: 31.539px;
-  background: url(./assets/images/1f7282d0-0120-4fd6-80a5-71ada20956e0.png)
+  background: url(../assets/images/1f7282d0-0120-4fd6-80a5-71ada20956e0.png)
     no-repeat center;
   background-size: cover;
   z-index: 50;
@@ -1092,7 +1092,7 @@ button {
   width: 21px;
   height: 30px;
   margin: 3px 0 0 7.5px;
-  background: url(./assets/images/f9c001b1-b80c-438f-a059-e03ebeea5c7c.png)
+  background: url(../assets/images/f9c001b1-b80c-438f-a059-e03ebeea5c7c.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 44;
@@ -1136,7 +1136,7 @@ button {
   width: 21px;
   height: 30px;
   margin: 3px 0 0 7.5px;
-  background: url(./assets/images/5727484c-6949-49b2-81e0-5080db32f2d0.png)
+  background: url(../assets/images/5727484c-6949-49b2-81e0-5080db32f2d0.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 48;
@@ -1162,7 +1162,7 @@ button {
   width: 384px;
   height: 1px;
   margin: 26px 0 0 20px;
-  background: url(./assets/images/aa28debb-dc2d-42eb-9b76-78e6b50b40b3.png)
+  background: url(../assets/images/aa28debb-dc2d-42eb-9b76-78e6b50b40b3.png)
     no-repeat center;
   background-size: cover;
   z-index: 15;
@@ -1386,7 +1386,7 @@ button {
   width: 387px;
   height: 1px;
   margin: 25px 0 0 20px;
-  background: url(./assets/images/441a7de5-209d-486b-b474-bdf00c8ea3e2.png)
+  background: url(../assets/images/441a7de5-209d-486b-b474-bdf00c8ea3e2.png)
     no-repeat center;
   background-size: cover;
   z-index: 40;
@@ -1404,7 +1404,7 @@ button {
   height: 44px;
   top: 0;
   left: 213px;
-  background: url(./assets/images/071e996e5bfe7c83953df436aec11e1fe8b55300.png)
+  background: url(../assets/images/071e996e5bfe7c83953df436aec11e1fe8b55300.png)
     no-repeat center;
   background-size: cover;
   z-index: 39;

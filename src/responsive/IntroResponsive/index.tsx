@@ -9,297 +9,201 @@ export default function IntroResponsive() {
     <>
       <NavBar open={toggle} onClose={() => setToggle(false)} />
 
-      <div className="main-container">
-        <div className="rectangle">
-          <div className="back-to-school">
-            <span className="back-to-school-1">
-              Ra mắt 365 Simple Back to school!
-            </span>
-            <span className="buy-now">Mua ngay</span>
-            <span className="back-to-school-2">{' ->'}</span>
+      <div className='main-container'>
+        <div className='flex-row-ffcc'>
+          <div className='rectangle'>
+            <div className='back-to-school'>
+              <span className='back-to-school-1'>
+                Ra mắt 365 Simple Back to school!
+              </span>
+              <span className='buy-now'>Mua ngay</span>
+              <span className='back-to-school-2'> -></span>
+            </div>
+            <div className='rectangle-3'>
+              <div className='asset' />
+              <div className='align-left' onClick={() => setToggle(true)}>
+                <div className='vector' />
+                <div className='vector-4' />
+                <div className='vector-5' />
+              </div>
+              <a href='/auth/login' className='account'>
+                <div className='vector-6' />
+              </a>
+              <a href='/cart' className='cart'>
+                <div className='vector-7' />
+                <div className='vector-8' />
+              </a>
+              <div className='search' />
+              <div className='ellipse' />
+              <span className='number-5'>5</span>
+            </div>
           </div>
-          <div className="rectangle-3">
-            <div className="asset" />
-            <div className="align-left" onClick={() => setToggle(!toggle)}>
-              <div className="vector" />
-              <div className="vector-4" />
-              <div className="vector-5" />
-            </div>
-            <a href="/auth/login" className="account">
-              <div className="vector-6" />
-            </a>
-            <div className="cart">
-              <div className="vector-7" />
-              <div className="vector-8" />
-            </div>
-            <div className="search" />
-            <div className="ellipse" />
-            <span className="number">5</span>
+          <span className='home'>Trang chủ</span>
+          <span className='about'>/ Giới thiệu</span>
+        </div>
+        <div className='rectangle-9'>
+          <div className='previous' />
+          <div className='ellipse-a' />
+          <div className='ooui-next-ltr'>
+            <div className='vector-b' />
           </div>
         </div>
-        <div className="frame">
-          <div className="link">
-            <span className="introduction">/ Giới thiệu</span>
-            <span className="home">Trang chủ</span>
-          </div>
-          <div className="image">
-            <div className="rectangle-9" />
-            <div className="previous" />
-            <div className="previous-a">
-              <div className="ooui-next-ltr">
-                <div className="vector-b" />
-              </div>
-              <div className="ellipse-c" />
-            </div>
-          </div>
-          <span className="text-8">365 Simple là ai?</span>
-          <div className="rectangle-d" />
-          <span className="text-9">
-            Nếu bạn thường xuyên khó khăn trong việc chọn lựa hay phối đồ, không
-            biết mặc gì khi đi làm, đi chơi, hay dự tiệc...
-            <br /> Đến với 365 Simple, chúng tôi sẽ giúp bạn phần còn lại
-          </span>
-          <span className="text-a">
-            1 Startup trong lĩnh vực thời trang thành lập vào năm 2024. 365
-            Simple mang thông điệp thời trang đơn giản đến mức tối giản có thể
-            mặc hàng ngày trong nhiều dịp khác nhau
+        <span className='simple-lai-ai'>365 Simple là ai?</span>
+        <div className='rectangle-c' />
+        <span className='neu-ban-thuong'>
+          Nếu bạn thường xuyên khó khăn trong việc chọn lựa hay phối đồ, không
+          biết mặc gì khi đi làm, đi chơi, hay dự tiệc...
+          <br /> Đến với 365 Simple, chúng tôi sẽ giúp bạn phần còn lại
+        </span>
+        <span className='startup-trong-linh-vuc'>
+          1 Startup trong lĩnh vực thời trang thành lập vào năm 2024. 365 Simple
+          mang thông điệp thời trang đơn giản đến mức tối giản có thể mặc hàng
+          ngày trong nhiều dịp khác nhau
+          <br />
+        </span>
+        <span className='voi-muc-tieu-tao'>
+          Với mục tiêu tạo ra không gian mua sắm trực tuyến tiện lợi và tiếp cận
+          đa khách hàng, mang đậm dấu ấn và phản chiếu phong cách thời trang của
+          "365 Simple"
+        </span>
+        <span className='simple-chon-don-gian'>
+          365 Simple - Chọn đơn giản, Sống dễ dàng
+        </span>
+        <div className='rectangle-d'>
+          <span className='phuong-cham-hoat-dong'>Phương châm hoạt động</span>
+          <span className='tinh-te'>Tinh Tế</span>
+          <span className='tu-te'>Tử Tế</span>
+          <span className='tinh-te-trong-cong-viec'>
+            Tinh tế trong công việc,
             <br />
+            Tinh tế trong các vấn đề của khách hàng
           </span>
-          <span className="text-b">
-            {
-              'Với mục tiêu tạo ra không gian mua sắm trực tuyến tiện lợi và tiếp cận đa khách hàng, mang đậm dấu ấn và phản chiếu phong cách thời trang của "365 Simple"'
-            }
+          <span className='tu-te-voi-khach-hang'>
+            Tử tế với khách hàng,
+            <br />
+            với đồng nghiệp, với lãnh đạo
           </span>
-          <span className="text-c">
-            365 Simple - Chọn đơn giản, Sống dễ dàng
+          <span className='trach-nhiem'>Trách nhiệm</span>
+          <span className='sang-tao'>Sáng tạo</span>
+          <span className='trach-nhiem-voi-khach-hang'>
+            Trách nhiệm với khách hàng,
+            <br />
+            trách nhiệm trong mọi lời nói của chúng tôi
           </span>
-          <div className="section-5">
-            <div className="section-6">
-              <span className="text-d">Phương châm hoạt động</span>
-            </div>
-            <div className="rectangle-e" />
-            <div className="section-7">
-              <div className="section-8">
-                <span className="text-e">Tử Tế</span>
-              </div>
-              <span className="text-f">
-                Tử tế với khách hàng,
-                <br />
-                với đồng nghiệp, với lãnh đạo
-              </span>
-            </div>
-            <div className="section-9">
-              <span className="text-10">Tinh Tế</span>
-              <span className="text-11">
-                Tinh tế trong công việc,
-                <br />
-                Tinh tế trong các vấn đề của khách hàng
-              </span>
-            </div>
-            <div className="wrapper-5">
-              <span className="text-12">Sáng tạo</span>
-              <span className="text-13">
-                Luôn đổi mới, sáng tạo
-                <br />
-                trong các sản phẩm của 365
-              </span>
-            </div>
-            <div className="box-4">
-              <span className="text-14">Trách nhiệm</span>
-              <span className="text-15">
-                Trách nhiệm với khách hàng,
-                <br />
-                trách nhiệm trong mọi lời nói của chúng tôi
-              </span>
-            </div>
-            <div className="section-a">
-              <span className="text-16">Hết mình</span>
-              <span className="text-17">
-                Làm mọi việc luôn hết mình vì cộng đồng,
-                <br />
-                vì khách hàng và vì tương lai của 365
-              </span>
-            </div>
-            <div className="group-4">
-              <span className="text-18">Sẵn sàng</span>
-              <span className="text-19">
-                Sẵn sàng với mọi công việc,
-                <br />
-                đáp ưng mọi yêu cầu của khách hàng
-              </span>
-            </div>
-          </div>
-          <span className="text-1a">Khách hàng nói gì về chúng tôi</span>
-          <div className="group-5">
-            <div className="group-6">
-              <span className="text-1b">18 ngày trước</span>
-              <div className="group-7" />
-              <div className="pic-d" />
-              <div className="pic-e" />
-            </div>
-            <span className="text-1c">Lê Đức - Hà Nội</span>
-            <span className="text-1d">
+          <span className='luon-doi-moi'>
+            Luôn đổi mới, sáng tạo
+            <br />
+            trong các sản phẩm của 365
+          </span>
+          <span className='het-minh'>Hết mình</span>
+          <span className='san-sang'>Sẵn sàng</span>
+          <span className='ready-for-all-tasks'>
+            Sẵn sàng với mọi công việc,
+            <br />
+            đáp ưng mọi yêu cầu của khách hàng
+          </span>
+          <span className='dedicated-to-community'>
+            Làm mọi việc luôn hết mình vì cộng đồng,
+            <br />
+            vì khách hàng và vì tương lai của 365
+          </span>
+        </div>
+        <span className='customer-feedback'>Khách hàng nói gì về chúng tôi</span>
+        <div className='flex-row-ace'>
+          <div className='rectangle-e'>
+            <span className='satisfied-customer-review'>
               Mình rất hài lòng khi trải nghiệm sản phẩm tại đây, trước đây mỗi
               ngày đều rất mất thời gian để chọn đồ, phối đồ. <br />
               Khi biết tới 365 Simple mình được tư vấn rất nhiệt tình, sản phẩm
               mua về cũng chất lượng. Nói chung là đáng để thử
             </span>
-            <div className="section-b">
-              <div className="wrapper-6">
-                <div className="section-c">
-                  <div className="pic-f" />
-                </div>
-                <div className="pic-10" />
-              </div>
-              <div className="pic-11" />
-            </div>
+            <div className='review-date' />
+            <div className='avatar' />
+            <span className='customer-location'>Lê Đức - Hà Nội</span>
+            <div className='star-rating' />
           </div>
-          <div className="section-d">
-            <div className="wrapper-7">
-              <div className="group-8">
-                <div className="box-5">
-                  <span className="text-1e">365 Simple </span>
-                  <span className="text-1f">
-                    - Chọn đơn giản - Sống dễ dàng !
-                  </span>
-                </div>
-                <span className="text-20">
-                  Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến
-                  đóng góp từ khách hàng để có thể nâng cấp trải nghiệm dịch vụ
-                  và sản phẩm tốt hơn nữa.
-                </span>
-              </div>
-              <div className="group-9">
-                <span className="text-21">Đóng góp ý kiến</span>
-                <div className="box-6" />
-              </div>
-              <div className="wrapper-8">
-                <div className="box-7">
-                  <span className="text-22">Hotline</span>
-                  <span className="text-23">1900-100023 - 027.918.2981</span>
-                </div>
-                <div className="group-a">
-                  <div className="img-4" />
-                </div>
-              </div>
-              <div className="section-e">
-                <div className="flex-column-ed">
-                  <span className="email">Email</span>
-                  <span className="simple-gmail-com">365simple@gmail.com</span>
-                </div>
-                <div className="material-symbols-mail-outline">
-                  <div className="vector-f" />
-                </div>
-              </div>
-              <div className="lien-he">
-                <div className="ig" />
-                <div className="youtube" />
-                <div className="whatsapp" />
-                <div className="facebook" />
-              </div>
-              <div className="rectangle-10" />
-              <div className="footer">
-                <div className="ndung-footer">
-                  <span className="dia-chi-lien-he">Địa chỉ liên hệ</span>
-                  <div className="line" />
-                  <div className="club">
-                    <span className="text-27">365 Club</span>
-                    <span className="dang-ky-thanh-vien">
-                      Đăng ký thành viên
-                    </span>
-                    <span className="uu-dai-doc-quyen">Ưu đãi & độc quyền</span>
-                  </div>
-                  <div className="chinh-sach">
-                    <span className="dieu-khoan-va-dieu-kien">Chính sách</span>
-                    <span className="chinh-sach-khuyen-mai">
-                      Điều khoản và điều kiện
-                    </span>
-                    <span className="chinh-sach-bao-mat">
-                      Chính sách khuyến mãi
-                    </span>
-                    <span className="chinh-sach-giao-hang">
-                      Chính sách bảo mật
-                    </span>
-                    <span className="cham-soc-khach-hang">
-                      Chính sách giao hàng
-                    </span>
-                  </div>
-                  <div className="cham-soc-khach-hang-11">
-                    <span className="trai-nghiem-mua-sam-100-hai-long">
-                      Chăm sóc khách hàng
-                    </span>
-                    <span className="hoi-dap-faqs">
-                      Trải nghiệm mua sắm 100% hài lòng
-                    </span>
-                    <span className="kien-thuc-mac-dep">Hỏi đáp - FAQs</span>
-                  </div>
-                  <div className="kien-thuc-mac-dep-12">
-                    <span className="huong-dan-chon-size">
-                      Kiến thức mặc đẹp
-                    </span>
-                    <span className="text-33">Hướng dẫn chọn size</span>
-                    <span className="blog">Blog</span>
-                    <span className="group-mac-don-gian-sung-chat">
-                      Group mặc đơn giản sống chất
-                    </span>
-                  </div>
-                </div>
-                <div className="group">
-                  <div className="line-13" />
-                  <span className="giay-phep-kinh-doanh">
-                    Giấy phép kinh doanh lữ hành quốc tế số:
-                    01-1761/2023/TCDL-GP LHQT
-                  </span>
-                  <div className="image-14" />
-                  <span className="copyright">
-                    Copyright © 365 Simple Viet Nam
-                  </span>
-                </div>
-              </div>
-              <div className="co-so">
-                <span className="co-so-15">
-                  Cơ sở 1: Số XXX Nguyễn Văn A, phường Cống Vị, quận Ba Đình,
-                  Thành phố Hà Nội
-                </span>
-                <div className="ic-baseline-place">
-                  <div className="vector-16" />
-                </div>
-              </div>
-              <div className="co-so-17">
-                <div className="ic-baseline-place-18">
-                  <div className="vector-19" />
-                </div>
-                <span className="co-so-1a">
-                  Cơ sở 2: Số XXX Nguyễn Văn A, phường Cống Vị, quận Ba Đình,
-                  Thành phố Hà Nội
-                </span>
-              </div>
-            </div>
+          <div className='previous-arrow' />
+          <div className='ellipse-f' />
+          <div className='next-arrow'>
+            <div className='vector-10' />
           </div>
         </div>
-        <div className="rectangle-1b">
-          <div className="rectangle-1c">
-            <div className="home-1d" />
+        <div className='rectangle-11'>
+          <div className='simple-slogan'>
+            <span className='simple-brand'>365 Simple </span>
+            <span className='brand-slogan'>- Chọn đơn giản - Sống dễ dàng !</span>
           </div>
-          <div className="rectangle-1e">
-            <div className="archive" />
+          <span className='customer-feedback-message'>
+            Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ
+            khách hàng để có thể nâng cấp trải nghiệm dịch vụ và sản phẩm tốt hơn
+            nữa.
+          </span>
+          <div className='rectangle-12'>
+            <span className='submit-feedback'>Đóng góp ý kiến</span>
           </div>
-          <div className="rectangle-1f">
-            <div className="clock" />
-          </div>
-          <div className="rectangle-20">
-            <div className="heart">
-              <div className="vector-21" />
+          <div className='flex-row-de'>
+            <span className='hotline'>Hotline</span>
+            <div className='phone-light'>
+              <div className='vector-13' />
             </div>
           </div>
-          <div className="rectangle-22">
-            <div className="phone">
-              <div className="vector-23" />
-            </div>
+          <span className='phone-number'>1900-100023 - 027.918.2981</span>
+          <span className='email'>Email</span>
+          <div className='mail-outline'>
+            <div className='vector-14' />
           </div>
-        </div>
-        <div className="home-indicator-on-light">
-          <div className="rectangle-24" />
+          <span className='email-address'>365simple@gmail.com</span>
+          <div className='flex-row-eac'>
+            <div className='whatsapp' />
+            <div className='facebook' />
+            <div className='youtube' />
+            <div className='ig' />
+          </div>
+          <span className='contact-address'>Địa chỉ liên hệ</span>
+          <div className='flex-row-f'>
+            <div className='place'>
+              <div className='vector-15' />
+            </div>
+            <span className='address-1'>
+              Cơ sở 1: Số XXX Nguyễn Văn A, phường Cống Vị, quận Ba Đình, Thành
+              phố Hà Nội
+            </span>
+          </div>
+          <div className='flex-row-c'>
+            <div className='place-16'>
+              <div className='vector-17' />
+            </div>
+            <span className='address-2'>
+              Cơ sở 2: Số XXX Nguyễn Văn A, phường Cống Vị, quận Ba Đình, Thành
+              phố Hà Nội
+            </span>
+          </div>
+          <div className='line' />
+          <span className='club'>365 Club</span>
+          <span className='dang-ky-thanh-vien'>Đăng ký thành viên</span>
+          <span className='uu-dai-doc-quyen'>Ưu đãi & độc quyền</span>
+          <span className='chinh-sach'>Chính sách</span>
+          <span className='dieu-khoan-dieu-kien'>Điều khoản và điều kiện</span>
+          <span className='chinh-sach-khuyen-mai'>Chính sách khuyến mãi</span>
+          <span className='chinh-sach-bao-mat'>Chính sách bảo mật</span>
+          <span className='chinh-sach-giao-hang'>Chính sách giao hàng</span>
+          <span className='cham-soc-khach-hang'>Chăm sóc khách hàng</span>
+          <span className='trai-nghiem-mua-sam'>
+            Trải nghiệm mua sắm 100% hài lòng
+          </span>
+          <span className='hoi-dap-faqs'>Hỏi đáp - FAQs</span>
+          <span className='kien-thuc-mac-dep'>Kiến thức mặc đẹp</span>
+          <span className='huong-dan-chon-size'>Hướng dẫn chọn size</span>
+          <span className='blog'>Blog</span>
+          <span className='group-mac-don-gian'>Group mặc đơn giản sống chất</span>
+          <div className='line-18' />
+          <div className='flex-row-e'>
+            <div className='image' />
+            <span className='copyright'>Copyright © 365 Simple Viet Nam </span>
+          </div>
+          <span className='giay-phep-kinh-doanh'>
+            Giấy phép kinh doanh lữ hành quốc tế số: 01-1761/2023/TCDL-GP LHQT
+          </span>
         </div>
       </div>
 

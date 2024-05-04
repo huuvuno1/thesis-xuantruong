@@ -20,19 +20,19 @@ export default function ContactsResponsive() {
             <span className='back-to-school-2'> -></span>
           </div>
           <div className='rectangle-3'>
-            <div className='asset' />
-            <div className='align-left'>
+            <a href='/' className='asset' />
+            <div className='align-left' onClick={() => setToggle(true)}>
               <div className='vector' />
               <div className='vector-4' />
               <div className='vector-5' />
             </div>
-            <div className='account'>
+            <a href='/auth/login' className='account'>
               <div className='vector-6' />
-            </div>
-            <div className='cart'>
+            </a>
+            <a href='/cart' className='cart'>
               <div className='vector-7' />
               <div className='vector-8' />
-            </div>
+            </a>
             <div className='search' />
             <div className='ellipse' />
             <span className='span-5'>5</span>

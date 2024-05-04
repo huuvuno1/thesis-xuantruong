@@ -21,7 +21,7 @@ export default function RecentViewResponsive() {
               <span className='ra-mat-simple-back-1'> -></span>
             </div>
             <div className='rectangle-2'>
-              <div className='asset' />
+              <a href='/' className='asset' />
               <div className='align-left' onClick={() => setToggle(true)}>
                 <div className='vector' />
                 <div className='vector-3' />
