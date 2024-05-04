@@ -17,7 +17,7 @@ export default function CartResponsive() {
               Ra mắt 365 Simple Back to school!
             </span>
             <span className='mua-ngay'>Mua ngay</span>
-            <span className='ra-mat-simple-back-to-school-2'> -></span>
+            <span className='ra-mat-simple-back-to-school-2'> {'->'}</span>
           </div>
           <div className='rectangle-3'>
             <div className='asset' />
@@ -126,7 +126,7 @@ export default function CartResponsive() {
         <div className='line' />
         <div className='buy-more-products'>
           <span className='buy-more-products-36'>Mua thêm sản phẩm</span>
-          <span className='buy-more-products-37'> >>></span>
+          <span className='buy-more-products-37'> {'>>>'}</span>
         </div>
         <div className='rectangle-38'>
           <span className='order-summary'>TÓM TẮT ĐƠN HÀNG</span>

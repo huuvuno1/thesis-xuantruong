@@ -17,7 +17,7 @@ export default function ContactsResponsive() {
               Ra mắt 365 Simple Back to school!
             </span>
             <span className='buy-now'>Mua ngay</span>
-            <span className='back-to-school-2'> -></span>
+            <span className='back-to-school-2'> {'->'}</span>
           </div>
           <div className='rectangle-3'>
             <a href='/' className='asset' />

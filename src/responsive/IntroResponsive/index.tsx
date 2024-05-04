@@ -17,7 +17,7 @@ export default function IntroResponsive() {
                 Ra mắt 365 Simple Back to school!
               </span>
               <span className='buy-now'>Mua ngay</span>
-              <span className='back-to-school-2'> -></span>
+              <span className='back-to-school-2'> {'->'}</span>
             </div>
             <div className='rectangle-3'>
               <div className='asset' />
@@ -64,7 +64,7 @@ export default function IntroResponsive() {
         <span className='voi-muc-tieu-tao'>
           Với mục tiêu tạo ra không gian mua sắm trực tuyến tiện lợi và tiếp cận
           đa khách hàng, mang đậm dấu ấn và phản chiếu phong cách thời trang của
-          "365 Simple"
+          {`"365 Simple"`}
         </span>
         <span className='simple-chon-don-gian'>
           365 Simple - Chọn đơn giản, Sống dễ dàng

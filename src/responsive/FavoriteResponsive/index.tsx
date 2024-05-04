@@ -18,7 +18,7 @@ export default function FavoriteResponsive() {
                 Ra mắt 365 Simple Back to school!
               </span>
               <span className='mua-ngay'>Mua ngay</span>
-              <span className='ra-mat-simple-1'> -></span>
+              <span className='ra-mat-simple-1'> {'->'}</span>
             </div>
             <div className='rectangle-2'>
               <a href='/' className='asset' />
